@@ -4,7 +4,7 @@ import Slider from 'react-slick';
 class Carousel extends React.Component {
 	render(){
 		var displayList = this.props.list.map((item)=>
-			<div>
+			<div key={item.image}>
 			  <h1>
 			    <img src={item.image}/>
 			    <p>{item.text}</p>

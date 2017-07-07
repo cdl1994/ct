@@ -111,9 +111,9 @@ class HomePage extends React.Component {
 	render() {
 		var name = this.state.name;
 		var homePageStyle = {
-			"background-color" : this.state.theme.backgroundColor,
-			"color" : this.state.theme.titleTextColor,
-			"font-style" : this.state.theme.fontStyle,
+			backgroundColor : this.state.theme.backgroundColor,
+			color : this.state.theme.titleTextColor,
+			fontStyle : this.state.theme.fontStyle,
 		}
 		return (			
 			<div style={homePageStyle}>
@@ -141,14 +141,14 @@ function WhiteLine(props){
 
 function WebsiteLink(props){
 	var containerStyle = {
-		"margin" : "10px",
+		margin : "10px",
 	}
 	var titleStyle = {
-		"margin" : "auto",
-		"color" : "#4c372e",
-		"font-family" : "Bodoni-stdroman",
-		"font-size" : "2.8vmax",
-		"text-align" : "center",
+		margin : "auto",
+		color : "#4c372e",
+		fontFamily : "Bodoni-stdroman",
+		fontSize : "2.8vmax",
+		textAlign : "center",
 	}
 	return (
 		<Row style={containerStyle}>
@@ -176,7 +176,7 @@ function EnterEmail(props){
 }
 
 function BlogTags(props){
-	const buttonList = props.list.map((item) => <button className='tag white-border-button blog-tags-but'>{item}</button>);
+	const buttonList = props.list.map((item) => <button key={item} className='tag white-border-button blog-tags-but'>{item}</button>);
 	return (
 		<Row className="margin-10 blog-tags">
 			<Col md={6}>

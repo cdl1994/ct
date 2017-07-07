@@ -4,18 +4,18 @@ import Slider from 'react-slick';
 class BandCarousel extends React.Component {
 	render(){		
 		var titleStyle={
-			"text-align" : "center",
+			textAlign : "center",
 		}
 		var bandStyle={
-			"padding" : "40px",
+			padding : "40px",
 		}
 		var containerStyle = {
-			"padding" : "40px",
-			"width" : "90%",
-			"margin" : "0 auto",
+			padding : "40px",
+			width : "90%",
+			margin : "0 auto",
 		}
 		var displayList = this.props.list.map((item) => 
-			<div style={bandStyle}>
+			<div key={item.image} style={bandStyle}>
 			    <img src={item.image} />
 			    <p>{item.buttonText}</p>
 			</div>);
