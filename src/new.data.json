@@ -1,0 +1,90 @@
+{
+	"theme":{
+	    "backgroundColor":"#dcc0ba",
+	    "titleTextColor":"#ffffff",
+	    "backgroundImage":"image/data/Woodcut.jpg",
+	    "fontStyle":"Bodoni-stdroman"
+	},
+	"carousel":[
+	    {
+	        "image":"image/data/home-banner/banner-2.jpg",
+	        "text":"The <i>Perfect Gift</i> for that Perfect Occasion.<br><i>Personalized</i> Cigars."
+	    },
+	    {
+	        "image":"image/data/home-banner/banner-1.jpg",
+	        "text":"The <i>Perfect Gift</i> for that Perfect Occasion.<br><i>Personalized</i> Cigars."
+	    },
+	    {
+	        "image":"image/data/home-banner/banner-3.jpg",
+	        "text":"The <i>Perfect Gift</i> for that Perfect Occasion.<br><i>Personalized</i> Cigars."
+	    }
+	],
+	"categories":[
+	    {
+	        "image":"image/data/homepage_category/Wedding.jpg",
+	        "title":"Celebrate the Newest Addition to Your Family",
+	        "buttonText":"Custom Holiday Cigars"
+	    },
+	    {
+	        "image":"image/data/homepage_category/Groomsmen.jpg",
+	        "title":"Say Thank You to the Men Who Stood by Your Side",
+	        "buttonText":"Custom Groomsmen Cigar"
+	    },
+	    {
+	        "image":"image/data/homepage_category/ValentinesDay.jpg",
+	        "title":"Show Your Partner Some Love",
+	        "buttonText":"Custom Valentine’s Day Cigars"
+	    },
+	    {
+	        "image":"image/data/homepage_category/CorporateEvent.jpg",
+	        "title":"Show Your Partner Some Love",
+	        "buttonText":"Custom Corporate Event Cigars"
+	    },
+	],
+	"customize":[
+	    {
+	        "image":"image/data/cigar-bands/cigar-bands-2.png",
+	        "link":"design-cigar-from-template/The Classic Cigar Band-cigar-band-template/940",
+	        "buttonText":"Customize yours"
+	    },
+	    {
+	        "image":"image/data/cigar-bands/cigar-bands-4.png",
+	        "link":"design-cigar-from-template/The Classic Cigar Band-cigar-band-template/940",
+	        "buttonText":"Customize yours"
+	    },
+	    {
+	        "image":"image/data/cigar-bands/cigar-bands-6.png",
+	        "link":"design-cigar-from-template/The Classic Cigar Band-cigar-band-template/940",
+	        "buttonText":"Customize yours"
+	    },
+	    {
+	        "image":"image/data/cigar-bands/cigar-bands-1.png",
+	        "link":"design-cigar-from-template/The Classic Cigar Band-cigar-band-template/940",
+	        "buttonText":"Customize yours"
+	    },
+	    {
+	        "image":"image/data/cigar-bands/cigar-bands-3.png",
+	        "link":"design-cigar-from-template/The Classic Cigar Band-cigar-band-template/940",
+	        "buttonText":"Customize yours"
+	    }
+	],
+	"readmore":[
+	    "Cigar",
+	    "Cigars",
+	    "Food-and-Cigar",
+	    "Father's-day",
+	    "Celebrations",
+	    "Valentine's-Day",
+	    "Dad",
+	    "Cinco-De-Mayo",
+	    "Bachelor-Party-Cigar",
+	    "Wedding-Cigar",
+	    "Cigar-Humidor",
+	    "Cigar-Smoke",
+	    "Groom",
+	    "Cigar-Culture",
+	    "Cigar-Aficionado",
+	    "Cuban-Cigars",
+	    "Luxury Cigars"
+	]
+}
