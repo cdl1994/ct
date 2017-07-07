@@ -6,6 +6,7 @@ import CutBG from './cut_bg.js';
 import {Row, Col} from 'react-bootstrap';
 import DocumentTitle from 'react-document-title';
 import Data_JSON from './data.json';
+import Header from './header.js'
 
 class HomePage extends React.Component {
     constructor(){
@@ -29,6 +30,7 @@ class HomePage extends React.Component {
         return (
             <DocumentTitle title={this.state.pageTitle}>
             <div style={homePageStyle}>
+              <Header/>
               <div> {name} </div>
               <Carousel list={this.state.carousel}/>
               <CutBG imageURL={this.state.theme.backgroundImage}/>
