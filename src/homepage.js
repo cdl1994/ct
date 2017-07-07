@@ -5,6 +5,8 @@ import BandCarousel from './band_carousel.js';
 import CutBG from './cut_bg.js';
 import {Row, Col} from 'react-bootstrap';
 import DocumentTitle from 'react-document-title';
+import {FirstCouLine} from './whiteline.js';
+import Footer from './footer.js';
 import Data_JSON from './data.json';
 import Header from './header.js'
 
@@ -36,22 +38,17 @@ class HomePage extends React.Component {
               <CutBG imageURL={this.state.theme.backgroundImage}/>
               <WebsiteLink />     
               <CutBG imageURL={this.state.theme.backgroundImage}/>
-              <WhiteLine />
+              <FirstCouLine />
               <EnterEmail />
-              <WhiteLine />
+              <FirstCouLine />
               <BandCarousel list={this.state.customize}/>
               <CutBG imageURL={this.state.theme.backgroundImage}/>
               <BlogTags list={this.state.readmore}/>
+              <Footer />
             </div>
             </DocumentTitle>
         );
     }
-}
-
-function WhiteLine(props){
-    return (
-        <h3 className="centered-line"><span><img src="/image/data/first-cou.png" /></span></h3>
-    );
 }
 
 function WebsiteLink(props){
