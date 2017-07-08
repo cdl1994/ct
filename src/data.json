@@ -89,5 +89,32 @@
         "Cigar-Aficionado",
         "Cuban-Cigars",
         "Luxury Cigars"
-    ]
+    ],
+    "footer":{
+        "background":"/image/data/home-banner/footer.jpg",
+        "serviceName":"Free Concierge Design Service",
+        "phone":"4242268612",
+        "address1":"1642 Westwood Blvd",
+        "address2":"Suite 200",
+        "address3":"Los Angeles, CA 90024",
+        "email":"connect@customtobacco.com",
+        "bottomLinks":[
+            {
+                "title":"Wine, Cigar, and Food Pairings for the Truly Elite",
+                "link":"/blog/post/2017/06/05/food-wine-cigar-pairings-truly-elite/"
+            },
+            {
+                "title":"Linguistic History of the Word ‘Cigar’ and its Slang",
+                "link":"/blog/post/2017/06/01/linguistic-history-word-cigar/"
+            },
+            {
+                "title":"Tobacco and Cigars: 10 Facts You Probably Didn’t Already Know",
+                "link":"/blog/post/2017/05/31/tobacco-cigar-10-fun-facts/"
+            },
+            {
+                "title":"Cigar Etiquette and Sleep: Indulge for a More Restful Evening",
+                "link":"/blog/post/2017/05/18/sleep-cigar-restful-evening/"
+            }
+        ]
+    }
 }

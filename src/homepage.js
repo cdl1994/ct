@@ -42,7 +42,7 @@ class HomePage extends React.Component {
               <BandCarousel list={this.state.customize}/>
               <CutBG imageURL={this.state.theme.backgroundImage}/>
               <BlogTags list={this.state.readmore}/>
-              <Footer />
+              <Footer data={this.state.footer} />
             </div>
             </DocumentTitle>
         );
