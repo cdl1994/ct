@@ -82,9 +82,13 @@ function EnterEmail(props){
     return (
     	<Grid>
     	<Row>
-        <Col md={12}>
-            <div>10% off your first order</div>
-            <div>Simply enter your email here and look for an email with a code to use on your first order.</div>
+        <Col md={12} className="h-first-cou">
+            <h2 className="text-center margin-10">10% off your first order</h2>
+            <h4 className="text-center color-white font-tradegothic-stdbold">Simply enter your email here and look for an email with a code to use on your first order.</h4>
+        	<br />
+        	<div id="column-left"><div id="formnewsletter">
+        		<input type="text" className="input" id="email" value="Your Email Here"></input>
+        	</div></div>
         </Col>
         </Row>
         </Grid>
