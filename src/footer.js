@@ -1,5 +1,5 @@
 import React from 'react';
-import {Row, Col} from 'react-bootstrap';
+import {Grid, Row, Col} from 'react-bootstrap';
 import Columns from 'react-columns';
 import {FooterDivider} from './whiteline.js';
 
@@ -18,7 +18,9 @@ function Footer(props) {
         backgroundAttachment: "fixed",
         paddingBottom: "25px",
         backgroundSize: "cover",
-        backgroundPosition: "center"
+        backgroundPosition: "center",
+        paddingLeft: "20px",
+        paddingRight: "20px"
     };
     var formattedPhone = phoneFormatter(props.data.phone);
     var telphone = "tel:" + props.data.phone;
