@@ -10,6 +10,7 @@ class Carousel extends React.Component {
 			position : "relative",
 		}
 		var imgStyle = {
+			width: "100%"
 		}
 		var capStyle = {
 			position : "absolute",
@@ -36,7 +37,7 @@ class Carousel extends React.Component {
 		var displayList = this.props.list.map((item)=>
 			<div key={item.image}>
 			  <h1 style={itemStyle}>
-			    <img src={item.image}/>
+			    <img src={item.image} style={imgStyle}/>
 			    <div style={capStyle}>
 			    	<p style={pStyle} dangerouslySetInnerHTML={{__html: item.text}}></p>
 			    	<div className="white-line centered50 margin-10"></div>

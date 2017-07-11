@@ -9,6 +9,7 @@ import {FirstCouLine} from './whiteline.js';
 import Footer from './footer.js';
 import Data_JSON from './data.json';
 import Header from './header.js'
+import CategoryCarousel from './category_carousel.js'
 
 class HomePage extends React.Component {
     constructor(){
@@ -34,6 +35,7 @@ class HomePage extends React.Component {
             <div style={homePageStyle}>
               <Header/>
               <Carousel list={this.state.carousel}/>
+              <CategoryCarousel list={this.state.categories} />
               <CutBG imageURL={this.state.theme.backgroundImage}/>
               <WebsiteLink />     
               <CutBG imageURL={this.state.theme.backgroundImage}/>

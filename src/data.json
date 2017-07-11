@@ -32,22 +32,26 @@
         {
             "image":"image/data/homepage_category/Wedding.jpg",
             "title":"Celebrate the Newest Addition to Your Family",
-            "buttonText":"Custom Holiday Cigars"
+            "buttonText":"Custom Holiday Cigars",
+            "buttonUrl":"/index.php?route=product/ctcategory&category=wedding"
         },
         {
             "image":"image/data/homepage_category/Groomsmen.jpg",
             "title":"Say Thank You to the Men Who Stood by Your Side",
-            "buttonText":"Custom Groomsmen Cigar"
+            "buttonText":"Custom Groomsmen Cigar",
+            "buttonUrl":"/index.php?route=product/ctcategory&category=groomsmen"
         },
         {
             "image":"image/data/homepage_category/ValentinesDay.jpg",
             "title":"Show Your Partner Some Love",
-            "buttonText":"Custom Valentine’s Day Cigars"
+            "buttonText":"Custom Valentine’s Day Cigars",
+            "buttonUrl":"/index.php?route=product/ctcategory&category=valentine's_day"
         },
         {
-            "image":"image/data/homepage_category/CorporateEvent.jpg",
+            "image":"image/data/homepage_category/CorporateEvent.png",
             "title":"Smoke Out the Competition",
-            "buttonText":"Custom Corporate Event Cigars"
+            "buttonText":"Custom Corporate Event Cigars",
+            "buttonUrl":"/index.php?route=product/ctcategory&category=corporate_event"
         }
     ],
     "customize":[
