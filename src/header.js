@@ -23,9 +23,9 @@ class Header extends React.Component{
 			position : "absolute",
 		}
 		return (
-			<Col md={12} style = {colStyle}>
+			<Col md={12} style={colStyle}>
 				<TopHeader />
-				<NavHeader list={this.state.navTitle} subList={this.state.navSubTitle}/>
+				<NavHeader list={this.state.navTitle} navSubIndex="2" subList={this.state.navSubTitle}/>
 			</Col>
 		);
 	}
@@ -43,7 +43,7 @@ function TopHeader(props){
 		float : "left",
 	}
 	return (
-		<div style={containerStyle} className = "top-header">
+		<div style={containerStyle} className="top-header">
 			<Col md={1}>
 				<div><img src="/image/data/ct-logo.png" alt="Custom Tobacco Logo" style={imgStyle}/></div>
 			</Col>

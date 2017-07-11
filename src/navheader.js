@@ -8,17 +8,16 @@ class NavHeader extends React.Component{
 		super();	
 		this.state = {
 			buttonOnSelect : -1,
-			navSubIndex : 2,
 		}	
 	}
 
 	mouseOverChange(value){
-		console.log("over");
+		// console.log("over");
 		this.setState({buttonOnSelect : value});
 	}
 
 	mouseOutChange(value){
-		console.log("out");
+		// console.log("out");
 		this.setState({buttonOnSelect : -1});
 	}
 	
@@ -60,7 +59,7 @@ class NavHeader extends React.Component{
 			if (i==this.state.buttonOnSelect){
 				// hard code
 				// only navSubIndex have dropdown so far
-				if (i==this.state.navSubIndex){
+				if (i==this.props.navSubIndex){
 				var subList = this.props.subList.map((item)=><div style={navTitleStyle}>{item}</div>);
 				return (
 					<NavItem onMouseEnter={this.mouseOverChange.bind(this,i)} style={itemHighlightStyle}>
@@ -70,11 +69,11 @@ class NavHeader extends React.Component{
 					</div>
 					</NavItem>);
 				}
-				return (<NavItem onMouseOver={this.mouseOverChange.bind(this,i)} onMouseOut={this.mouseOutChange.bind(this,i)} style={itemHighlightStyle}>
+				return (<NavItem onMouseEnter={this.mouseOverChange.bind(this,i)} onMouseLeave={this.mouseOutChange.bind(this,i)} style={itemHighlightStyle}>
 					<p style={navTitleStyle}>{item}</p></NavItem>);
 			}
 			else{
-				return (<NavItem onMouseOver={this.mouseOverChange.bind(this,i)} onMouseOut={this.mouseOutChange.bind(this,i)} style={itemStyle}>
+				return (<NavItem onMouseEnter={this.mouseOverChange.bind(this,i)} onMouseLeave={this.mouseOutChange.bind(this,i)} style={itemStyle}>
 					<p style={navTitleStyle}>{item}</p></NavItem>);
 			}
 			});
