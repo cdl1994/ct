@@ -2044,12 +2044,23 @@ button.nav-title{
 .header-navigation{
 	text-align: center;
 }
-
 .header-navigation li{
 	margin-top : 15px;
 	border-right : 2px solid white;
 }
-
 .header-navigation li:last-child{
 	border-right : 0px;
+}
+
+.sign-in-list{
+	padding-top: 18px;
+}
+.sign-in-list li:first-child{
+	border-right: 1px solid #fff;
+}
+.sign-in-list a{
+	color: #fff;
+	font-size: 22px;
+	padding: 10px 5px;
+	font-family: Bodoni-stdroman;
 }

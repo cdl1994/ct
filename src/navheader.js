@@ -33,7 +33,6 @@ class NavHeader extends React.Component{
 			color : "white",
 			fontSize : "30px",
 			fontFamily : "Tradegothic-stdbold",
-			margin : "0",
 		}
 		var itemStyle = {
 			backgroundColor : "transparent",
@@ -60,6 +59,7 @@ class NavHeader extends React.Component{
 		var displayList = this.props.list.map((item,i)=>{
 			if (i==this.state.buttonOnSelect){
 				// hard code
+				// only navSubIndex have dropdown so far
 				if (i==this.state.navSubIndex){
 				var subList = this.props.subList.map((item)=><div style={navTitleStyle}>{item}</div>);
 				return (

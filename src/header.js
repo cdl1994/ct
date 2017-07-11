@@ -39,7 +39,8 @@ function TopHeader(props){
 	var containerStyle = {
 	}
 	var liStyle = {
-		display : "inline"
+		display : "inline-block",
+		float : "left",
 	}
 	return (
 		<div style={containerStyle} className = "top-header">
@@ -49,11 +50,11 @@ function TopHeader(props){
 			<Col md={3} className="text-center">
 				<p><span className="brightblue">10% off your first order</span></p>
 			</Col>
-			<Col md={6} className="text-center">
+			<Col md={6} className="conceirge-text text-center">
 				<p>Free concierge design service : <a href="tel:4242268612">(424) 226-8612</a></p>
 			</Col>
-			<Col md={2} className="text-right">
-				<ul>
+			<Col md={3} className="text-right">
+				<ul className="sign-in-list">
 					<li style={liStyle}><a href="#">Sign In</a></li>
 					<li style={liStyle}><a href="#">Register</a></li>
 					<li><span id="header"></span></li>
