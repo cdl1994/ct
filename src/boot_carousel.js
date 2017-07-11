@@ -1,31 +1,27 @@
 import React from 'react';
 import Slider from 'react-slick';
+import {Carousel} from 'react-bootstrap'
 
-class Carousel extends React.Component {
+class BootCarousel extends React.Component {
 	render(){
-		var itemStyle = {
-			margin : "0px",
-			padding : "0px",
-		}
 		var displayList = this.props.list.map((item)=>
-			<div key={item.image}>
-			  <h1 style={itemStyle}>
+			<Carousel.Item key={item.image}>
+			  <h1>
 			    <img src={item.image}/>
 			    <p>{item.text}</p>
 			  </h1>
-			</div>);
+			</Carousel.Item>);
 		var settings = {
-    		dots : true
     	}
 		return (
 			<div>
-				<Slider {...settings}>	
+				<Carousel {...settings}>	
 					{displayList}
-				</Slider>
+				</Carousel>
 			</div>
 
 		);
 	}
 }
 
-export default Carousel;
+export default BootCarousel;

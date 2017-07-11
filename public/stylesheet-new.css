@@ -2032,3 +2032,11 @@ width: 60%;margin: 2% auto 0 auto; padding: 2% 1% 1% 1%;text-align: center;}
 .em83{font-size: 2vmax;}
 #indexbox {position: absolute;top:200px;width: 24%;left: 15px}
 #adbox{position: absolute;top:200px;right: 15px;width: 16.67%}
+
+
+/* cdl */
+button.nav-title{
+	color:#fff !important;
+	font-size:30px;
+	font-family:Tradegothic-stdbold;
+}

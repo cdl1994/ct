@@ -28,12 +28,13 @@ class HomePage extends React.Component {
             backgroundColor : this.state.theme.backgroundColor,
             color : this.state.theme.titleTextColor,
             fontStyle : this.state.theme.fontStyle,
+            padding : "0",
+            position : "relative",
         }
         return (
             <DocumentTitle title={this.state.pageTitle}>
-            <div style={homePageStyle}>
+            <Col md={12} style={homePageStyle}>
               <Header/>
-              <div> {name} </div>
               <Carousel list={this.state.carousel}/>
               <CutBG imageURL={this.state.theme.backgroundImage}/>
               <WebsiteLink />     
@@ -45,7 +46,7 @@ class HomePage extends React.Component {
               <CutBG imageURL={this.state.theme.backgroundImage}/>
               <BlogTags list={this.state.readmore}/>
               <Footer />
-            </div>
+            </Col>
             </DocumentTitle>
         );
     }
