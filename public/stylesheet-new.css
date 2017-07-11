@@ -2040,3 +2040,16 @@ button.nav-title{
 	font-size:30px;
 	font-family:Tradegothic-stdbold;
 }
+
+.header-navigation{
+	text-align: center;
+}
+
+.header-navigation li{
+	margin-top : 15px;
+	border-right : 2px solid white;
+}
+
+.header-navigation li:last-child{
+	border-right : 0px;
+}
