@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import Carousel from './carousel.js';
 import BandCarousel from './band_carousel.js';
 import CutBG from './cut_bg.js';
-import {Row, Col} from 'react-bootstrap';
+import {Grid, Row, Col} from 'react-bootstrap';
 import DocumentTitle from 'react-document-title';
 import {FirstCouLine} from './whiteline.js';
 import Footer from './footer.js';
@@ -28,12 +28,10 @@ class HomePage extends React.Component {
             backgroundColor : this.state.theme.backgroundColor,
             color : this.state.theme.titleTextColor,
             fontStyle : this.state.theme.fontStyle,
-            padding : "0",
-            position : "relative",
         }
         return (
             <DocumentTitle title={this.state.pageTitle}>
-            <Col md={12} style={homePageStyle}>
+            <div style={homePageStyle}>
               <Header/>
               <Carousel list={this.state.carousel}/>
               <CutBG imageURL={this.state.theme.backgroundImage}/>
@@ -45,8 +43,8 @@ class HomePage extends React.Component {
               <BandCarousel list={this.state.customize}/>
               <CutBG imageURL={this.state.theme.backgroundImage}/>
               <BlogTags list={this.state.readmore}/>
-              <Footer />
-            </Col>
+              <Footer data={this.state.footer} />
+            </div>
             </DocumentTitle>
         );
     }
@@ -64,6 +62,7 @@ function WebsiteLink(props){
         textAlign : "center",
     }
     return (
+        <Grid>
         <Row style={containerStyle}>
         <div style={titleStyle}>AS SEEN IN</div>
         <Col md={2} mdOffset={1}><a href="http://www.thedailybeast.com/articles/2016/05/30/whatever-happened-to-new-dads-passing-out-cigars" target="_blank"><img src="/image/data/daily-beast.png" /></a></Col>
@@ -76,21 +75,31 @@ function WebsiteLink(props){
         <Col md={2}><a href="http://www.bostonherald.com/gift_guide/stocking_stuffers/2016/11/customized_cigars_can_light_up_a_smoker_s_holidays" target="_blank"><img src="/image/data/boston.png" /></a></Col>
         <Col md={2}><a href="http://labusinessjournal.com/accounts/login/?next=/news/2016/jul/29/cigar-maker-meets-its-match/" target="_blank"><img src="/image/data/los-ang.png" /></a></Col>
         </Row>
+        </Grid>
     );
 }
 
 function EnterEmail(props){
     return (
-        <Col md={12}>
-            <div>10% off your first order</div>
-            <div>Simply enter your email here and look for an email with a code to use on your first order.</div>
+        <Grid>
+        <Row>
+        <Col md={12} className="h-first-cou">
+            <h2 className="text-center margin-10">10% off your first order</h2>
+            <h4 className="text-center color-white font-tradegothic-stdbold">Simply enter your email here and look for an email with a code to use on your first order.</h4>
+            <br />
+            <div id="column-left"><div id="formnewsletter">
+                <input type="text" className="input" id="email" value="Your Email Here"></input>
+            </div></div>
         </Col>
+        </Row>
+        </Grid>
     );
 }
 
 function BlogTags(props){
     const buttonList = props.list.map((item) => <button key={item} className='tag white-border-button blog-tags-but'>{item}</button>);
     return (
+        <Grid>
         <Row className="margin-10 blog-tags">
             <Col md={6}>
                 <div className="white-line"></div>
@@ -115,6 +124,7 @@ function BlogTags(props){
                 <div className="white-line"></div>
             </Col>
         </Row>
+        </Grid>
     );
 }
 
