@@ -1,41 +1,78 @@
 import React from 'react';
-import {Row, Col} from 'react-bootstrap';
+import {Grid, Row, Col} from 'react-bootstrap';
+import Columns from 'react-columns';
 import {FooterDivider} from './whiteline.js';
 
-class Footer extends React.Component {
-    render() {
-        return (
+function phoneFormatter(phone) {
+    var len = phone.length;
+    if (len !== 10) return phone;
+    var res = "(" + phone.slice(0, 3);
+    res += ") " + phone.slice(3, 6);
+    res += "-" + phone.slice(6, 10);
+    return res;
+}
+
+function Footer(props) {
+    var footerStyle = {
+        background: "url(" + props.data.background + ")",
+        backgroundAttachment: "fixed",
+        paddingBottom: "25px",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        paddingLeft: "20px",
+        paddingRight: "20px"
+    };
+    var formattedPhone = phoneFormatter(props.data.phone);
+    var telphone = "tel:" + props.data.phone;
+    var hrefEmail = "mailto:" + props.data.email;
+    var bottomStyle = {
+        color: "#fff",
+        fontSize: "20px",
+        marginBottom: "0",
+        lineHeight: "30px",
+        fontWight: "normal",
+        fontFamily: "Bodoni-stdroman"
+    };
+    var bottomLinkStyle = {
+        color: "#fff"
+    };
+    const links = props.data.bottomLinks.map((link) => 
+        <h3 key={link.link} style={bottomStyle}><a style={bottomLinkStyle} href={link.link}>{link.title}</a></h3>
+    );
+    var col_queries = [{
+        columns: 1,
+        query: 'min-width: 1px'
+    },
+    {
+        columns: 2,
+        query: 'min-width: 768px'
+    }];
+    return (
+        <Row style={footerStyle}>
+        <Col md={12} className="new_footer">
             <Row>
-            <Col md={12} className="new_footer">
-                <Row>
-                <Col md={6} className="footer_first">
-                    <p>Free Concierge Design Service</p>
-                    <a href="tel:4242268612">(424) 226-8612</a>
-                </Col>
-                <Col md={6} className="footer_sec">
-                    <ul class="contact-us pull-right">
-                        <li>1642 Westwood Blvd</li> 
-                        <li>Suite 200</li>
-                        <li>Los Angeles, CA 90024</li>
-                        <li><a href="mailto:connect@customtobacco.com" class="brightblue">connect@customtobacco.com</a></li>
-                    </ul>
-                </Col>
-                </Row>
-                <FooterDivider />
-                <Row className="footer-bottom">
-                <Col md={6}>
-                    <h3 class="color-white"><a href="/blog/post/2017/06/05/food-wine-cigar-pairings-truly-elite/">Wine, Cigar, and Food Pairings for the Truly Elite</a></h3>
-                    <h3 class="color-white"><a href="/blog/post/2017/06/01/linguistic-history-word-cigar/">Linguistic History of the Word ‘Cigar’ and its Slang</a></h3>
-                </Col>
-                <Col md={6}>
-                    <h3 class="color-white"><a href="/blog/post/2017/05/31/tobacco-cigar-10-fun-facts/">Tobacco and Cigars: 10 Facts You Probably Didn’t Already Know</a></h3>
-                    <h3 class="color-white"><a href="/blog/post/2017/05/18/sleep-cigar-restful-evening/">Cigar Etiquette and Sleep: Indulge for a More Restful Evening</a></h3>
-                </Col>
-                </Row>
+            <Col md={6} className="footer_first">
+                <p>{props.data.serviceName}</p>
+                <a href={telphone}>{formattedPhone}</a>
+            </Col>
+            <Col md={6} className="footer_sec">
+                <ul className="contact-us pull-right">
+                    <li>{props.data.address1}</li> 
+                    <li>{props.data.address2}</li>
+                    <li>{props.data.address3}</li>
+                    <li><a href={hrefEmail} className="brightblue">{props.data.email}</a></li>
+                </ul>
             </Col>
             </Row>
-        );
-    }
+            <FooterDivider />
+            <div className="footer-bottom">
+            <Columns queries={col_queries}>
+                {links}
+            </Columns>
+            </div>
+        </Col>
+        </Row>
+    );
 }
 
 export default Footer;
