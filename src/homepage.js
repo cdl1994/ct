@@ -5,12 +5,12 @@ import BandCarousel from './band_carousel.js';
 import CutBG from './cut_bg.js';
 import {Grid, Row, Col} from 'react-bootstrap';
 import DocumentTitle from 'react-document-title';
-import {FirstCouLine} from './whiteline.js';
+import {FirstCouLine, PopupLine} from './whiteline.js';
 import Footer from './footer.js';
 import Data_JSON from './data.json';
 import Header from './header.js'
 import CategoryCarousel from './category_carousel.js'
-import PopupWindow from './popupwindow.js'
+import SkyLight from 'react-skylight';
 
 class HomePage extends React.Component {
     constructor(){
@@ -18,8 +18,9 @@ class HomePage extends React.Component {
         this.state = Data_JSON;
     }
 
-    componentDidMount(){
 
+    componentDidMount(){
+        this.refs.popupWindow.show();
     }
 
     componentDidUpdate(){
@@ -32,9 +33,18 @@ class HomePage extends React.Component {
             color : this.state.theme.titleTextColor,
             fontStyle : this.state.theme.fontStyle,
         }
+        var popupStyle = {
+            backgroundColor : '#dcc0ba'
+        }
+        var overlayStyle = {
+            backgroundColor : "rgba(0,0,0,.6)",
+        }
         return (
             <DocumentTitle title={this.state.pageTitle}>
             <div style={homePageStyle}>
+              <SkyLight dialogStyles={popupStyle} overlayStyles={overlayStyle} ref="popupWindow">
+                <Popup/>
+              </SkyLight>
               <Header/>
               <Carousel list={this.state.carousel}/>
               <CategoryCarousel list={this.state.categories} />
@@ -49,7 +59,6 @@ class HomePage extends React.Component {
               <BlogTags list={this.state.readmore}/>
               <Footer data={this.state.footer} />
             </div>
-            <PopupWindow />
             </DocumentTitle>
         );
     }
@@ -130,6 +139,19 @@ function BlogTags(props){
             </Col>
         </Row>
         </Grid>
+    );
+}
+
+function Popup(){
+    return (    
+    <div>
+        <PopupLine />
+        <h2 className="text-center margin-10">10% OFF</h2>
+        <h2 className="text-center margin-10">Your First Order</h2>
+        <div className="white-line"></div>
+        <h3 className="text-center margin-10">Use Code <span className="color-white"><b>FIRST</b></span> at Checkout</h3>
+        <h4 className="text-center margin-10 color-white">Save This Coupon For Later</h4>
+    </div>
     );
 }
 

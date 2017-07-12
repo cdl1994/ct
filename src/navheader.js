@@ -8,20 +8,21 @@ class NavHeader extends React.Component{
 		super();	
 		this.state = {
 			buttonOnSelect : -1,
+			titleColor : "#fff",
 		}	
 	}
 
 	mouseOverChange(value){
-		this.setState({buttonOnSelect : value});
+		this.setState({buttonOnSelect : value, titleColor:"rgb(0,255,247)"});
 	}
 
 	mouseOutChange(value){
-		this.setState({buttonOnSelect : -1});
+		this.setState({buttonOnSelect : -1, titleColor:"rgb(0,255,247)"});
 	}
 	
 	render(){
 		var colStyle = {
-			zIndex : "10000000",
+			zIndex : "50",
 		}
 		var settings = {
 			bsStyle : "pills",
@@ -30,6 +31,19 @@ class NavHeader extends React.Component{
 			color : "white",
 			fontSize : "30px",
 			fontFamily : "Tradegothic-stdbold",
+			textAlign : "left",
+		}
+		var navHighlightStyle={
+			color : "rgb(0,255,247)",
+			fontSize : "30px",
+			fontFamily : "Tradegothic-stdbold",
+			textAlign : "left",
+		}
+		var subTitleStyle = {
+			color : "white",
+			fontSize : "30px",
+			fontFamily : "Tradegothic-stdbold",
+			textAlign : "left",
 		}
 		var itemStyle = {
 			backgroundColor : "transparent",
@@ -37,16 +51,9 @@ class NavHeader extends React.Component{
 			display : "inline-block",
 			float : "none",
 		}
-		var itemHighlightStyle = {
-			backgroundColor : "#ccc",
-			marginLeft : "0px",
-			display : "inline-block",
-			float : "none",
-		}
 		var subListStyle = {
 			position : "absolute",
-			position: "absolute",
-			zIndex : "20",
+			zIndex : "50",
 			background : "rgba(0,0,0,.6)",
 			padding : "10px",
 			width : "330px",
@@ -58,17 +65,17 @@ class NavHeader extends React.Component{
 				// hard code
 				// only navSubIndex have dropdown so far
 				if (i==this.props.navSubIndex){
-				var subList = this.props.subList.map((item)=><div key={item} style={navTitleStyle}>{item}</div>);
+				var subList = this.props.subList.map((item)=><div key={item} style={subTitleStyle}>{item}</div>);
 				return (
-					<NavItem key={item + "_C"} onMouseEnter={this.mouseOverChange.bind(this,i)} style={itemHighlightStyle}>
-					<p style={navTitleStyle}>{item}</p>					
-					<div onMouseLeave={this.mouseOutChange.bind(this,i)} style={subListStyle}>
+					<NavItem key={item + "_C"} onMouseEnter={this.mouseOverChange.bind(this,i)}  onMouseLeave={this.mouseOutChange.bind(this,i)} style={itemStyle}>
+					<p style={navHighlightStyle}>{item}</p>					
+					<div style={subListStyle}>
 						{subList}
 					</div>
 					</NavItem>);
 				}
-				return (<NavItem key={item + "_A"} onMouseEnter={this.mouseOverChange.bind(this,i)} onMouseLeave={this.mouseOutChange.bind(this,i)} style={itemHighlightStyle}>
-					<p style={navTitleStyle}>{item}</p></NavItem>);
+				return (<NavItem key={item + "_A"} onMouseEnter={this.mouseOverChange.bind(this,i)} onMouseLeave={this.mouseOutChange.bind(this,i)} style={itemStyle}>
+					<p style={navHighlightStyle}>{item}</p></NavItem>);
 			}
 			else{
 				return (<NavItem key={item + "_B"} onMouseEnter={this.mouseOverChange.bind(this,i)} onMouseLeave={this.mouseOutChange.bind(this,i)} style={itemStyle}>
