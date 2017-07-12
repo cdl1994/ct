@@ -35,8 +35,8 @@ class Carousel extends React.Component {
 			    	<p style={pStyle} dangerouslySetInnerHTML={{__html: item.text}}></p>
 			    	<div className="white-line centered50 margin-10"></div>
 			    	<Row>
-			    		<CaptionButton colNum="6" btnText={item.button1} />
-			    		<CaptionButton colNum="6" btnText={item.button2} />
+			    		<CaptionButton colNum={6} btnText={item.button1} />
+			    		<CaptionButton colNum={6} btnText={item.button2} />
 			    	</Row>
 			    </div>
 			  </h1>

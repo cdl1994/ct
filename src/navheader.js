@@ -2,6 +2,7 @@ import React from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
 import {Nav, NavItem, NavDropdown, MenuItem} from 'react-bootstrap';
 import {Button} from 'react-bootstrap';
+import NavButton from './nav_button.js'
 
 class NavHeader extends React.Component{
 	constructor(){
@@ -27,61 +28,14 @@ class NavHeader extends React.Component{
 		var settings = {
 			bsStyle : "pills",
 		}
-		var navTitleStyle = {
-			color : "white",
-			fontSize : "30px",
-			fontFamily : "Tradegothic-stdbold",
-			textAlign : "left",
-		}
-		var navHighlightStyle={
-			color : "rgb(0,255,247)",
-			fontSize : "30px",
-			fontFamily : "Tradegothic-stdbold",
-			textAlign : "left",
-		}
-		var subTitleStyle = {
-			color : "white",
-			fontSize : "30px",
-			fontFamily : "Tradegothic-stdbold",
-			textAlign : "left",
-		}
-		var itemStyle = {
-			backgroundColor : "transparent",
-			marginLeft : "0px",
-			display : "inline-block",
-			float : "none",
-		}
-		var subListStyle = {
-			position : "absolute",
-			zIndex : "50",
-			background : "rgba(0,0,0,.6)",
-			padding : "10px",
-			width : "330px",
-			marginLeft : "-50px",
-			marginTop: "10px",
-		}
 		var displayList = this.props.list.map((item,i)=>{
-			if (i==this.state.buttonOnSelect){
-				// hard code
-				// only navSubIndex have dropdown so far
-				if (i==this.props.navSubIndex){
-				var subList = this.props.subList.map((item)=><div key={item} style={subTitleStyle}>{item}</div>);
-				return (
-					<NavItem key={item + "_C"} onMouseEnter={this.mouseOverChange.bind(this,i)}  onMouseLeave={this.mouseOutChange.bind(this,i)} style={itemStyle}>
-					<p style={navHighlightStyle}>{item}</p>					
-					<div style={subListStyle}>
-						{subList}
-					</div>
-					</NavItem>);
-				}
-				return (<NavItem key={item + "_A"} onMouseEnter={this.mouseOverChange.bind(this,i)} onMouseLeave={this.mouseOutChange.bind(this,i)} style={itemStyle}>
-					<p style={navHighlightStyle}>{item}</p></NavItem>);
+			if (i==this.props.navSubIndex){
+				return (<NavButton text={item} subList={this.props.subList} />);
 			}
 			else{
-				return (<NavItem key={item + "_B"} onMouseEnter={this.mouseOverChange.bind(this,i)} onMouseLeave={this.mouseOutChange.bind(this,i)} style={itemStyle}>
-					<p style={navTitleStyle}>{item}</p></NavItem>);
+				return (<NavButton text={item}/>);
 			}
-			});
+		});
 
 		return (
 			<Col md={12} style={colStyle}>
