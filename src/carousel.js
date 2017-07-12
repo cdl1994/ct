@@ -1,6 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick';
 import {Col,Row} from 'react-bootstrap';
+import CaptionButton from './caption_button.js';
 
 class Carousel extends React.Component {
 	render(){
@@ -26,14 +27,6 @@ class Carousel extends React.Component {
 			fontWeight : "500",
 			whiteSpace : "nowrap",
 		}
-		var buttonStyle = {
-			fontSize:"1.8vmax",
-			fontFamily: "Tradegothic-stdbold", 
-			padding : "3%",
-			background:"#fff",
-			color:"#111",
-			whiteSpace: "nowrap",
-		}
 		var displayList = this.props.list.map((item)=>
 			<div key={item.image}>
 			  <h1 style={itemStyle}>
@@ -42,8 +35,8 @@ class Carousel extends React.Component {
 			    	<p style={pStyle} dangerouslySetInnerHTML={{__html: item.text}}></p>
 			    	<div className="white-line centered50 margin-10"></div>
 			    	<Row>
-			    	<Col md={6}><p style={buttonStyle}>{item.button1}</p></Col>
-			    	<Col md={6}><p style={buttonStyle}>{item.button2}</p></Col>
+			    		<CaptionButton colNum="6" btnText={item.button1} />
+			    		<CaptionButton colNum="6" btnText={item.button2} />
 			    	</Row>
 			    </div>
 			  </h1>
