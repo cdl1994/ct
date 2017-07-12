@@ -3,20 +3,20 @@ import Slider from 'react-slick';
 import {Grid, Row, Col} from 'react-bootstrap';
 
 class CategoryCarousel extends React.Component {
-	render() {
-		var displayList = this.props.list.map((item) => 
+    render() {
+        var displayList = this.props.list.map((item) => 
             <div key={item.image} className="item">
-            	<div className="caption homepage-heading-font">
-            		<h2>{item.title}</h2>
-            	</div>
-            	<div className="white-line margin-right"></div>
+                <div className="caption homepage-heading-font">
+                    <h2>{item.title}</h2>
+                </div>
+                <div className="white-line margin-right"></div>
                 <img src={item.image} />
                 <div className="customizebutton-1">
-                	<a href={item.buttonUrl}>{item.buttonText}</a>
+                    <a href={item.buttonUrl}>{item.buttonText}</a>
                 </div>
             </div>
         );
-		var settings = {
+        var settings = {
             dots : false,
             slidesToShow : 2,
             arrows : true,
@@ -26,14 +26,14 @@ class CategoryCarousel extends React.Component {
             speed : 600,
             autoplaySpeed:5000,
         }
-		return (
+        return (
             <Grid><Row id="customize-carousel"><Col>
                 <Slider {...settings}>        
                   {displayList}
                 </Slider>
             </Col></Row></Grid>
         );
-	}
+    }
 }
 
 export default CategoryCarousel;

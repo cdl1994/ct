@@ -9,7 +9,9 @@
     "react-document-title": "^2.0.3",
     "react-dom": "^15.6.1",
     "react-scripts": "1.0.10",
-    "react-slick": "^0.14.11"
+    "react-skylight": "^0.4.2",
+    "react-slick": "^0.14.11",
+    "universal-cookie": "^2.0.8"
   },
   "scripts": {
     "start": "react-scripts start",

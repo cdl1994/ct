@@ -10,6 +10,7 @@ import Footer from './footer.js';
 import Data_JSON from './data.json';
 import Header from './header.js'
 import CategoryCarousel from './category_carousel.js'
+import PopupWindow from './popupwindow.js'
 
 class HomePage extends React.Component {
     constructor(){
@@ -18,6 +19,7 @@ class HomePage extends React.Component {
     }
 
     componentDidMount(){
+
     }
 
     componentDidUpdate(){
@@ -47,6 +49,7 @@ class HomePage extends React.Component {
               <BlogTags list={this.state.readmore}/>
               <Footer data={this.state.footer} />
             </div>
+            <PopupWindow />
             </DocumentTitle>
         );
     }
