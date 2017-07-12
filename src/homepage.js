@@ -11,6 +11,7 @@ import Data_JSON from './data.json';
 import Header from './header.js'
 import CategoryCarousel from './category_carousel.js'
 import SkyLight from 'react-skylight';
+import Cookies from 'universal-cookie';
 
 class HomePage extends React.Component {
     constructor(){
@@ -20,7 +21,9 @@ class HomePage extends React.Component {
 
 
     componentDidMount(){
-        this.refs.popupWindow.show();
+        const cookies = new Cookies();
+        if (cookies.get('submitemail') != '1')
+            this.refs.popupWindow.show();
     }
 
     componentDidUpdate(){
@@ -93,21 +96,36 @@ function WebsiteLink(props){
     );
 }
 
-function EnterEmail(props){
-    return (
-        <Grid>
-        <Row>
-        <Col md={12} className="h-first-cou">
-            <h2 className="text-center margin-10">10% off your first order</h2>
-            <h4 className="text-center color-white font-tradegothic-stdbold">Simply enter your email here and look for an email with a code to use on your first order.</h4>
-            <br />
-            <div id="column-left"><div id="formnewsletter">
-                <input type="text" className="input" id="email" value="Your Email Here"></input>
-            </div></div>
-        </Col>
-        </Row>
-        </Grid>
-    );
+class EnterEmail extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {email: ""};
+        this.handleEmailChange = this.handleEmailChange.bind(this);
+    }
+
+    handleEmailChange(event) {
+        this.setState({email : event.target.value});
+    }
+
+    render() {
+        return (
+            <Grid>
+            <Row>
+            <Col md={12} className="h-first-cou">
+                <h2 className="text-center margin-10">10% off your first order</h2>
+                <h4 className="text-center color-white font-tradegothic-stdbold">Simply enter your email here and look for an email with a code to use on your first order.</h4>
+                <br />
+                <div id="column-left"><div id="formnewsletter">
+                    <input type="text" className="input" ref="email" id="email" value={this.state.email} onChange={this.handleEmailChange} placeholder="Your Email Here"></input>
+                    <button className="submitemail" id="submitNewsletter">
+                        <img src="/image/data/arrow-right.png" alt="right arrow" className="arrow-right-submit" />
+                    </button>
+                </div></div>
+            </Col>
+            </Row>
+            </Grid>
+        );
+    }
 }
 
 function BlogTags(props){
@@ -142,17 +160,37 @@ function BlogTags(props){
     );
 }
 
-function Popup(){
-    return (    
-    <div>
-        <PopupLine />
-        <h2 className="text-center margin-10">10% OFF</h2>
-        <h2 className="text-center margin-10">Your First Order</h2>
-        <div className="white-line"></div>
-        <h3 className="text-center margin-10">Use Code <span className="color-white"><b>FIRST</b></span> at Checkout</h3>
-        <h4 className="text-center margin-10 color-white">Save This Coupon For Later</h4>
-    </div>
-    );
+class Popup extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {email: ""};
+        this.handleEmailChange = this.handleEmailChange.bind(this);
+    }
+
+    handleEmailChange(event) {
+        this.setState({email : event.target.value});
+    }
+
+    render() {
+        var inputStyle = {
+            marginLeft : "25%"
+        }
+        return (
+        <div>
+            <PopupLine />
+            <h2 className="text-center margin-10">10% OFF</h2>
+            <h2 className="text-center margin-10">Your First Order</h2>
+            <div className="white-line"></div>
+            <h3 className="text-center margin-10">Use Code <span className="color-white"><b>FIRST</b></span> at Checkout</h3>
+            <h4 className="text-center margin-10 color-white">Save This Coupon For Later</h4>
+            <div id="formnewsletter_pop">
+                <input type="text" style={inputStyle} className="input" id="email_pop" value={this.state.email} onChange={this.handleEmailChange} placeholder="Enter Your Email" />
+                <button className="submitemail" id="submitNewsletter_pop"><img src="/image/data/arrow-right.png" alt="right arrow" className="arrow-right-submit" /></button>
+            <img id="loading_img_pop" src="image/data/loading1.gif" alt="loading" />
+          </div>
+        </div>
+        );
+    }
 }
 
 export default HomePage;
