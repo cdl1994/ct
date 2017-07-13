@@ -1,6 +1,7 @@
 import React from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
 import {Nav, NavItem, NavDropdown, MenuItem} from 'react-bootstrap';
+import NavSub from './nav_sub.js';
 
 class NavButton extends React.Component{
 	constructor(){
@@ -52,7 +53,7 @@ class NavButton extends React.Component{
 		var text = this.props.text;
 		// if this button have sublist and selected
 		if (this.props.subList!=null && this.state.selected){
-			var subList = this.props.subList.map((item)=><div key={item} style={subTitleStyle}>{item}</div>);
+			var subList = this.props.subList.map((item)=><NavSub key={item} text={item}/>);
 			return (
 			<NavItem key={text} onMouseEnter={this.mouseOverChange} onMouseLeave={this.mouseOutChange} style={itemStyle}>
 				<p style={navTitleStyle}>{text}</p>					
