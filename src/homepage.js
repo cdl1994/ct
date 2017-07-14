@@ -12,58 +12,107 @@ import Header from './header.js'
 import CategoryCarousel from './category_carousel.js'
 import SkyLight from 'react-skylight';
 import Cookies from 'universal-cookie';
+import axios from 'axios';
 
 class HomePage extends React.Component {
     constructor(){
         super();
-        this.state = Data_JSON;
+        this.state = {
+            data : null,
+            pageTitle : "Custom Cigars Online: Personalized Cigar Bands | Custom Tobacco",
+            carousel:[
+                {
+                    "image":"image/data/home-banner/banner-2.jpg",
+                    "text":"The <i>Perfect Gift</i> for that Perfect Occasion.<br><i>Personalized</i> Cigars.",
+                    "button1":"Customize Yours >",
+                    "button2":"The Briarmont Difference >"
+                },
+                {
+                    "image":"image/data/home-banner/banner-1.jpg",
+                    "text":"The <i>Perfect Gift</i> for that Perfect Occasion.<br><i>Personalized</i> Cigars.",
+                    "button1":"Customize Yours >",
+                    "button2":"The Briarmont Difference >"
+                },
+                {
+                    "image":"image/data/home-banner/banner-3.jpg",
+                    "text":"The <i>Perfect Gift</i> for that Perfect Occasion.<br><i>Personalized</i> Cigars.",
+                    "button1":"Customize Yours >",
+                    "button2":"The Briarmont Difference >"
+                }
+            ],
+        };
     }
 
+    axiosRequest(){
+        axios({
+            method:"get",
+            url:"http://www.cp.dev/",
+            // url:"http://www.cp.dev/index.php?route=common/cp_home/api",
+        })
+        .then((response)=>{            
+            this.setState({data: response.data});
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+    }
 
+    componentWillMount(){
+        // this.axiosRequest();
+
+    }
     componentDidMount(){
-        const cookies = new Cookies();
-        if (cookies.get('submitemail') != '1')
-            this.refs.popupWindow.show();
+        this.axiosRequest();
     }
 
-    componentDidUpdate(){
+    componentDidUpdate(){  
     }
+
+    // render(){
+    //     if(this.state.data!==null){
+    //         // console.log(this.state.data);
+    //     return (
+    //         <p> {this.state.data.header.title} </p>
+    //     );}
+    //     else {
+    //         return (<p>loading</p>);
+    //     }
+    // }
 
     render() {
-        var name = this.state.name;
-        var homePageStyle = {
-            backgroundColor : this.state.theme.backgroundColor,
-            color : this.state.theme.titleTextColor,
-            fontStyle : this.state.theme.fontStyle,
+        if (this.state.data!=null){
+            var homePageStyle = {
+                backgroundColor : this.state.data.theme.backgroundColor,
+                color : this.state.data.theme.lightTextColor,
+                fontStyle : this.state.data.theme.fontStyle,
+            }
+            var popupStyle = {
+                backgroundColor : this.state.data.theme.backgroundColor,
+            }
+            var overlayStyle = {
+                backgroundColor : "rgba(0,0,0,.6)",
+            }
+            return (
+                <DocumentTitle title={this.state.pageTitle}>
+                <div style={homePageStyle}>
+                  <Carousel list={this.state.carousel}/>
+                  <CutBG imageURL={this.state.data.theme.backgroundImage}/>
+                  <CategoryCarousel titleColor={this.state.data.theme.darkTextColor} list={this.state.data.categories} />
+                  <CutBG imageURL={this.state.data.theme.backgroundImage}/>
+                  <CutBG imageURL={this.state.data.theme.backgroundImage}/>
+                  <FirstCouLine />
+                  <EnterEmail />
+                  <FirstCouLine />
+                  <BandCarousel list={this.state.data.customize}/>
+                  <CutBG imageURL={this.state.data.theme.backgroundImage}/>
+                  <BlogTags evergreen={this.state.data.info.evergreen} list={this.state.data.readmore}/>
+                </div>
+                </DocumentTitle>
+            );
         }
-        var popupStyle = {
-            backgroundColor : '#dcc0ba'
+        else{
+            return (<p>loading</p>);
         }
-        var overlayStyle = {
-            backgroundColor : "rgba(0,0,0,.6)",
-        }
-        return (
-            <DocumentTitle title={this.state.pageTitle}>
-            <div style={homePageStyle}>
-              <SkyLight dialogStyles={popupStyle} overlayStyles={overlayStyle} ref="popupWindow">
-                <Popup/>
-              </SkyLight>
-              <Header/>
-              <Carousel list={this.state.carousel}/>
-              <CategoryCarousel list={this.state.categories} />
-              <CutBG imageURL={this.state.theme.backgroundImage}/>
-              <WebsiteLink />     
-              <CutBG imageURL={this.state.theme.backgroundImage}/>
-              <FirstCouLine />
-              <EnterEmail />
-              <FirstCouLine />
-              <BandCarousel list={this.state.customize}/>
-              <CutBG imageURL={this.state.theme.backgroundImage}/>
-              <BlogTags list={this.state.readmore}/>
-              <Footer data={this.state.footer} />
-            </div>
-            </DocumentTitle>
-        );
     }
 }
 
@@ -129,7 +178,7 @@ class EnterEmail extends React.Component {
 }
 
 function BlogTags(props){
-    const buttonList = props.list.map((item) => <button key={item} className='tag white-border-button blog-tags-but'>{item}</button>);
+    const buttonList = props.list.map((item) => <button key={item.tag} className='tag white-border-button blog-tags-but'>{item.tag}</button>);
     return (
         <Grid>
         <Row className="margin-10 blog-tags">
@@ -137,7 +186,7 @@ function BlogTags(props){
                 <div className="white-line"></div>
                 <Row>
                     <Col md={12}>
-                    <h3>Evergreen Text Goes Here...</h3>
+                    <h3>{props.evergreen}</h3>
                     </Col>
                 </Row>
                 <div className="white-line"></div>

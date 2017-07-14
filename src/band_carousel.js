@@ -19,7 +19,7 @@ class BandCarousel extends React.Component {
             <div key={item.image} style={bandStyle}>
                 <a href={item.link}>
                     <img src={item.image} />
-                    <p className="customizebutton-2">{item.buttonText}</p>
+                    <p className="customizebutton-2">Customize yours ></p>
                 </a>
             </div>);
         var settings = {

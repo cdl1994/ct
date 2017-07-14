@@ -16,10 +16,13 @@ class CategoryCarousel extends React.Component {
             width : "90%",
             height : "40%",
         }
+        var titleStyle = {
+            color : this.props.titleColor,
+        }
         var displayList = this.props.list.map((item) => 
             <div key={item.image} style={catStyle}>
                 <div className="caption homepage-heading-font">
-                    <h2>{item.title}</h2>
+                    <h2 style={titleStyle}>{item.title}</h2>
                 </div>
                 <div className="white-line margin-right"></div>
                 <img src={item.image} style={imgStyle}/>

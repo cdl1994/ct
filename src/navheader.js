@@ -30,10 +30,10 @@ class NavHeader extends React.Component{
 		}
 		var displayList = this.props.list.map((item,i)=>{
 			if (i==this.props.navSubIndex){
-				return (<NavButton text={item} subList={this.props.subList} />);
+				return (<NavButton key={item} text={item} subList={this.props.subList} />);
 			}
 			else{
-				return (<NavButton text={item}/>);
+				return (<NavButton key={item} text={item}/>);
 			}
 		});
 
