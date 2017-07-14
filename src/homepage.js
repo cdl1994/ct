@@ -19,6 +19,7 @@ class HomePage extends React.Component {
         super();
         this.state = {
             data : null,
+            footer : null,
             pageTitle : "Custom Cigars Online: Personalized Cigar Bands | Custom Tobacco",
             carousel:[
                 {
@@ -46,8 +47,7 @@ class HomePage extends React.Component {
     axiosRequest(){
         axios({
             method:"get",
-            url:"http://www.cp.dev/",
-            // url:"http://www.cp.dev/index.php?route=common/cp_home/api",
+            url:"http://52.53.152.61:8080/index.php?route=common/cp_home/api",
         })
         .then((response)=>{            
             this.setState({data: response.data});
@@ -55,10 +55,19 @@ class HomePage extends React.Component {
         .catch(function (error) {
             console.log(error);
         });
+        axios({
+            method:"get",
+            url:"http://52.53.152.61:8080/index.php?route=common/cp_footer/api",
+        })
+        .then((response)=> {
+            this.setState({footer: response.data});
+        })
+        .catch((error)=>{
+            console.log(error);
+        });
     }
 
     componentWillMount(){
-        // this.axiosRequest();
 
     }
     componentDidMount(){
@@ -68,19 +77,9 @@ class HomePage extends React.Component {
     componentDidUpdate(){  
     }
 
-    // render(){
-    //     if(this.state.data!==null){
-    //         // console.log(this.state.data);
-    //     return (
-    //         <p> {this.state.data.header.title} </p>
-    //     );}
-    //     else {
-    //         return (<p>loading</p>);
-    //     }
-    // }
-
     render() {
-        if (this.state.data!=null){
+        var footer = this.state.footer == null ? null : <Footer data={this.state.footer} />;
+        if (this.state.data != null){
             var homePageStyle = {
                 backgroundColor : this.state.data.theme.backgroundColor,
                 color : this.state.data.theme.lightTextColor,
@@ -106,6 +105,7 @@ class HomePage extends React.Component {
                   <BandCarousel list={this.state.data.customize}/>
                   <CutBG imageURL={this.state.data.theme.backgroundImage}/>
                   <BlogTags evergreen={this.state.data.info.evergreen} list={this.state.data.readmore}/>
+                  {footer}
                 </div>
                 </DocumentTitle>
             );

@@ -14,17 +14,18 @@ function phoneFormatter(phone) {
 
 function Footer(props) {
     var footerStyle = {
-        background: "url(" + props.data.background + ")",
+        background: "url(" + props.data.footer.footerImage + ")",
         backgroundAttachment: "fixed",
         paddingBottom: "25px",
         backgroundSize: "cover",
         backgroundPosition: "center",
         paddingLeft: "20px",
-        paddingRight: "20px"
+        paddingRight: "20px",
+        paddingTop: "25px"
     };
-    var formattedPhone = phoneFormatter(props.data.phone);
-    var telphone = "tel:" + props.data.phone;
-    var hrefEmail = "mailto:" + props.data.email;
+    var formattedPhone = phoneFormatter(props.data.footer.phone);
+    var telphone = "tel:" + props.data.footer.phone;
+    var hrefEmail = "mailto:" + props.data.footer.email;
     var bottomStyle = {
         color: "#fff",
         fontSize: "20px",
@@ -36,7 +37,7 @@ function Footer(props) {
     var bottomLinkStyle = {
         color: "#fff"
     };
-    const links = props.data.bottomLinks.map((link) => 
+    const links = props.data.footerBlog.map((link) => 
         <h3 key={link.link} style={bottomStyle}><a style={bottomLinkStyle} href={link.link}>{link.title}</a></h3>
     );
     var col_queries = [{
@@ -57,10 +58,9 @@ function Footer(props) {
             </Col>
             <Col md={6} className="footer_sec">
                 <ul className="contact-us pull-right">
-                    <li>{props.data.address1}</li> 
-                    <li>{props.data.address2}</li>
-                    <li>{props.data.address3}</li>
-                    <li><a href={hrefEmail} className="brightblue">{props.data.email}</a></li>
+                    <li>{props.data.footer.address}</li> 
+                    <li>{props.data.footer.stateInfo}</li>
+                    <li><a href={hrefEmail} className="brightblue">{props.data.footer.email}</a></li>
                 </ul>
             </Col>
             </Row>
