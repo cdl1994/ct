@@ -5,6 +5,26 @@ import CaptionButton from './caption_button.js';
 
 class Carousel extends React.Component {
 	render(){
+		var data=[
+                {
+                    "image":"image/data/home-banner/banner-2.jpg",
+                    "text":"The <i>Perfect Gift</i> for that Perfect Occasion.<br><i>Personalized</i> Cigars.",
+                    "button1":"Customize Yours >",
+                    "button2":"The Briarmont Difference >"
+                },
+                {
+                    "image":"image/data/home-banner/banner-1.jpg",
+                    "text":"The <i>Perfect Gift</i> for that Perfect Occasion.<br><i>Personalized</i> Cigars.",
+                    "button1":"Customize Yours >",
+                    "button2":"The Briarmont Difference >"
+                },
+                {
+                    "image":"image/data/home-banner/banner-3.jpg",
+                    "text":"The <i>Perfect Gift</i> for that Perfect Occasion.<br><i>Personalized</i> Cigars.",
+                    "button1":"Customize Yours >",
+                    "button2":"The Briarmont Difference >"
+                }
+            ];
 		var itemStyle = {
 			margin : "0px",
 			padding : "0px",
@@ -27,7 +47,7 @@ class Carousel extends React.Component {
 			fontWeight : "500",
 			whiteSpace : "nowrap",
 		}
-		var displayList = this.props.list.map((item)=>
+		var displayList = data.map((item)=>
 			<div key={item.image}>
 			  <h1 style={itemStyle}>
 			    <img src={item.image} style={imgStyle}/>

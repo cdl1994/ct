@@ -21,26 +21,6 @@ class HomePage extends React.Component {
             header : null,
             footer : null,
             pageTitle : "Custom Cigars Online: Personalized Cigar Bands | Custom Tobacco",
-            carousel:[
-                {
-                    "image":"image/data/home-banner/banner-2.jpg",
-                    "text":"The <i>Perfect Gift</i> for that Perfect Occasion.<br><i>Personalized</i> Cigars.",
-                    "button1":"Customize Yours >",
-                    "button2":"The Briarmont Difference >"
-                },
-                {
-                    "image":"image/data/home-banner/banner-1.jpg",
-                    "text":"The <i>Perfect Gift</i> for that Perfect Occasion.<br><i>Personalized</i> Cigars.",
-                    "button1":"Customize Yours >",
-                    "button2":"The Briarmont Difference >"
-                },
-                {
-                    "image":"image/data/home-banner/banner-3.jpg",
-                    "text":"The <i>Perfect Gift</i> for that Perfect Occasion.<br><i>Personalized</i> Cigars.",
-                    "button1":"Customize Yours >",
-                    "button2":"The Briarmont Difference >"
-                }
-            ],
         };
     }
 
@@ -90,6 +70,7 @@ class HomePage extends React.Component {
     render() {
         var footer = this.state.footer == null ? null : <Footer data={this.state.footer} />;
         var header = this.state.header == null ? null : <Header data={this.state.header} />;
+        var carousel = <Carousel/>;
         if (this.state.data != null){
             var homePageStyle = {
                 backgroundColor : this.state.data.theme.backgroundColor,
@@ -100,7 +81,7 @@ class HomePage extends React.Component {
                 <DocumentTitle title={this.state.pageTitle}>
                 <div style={homePageStyle}>
                   {header}
-                  <Carousel list={this.state.carousel}/>
+                  {carousel}
                   <CutBG imageURL={this.state.data.theme.backgroundImage}/>
                   <CategoryCarousel titleColor={this.state.data.theme.darkTextColor} list={this.state.data.categories} />
                   <CutBG imageURL={this.state.data.theme.backgroundImage}/>
