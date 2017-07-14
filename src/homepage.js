@@ -7,7 +7,6 @@ import {Grid, Row, Col} from 'react-bootstrap';
 import DocumentTitle from 'react-document-title';
 import {FirstCouLine, PopupLine} from './whiteline.js';
 import Footer from './footer.js';
-import Data_JSON from './data.json';
 import Header from './header.js'
 import CategoryCarousel from './category_carousel.js'
 import SkyLight from 'react-skylight';

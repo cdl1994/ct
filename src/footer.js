@@ -53,7 +53,7 @@ function Footer(props) {
         <Col md={12} className="new_footer">
             <Row>
             <Col md={6} className="footer_first">
-                <p>{props.data.serviceName}</p>
+                <p>{props.data.footer.conciergeText}</p>
                 <a href={telphone}>{formattedPhone}</a>
             </Col>
             <Col md={6} className="footer_sec">
