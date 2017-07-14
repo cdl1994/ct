@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Carousel from './carousel.js';
+import TobaccoCarousel from './tobacco_carousel.js';
 import BandCarousel from './band_carousel.js';
 import CutBG from './cut_bg.js';
 import {Grid, Row, Col} from 'react-bootstrap';
@@ -69,7 +69,7 @@ class HomePage extends React.Component {
     render() {
         var footer = this.state.footer == null ? null : <Footer data={this.state.footer} />;
         var header = this.state.header == null ? null : <Header data={this.state.header} />;
-        var carousel = <Carousel/>;
+        var carousel = <TobaccoCarousel/>;
         if (this.state.data != null){
             var homePageStyle = {
                 backgroundColor : this.state.data.theme.backgroundColor,

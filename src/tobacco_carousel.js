@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import {Col,Row} from 'react-bootstrap';
 import CaptionButton from './caption_button.js';
 
-class Carousel extends React.Component {
+class TobaccoCarousel extends React.Component {
 	render(){
 		var data=[
                 {
@@ -79,4 +79,4 @@ class Carousel extends React.Component {
 	}
 }
 
-export default Carousel;
+export default TobaccoCarousel;
