@@ -4,10 +4,21 @@ import HomePage from './homepage.js'
 import Cookies from 'universal-cookie';
 import SkyLight from 'react-skylight';
 import {PopupLine} from './whiteline.js';
+import {Row,Col} from 'react-bootstrap';
 
 class Index extends React.Component {
     constructor() {
         super();
+        this.state={
+            image : null,
+        }
+        this.getPopupImage = this.getPopupImage.bind(this);
+    }
+
+    getPopupImage(img){
+        this.setState({
+            image : img,
+        });
     }
 
     componentDidMount(){
@@ -25,10 +36,10 @@ class Index extends React.Component {
         }
         return (
             <div>
-                <HomePage />
+                <HomePage setPopupImage={this.getPopupImage}/>
                 <div>
                     <SkyLight dialogStyles={popupStyle} overlayStyles={overlayStyle} ref="popupWindow">
-                        <Popup />
+                        <Popup image={this.state.image}/>
                     </SkyLight>
                 </div>
             </div>
@@ -53,7 +64,7 @@ class Popup extends React.Component {
         }
         return (
         <div>
-            <PopupLine />
+            <PopupLine image={this.props.image} />
             <h2 className="text-center margin-10">10% OFF</h2>
             <h2 className="text-center margin-10">Your First Order</h2>
             <div className="white-line"></div>

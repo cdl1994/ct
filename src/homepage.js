@@ -30,6 +30,7 @@ class HomePage extends React.Component {
         })
         .then((response)=>{            
             this.setState({data: response.data});
+            this.props.setPopupImage(this.state.data.theme.sectionDivider);
         })
         .catch(function (error) {
             console.log(error);
@@ -60,10 +61,9 @@ class HomePage extends React.Component {
         this.axiosRequest();
     }
     componentDidMount(){
-        
     }
 
-    componentDidUpdate(){  
+    componentDidUpdate(){
     }
 
     render() {
