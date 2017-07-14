@@ -7,18 +7,6 @@ function WhiteLine(props) {
     );
 }
 
-function FirstCouLine(props) {
-    return (
-        <WhiteLine image="/image/data/first-cou.png" />
-    );
-}
-
-function FooterDivider(props) {
-    return (
-        <WhiteLine image="/image/data/footer-divider.png" />
-    );
-}
-
 function PopupLine(props){
     return (
         <Row>
@@ -29,4 +17,4 @@ function PopupLine(props){
     );
 }
 
-export {WhiteLine, FirstCouLine, FooterDivider, PopupLine};
+export {WhiteLine, PopupLine};

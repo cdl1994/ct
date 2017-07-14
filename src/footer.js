@@ -1,7 +1,7 @@
 import React from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
 import Columns from 'react-columns';
-import {FooterDivider} from './whiteline.js';
+import {WhiteLine} from './whiteline.js';
 
 function phoneFormatter(phone) {
     var len = phone.length;
@@ -64,7 +64,7 @@ function Footer(props) {
                 </ul>
             </Col>
             </Row>
-            <FooterDivider />
+            <WhiteLine image={props.data.footer.footerDivider} />
             <div className="footer-bottom">
             <Columns queries={col_queries}>
                 {links}

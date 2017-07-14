@@ -5,7 +5,7 @@ import BandCarousel from './band_carousel.js';
 import CutBG from './cut_bg.js';
 import {Grid, Row, Col} from 'react-bootstrap';
 import DocumentTitle from 'react-document-title';
-import {FirstCouLine, PopupLine} from './whiteline.js';
+import {WhiteLine, PopupLine} from './whiteline.js';
 import Footer from './footer.js';
 import Header from './header.js'
 import CategoryCarousel from './category_carousel.js'
@@ -20,7 +20,6 @@ class HomePage extends React.Component {
             data : null,
             header : null,
             footer : null,
-            pageTitle : "Custom Cigars Online: Personalized Cigar Bands | Custom Tobacco",
         };
     }
 
@@ -78,7 +77,7 @@ class HomePage extends React.Component {
                 fontStyle : this.state.data.theme.fontStyle,
             }
             return (
-                <DocumentTitle title={this.state.pageTitle}>
+                <DocumentTitle title={this.state.data.info.title}>
                 <div style={homePageStyle}>
                   {header}
                   {carousel}
@@ -87,12 +86,12 @@ class HomePage extends React.Component {
                   <CutBG imageURL={this.state.data.theme.backgroundImage}/>
                   <AsSeenIn data={this.state.data.asSeenIn}/>
                   <CutBG imageURL={this.state.data.theme.backgroundImage}/>
-                  <FirstCouLine />
+                  <WhiteLine image={this.state.data.theme.sectionDivider} />
                   <EnterEmail />
-                  <FirstCouLine />
+                  <WhiteLine image={this.state.data.theme.sectionDivider} />
                   <BandCarousel list={this.state.data.customize}/>
                   <CutBG imageURL={this.state.data.theme.backgroundImage}/>
-                  <BlogTags evergreen={this.state.data.info.evergreen} list={this.state.data.readmore}/>
+                  <BlogTags evergreen={this.state.data.info.evergreen} list={this.state.data.readmore} icon={this.state.data.theme.sectionDivider} />
                   {footer}
                 </div>
                 </DocumentTitle>
@@ -151,7 +150,7 @@ class EnterEmail extends React.Component {
                 <div id="column-left"><div id="formnewsletter">
                     <input type="text" className="input" ref="email" id="email" value={this.state.email} onChange={this.handleEmailChange} placeholder="Your Email Here"></input>
                     <button className="submitemail" id="submitNewsletter">
-                        <img src="/image/data/arrow-right.png" alt="right arrow" className="arrow-right-submit" />
+                        <img src="/image/data/default/misc/arrow-right.png" alt="right arrow" className="arrow-right-submit" />
                     </button>
                 </div></div>
             </Col>
@@ -174,7 +173,7 @@ function BlogTags(props){
                     </Col>
                 </Row>
                 <div className="white-line"></div>
-                <a href="/blog" className="readmore"><img src="/image/data/arrow-right.png" alt="right arrow" className="arrow-right" />Read More</a>
+                <a href="/blog" className="readmore"><img src="/image/data/default/misc/arrow-right.png" alt="right arrow" className="arrow-right" />Read More</a>
             </Col>
             <Col md={6}>
                 <div className="white-line"></div>
@@ -183,7 +182,7 @@ function BlogTags(props){
                     <div className="color-white blog-tags-m">{buttonList}</div>
                     </Col>
                     <Col md={2}>
-                        <h3><img src="/image/data/first-cou.png" /></h3>
+                        <h3><img src={props.icon} /></h3>
                     </Col>
                 </Row>
                 <div className="white-line"></div>

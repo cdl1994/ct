@@ -7,19 +7,19 @@ class Carousel extends React.Component {
 	render(){
 		var data=[
                 {
-                    "image":"image/data/home-banner/banner-2.jpg",
+                    "image":"image/data/custom-tobacco/home_banner/banner-2.jpg",
                     "text":"The <i>Perfect Gift</i> for that Perfect Occasion.<br><i>Personalized</i> Cigars.",
                     "button1":"Customize Yours >",
                     "button2":"The Briarmont Difference >"
                 },
                 {
-                    "image":"image/data/home-banner/banner-1.jpg",
+                    "image":"image/data/custom-tobacco/home_banner/banner-1.jpg",
                     "text":"The <i>Perfect Gift</i> for that Perfect Occasion.<br><i>Personalized</i> Cigars.",
                     "button1":"Customize Yours >",
                     "button2":"The Briarmont Difference >"
                 },
                 {
-                    "image":"image/data/home-banner/banner-3.jpg",
+                    "image":"image/data/custom-tobacco/home_banner/banner-3.jpg",
                     "text":"The <i>Perfect Gift</i> for that Perfect Occasion.<br><i>Personalized</i> Cigars.",
                     "button1":"Customize Yours >",
                     "button2":"The Briarmont Difference >"
