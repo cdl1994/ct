@@ -8,7 +8,6 @@ class Header extends React.Component{
 	constructor(){
 		super();
 		this.state = {
-			logoURL : "/image/data/ct-logo.png",
 			navTitle : ["ABOUT US", "CUSTOMIZE YOUR OWN", "EVENTS","ACCESSORIES"],
 			navSubTitle : ["Bachelor Party Cigars","Birthday Cigars",
 			"Corporate Event Cigars","Father's Day Cigars","Golf Tournament Cigars",
@@ -24,7 +23,7 @@ class Header extends React.Component{
 		}
 		return (
 			<Col md={12} style={colStyle}>
-				<TopHeader />
+				<TopHeader data={this.props.data}/>
 				<NavHeader list={this.state.navTitle} navSubIndex="2" subList={this.state.navSubTitle}/>
 			</Col>
 		);
@@ -45,13 +44,13 @@ function TopHeader(props){
 	return (
 		<div style={containerStyle} className="top-header">
 			<Col md={1}>
-				<div><img src="/image/data/ct-logo.png" alt="Custom Tobacco Logo" style={imgStyle}/></div>
+				<div><img src={props.data.logo} alt="Custom Tobacco Logo" style={imgStyle}/></div>
 			</Col>
 			<Col md={3} className="text-center">
-				<p><span className="brightblue">10% off your first order</span></p>
+				<p><span className="brightblue">{props.data.discountText}</span></p>
 			</Col>
 			<Col md={6} className="conceirge-text text-center">
-				<p>Free concierge design service : <a href="tel:4242268612">(424) 226-8612</a></p>
+				<p>{props.data.conciergeText}<a href="#">{props.data.phone}</a></p>
 			</Col>
 			<Col md={3} className="text-right">
 				<ul className="sign-in-list">

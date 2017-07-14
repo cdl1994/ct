@@ -19,6 +19,7 @@ class HomePage extends React.Component {
         super();
         this.state = {
             data : null,
+            header : null,
             footer : null,
             pageTitle : "Custom Cigars Online: Personalized Cigar Bands | Custom Tobacco",
             carousel:[
@@ -57,6 +58,16 @@ class HomePage extends React.Component {
         });
         axios({
             method:"get",
+            url:"http://52.53.152.61:8080/index.php?route=common/cp_header/api",
+        })
+        .then((response)=> {
+            this.setState({header: response.data});
+        })
+        .catch((error)=>{
+            console.log(error);
+        });
+        axios({
+            method:"get",
             url:"http://52.53.152.61:8080/index.php?route=common/cp_footer/api",
         })
         .then((response)=> {
@@ -68,10 +79,12 @@ class HomePage extends React.Component {
     }
 
     componentWillMount(){
-
+        this.axiosRequest();
     }
     componentDidMount(){
-        this.axiosRequest();
+        const cookies = new Cookies();
+        if (cookies.get('submitemail') != '1')
+            this.refs.popupWindow.show();
     }
 
     componentDidUpdate(){  
@@ -79,6 +92,7 @@ class HomePage extends React.Component {
 
     render() {
         var footer = this.state.footer == null ? null : <Footer data={this.state.footer} />;
+        var header = this.state.header == null ? null : <Header data={this.state.header} />;
         if (this.state.data != null){
             var homePageStyle = {
                 backgroundColor : this.state.data.theme.backgroundColor,
@@ -94,10 +108,15 @@ class HomePage extends React.Component {
             return (
                 <DocumentTitle title={this.state.pageTitle}>
                 <div style={homePageStyle}>
+                  <SkyLight dialogStyles={popupStyle} overlayStyles={overlayStyle} ref="popupWindow">
+                    <Popup/>
+                  </SkyLight>
+                  {header}
                   <Carousel list={this.state.carousel}/>
                   <CutBG imageURL={this.state.data.theme.backgroundImage}/>
                   <CategoryCarousel titleColor={this.state.data.theme.darkTextColor} list={this.state.data.categories} />
                   <CutBG imageURL={this.state.data.theme.backgroundImage}/>
+                  <AsSeenIn data={this.state.data.asSeenIn}/>
                   <CutBG imageURL={this.state.data.theme.backgroundImage}/>
                   <FirstCouLine />
                   <EnterEmail />
@@ -111,12 +130,16 @@ class HomePage extends React.Component {
             );
         }
         else{
-            return (<p>loading</p>);
+            return (
+                <SkyLight dialogStyles={popupStyle} overlayStyles={overlayStyle} ref="popupWindow">
+                    <Popup/>
+                </SkyLight>
+            );
         }
     }
 }
 
-function WebsiteLink(props){
+function AsSeenIn(props){
     var containerStyle = {
         margin : "10px",
     }
@@ -127,19 +150,13 @@ function WebsiteLink(props){
         fontSize : "2.8vmax",
         textAlign : "center",
     }
+    var dataList = props.data.map((item)=>
+        <Col md={2} key={item.image}><a href={item.link}><img src={item.image}/></a></Col>);
     return (
         <Grid>
         <Row style={containerStyle}>
         <div style={titleStyle}>AS SEEN IN</div>
-        <Col md={2} mdOffset={1}><a href="http://www.thedailybeast.com/articles/2016/05/30/whatever-happened-to-new-dads-passing-out-cigars" target="_blank"><img src="/image/data/daily-beast.png" /></a></Col>
-        <Col md={2}><a href="http://edition.pagesuite.com/html5/reader/production/default.aspx?pubname=&edid=d0190934-1df3-49f7-9f91-c3eeb4d210b6" target="_blank"><img src="/image/data/american-way.png" /></a></Col>
-        <Col md={2}><a href="http://mmqb.si.com/mmqb/2016/09/22/nfl-football-lifestyle-gameday-outfit-shirts" target="_blank"><img src="/image/data/sports-illu.png" /></a></Col>
-        <Col md={2}><a href="http://www.craveonline.com/culture/1013287-roll-smokes-like-big-shot-custom-tobacco-cigars" target="_blank"><img src="/image/data/crave.png" /></a></Col>
-        <Col md={2}><a href="http://wedding-bros.com/wedding-planning/custom-cigars-for-groomsmen-dads-and-all-aficionados-custom-tobacco.html" target="_blank"><img src="/image/data/bros.png" /></a></Col>
-        <Col md={2} mdOffset={2}><a href="http://www.uptownmagazine.com/2016/12/holiday-gift-guide-the-gifts-they-dont-know-they-really-want/" target="_blank"><img src="/image/data/uptown.png" /></a></Col>
-        <Col md={2}><a href="https://www.youtube.com/watch?v=Twm8iclYNGA" target="_blank"><img src="/image/data/fox.png" /></a></Col>
-        <Col md={2}><a href="http://www.bostonherald.com/gift_guide/stocking_stuffers/2016/11/customized_cigars_can_light_up_a_smoker_s_holidays" target="_blank"><img src="/image/data/boston.png" /></a></Col>
-        <Col md={2}><a href="http://labusinessjournal.com/accounts/login/?next=/news/2016/jul/29/cigar-maker-meets-its-match/" target="_blank"><img src="/image/data/los-ang.png" /></a></Col>
+            {dataList}
         </Row>
         </Grid>
     );
