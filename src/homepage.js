@@ -25,9 +25,14 @@ class HomePage extends React.Component {
     }
 
     axiosRequest(){
+        let address;
+        if (process.env.REACT_APP_NODE_ENV == "development")
+            address = "52.53.152.61:8080";
+        else
+            address = window.location.host;
         axios({
             method:"get",
-            url:"http://52.53.152.61:8080/index.php?route=common/cp_home/api",
+            url:"http://" + address + "/index.php?route=common/cp_home/api",
         })
         .then((response)=>{            
             this.setState({data: response.data});
@@ -38,7 +43,7 @@ class HomePage extends React.Component {
         });
         axios({
             method:"get",
-            url:"http://52.53.152.61:8080/index.php?route=common/cp_header/api",
+            url:"http://" + address + "index.php?route=common/cp_header/api",
         })
         .then((response)=> {
             this.setState({header: response.data});
@@ -48,7 +53,7 @@ class HomePage extends React.Component {
         });
         axios({
             method:"get",
-            url:"http://52.53.152.61:8080/index.php?route=common/cp_footer/api",
+            url:"http://" + address + "/index.php?route=common/cp_footer/api",
         })
         .then((response)=> {
             this.setState({footer: response.data});
