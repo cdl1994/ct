@@ -35,7 +35,6 @@ class NavHeader extends React.Component{
 				return (<NavButton key={item} text={item}/>);
 			}
 		});
-
 		return (
 			<Col md={12} style={colStyle}>
 			<Grid style={colStyle}>
