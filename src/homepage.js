@@ -123,7 +123,7 @@ function AsSeenIn(props){
         textAlign : "center",
     }
     var dataList = props.data.map((item)=>
-        <Col md={2} key={item.image}><a href={item.link}><img src={item.image}/></a></Col>);
+        <Col md={2} xs={2} key={item.image}><a href={item.link}><img src={item.image}/></a></Col>);
     return (
         <Grid>
         <Row style={containerStyle}>
@@ -149,7 +149,7 @@ class EnterEmail extends React.Component {
         return (
             <Grid>
             <Row>
-            <Col md={12} className="h-first-cou">
+            <Col md={12} xs={12} className="h-first-cou">
                 <h2 className="text-center margin-10">10% off your first order</h2>
                 <h4 className="text-center color-white font-tradegothic-stdbold">Simply enter your email here and look for an email with a code to use on your first order.</h4>
                 <br />
@@ -171,23 +171,23 @@ function BlogTags(props){
     return (
         <Grid>
         <Row className="margin-10 blog-tags">
-            <Col md={6}>
+            <Col md={6} xs={12}>
                 <div className="white-line"></div>
                 <Row>
-                    <Col md={12}>
+                    <Col md={12} xs={12}>
                     <h3>{props.evergreen}</h3>
                     </Col>
                 </Row>
                 <div className="white-line"></div>
                 <a href="/blog" className="readmore"><img src="/image/data/default/misc/arrow-right.png" alt="right arrow" className="arrow-right" />Read More</a>
             </Col>
-            <Col md={6}>
+            <Col md={6} xs={12}>
                 <div className="white-line"></div>
                 <Row>
-                    <Col md={10}>
+                    <Col md={10} xs={10}>
                     <div className="color-white blog-tags-m">{buttonList}</div>
                     </Col>
-                    <Col md={2}>
+                    <Col md={2} xs={2}>
                         <h3><img src={props.icon} /></h3>
                     </Col>
                 </Row>

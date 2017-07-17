@@ -38,7 +38,7 @@ class Index extends React.Component {
             <div>
                 <HomePage setPopupImage={this.getPopupImage}/>
                 <div>
-                    <SkyLight dialogStyles={popupStyle} overlayStyles={overlayStyle} ref="popupWindow">
+                    <SkyLight dialogStyles={popupStyle} overlayStyles={overlayStyle} hideOnOverlayClicked ref="popupWindow">
                         <Popup image={this.state.image}/>
                     </SkyLight>
                 </div>
