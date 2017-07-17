@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import TobaccoCarousel from './tobacco_carousel.js';
+import SpaCarousel from './spa_carousel.js';
 import BandCarousel from './band_carousel.js';
 import CutBG from './cut_bg.js';
 import {Grid, Row, Col} from 'react-bootstrap';
