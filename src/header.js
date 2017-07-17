@@ -30,7 +30,7 @@ class Header extends React.Component{
 		var navHeader = <NavHeader list={this.state.tobacco.navTitle} navSubIndex={this.state.tobacco.navSubIndex} subList={this.state.tobacco.navSubTitle}/>;
 		return (
 			<Col md={12} style={colStyle}>
-				<TopHeader data={this.props.data}/>
+				<TopHeader data={this.props.data} />
 				{navHeader}
 			</Col>
 		);
