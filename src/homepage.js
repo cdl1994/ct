@@ -43,7 +43,7 @@ class HomePage extends React.Component {
         });
         axios({
             method:"get",
-            url:"http://" + address + "index.php?route=common/cp_header/api",
+            url:"http://" + address + "/index.php?route=common/cp_header/api",
         })
         .then((response)=> {
             this.setState({header: response.data});
