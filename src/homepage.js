@@ -26,10 +26,10 @@ class HomePage extends React.Component {
 
     axiosRequest(){
         let address;
-        if (process.env.REACT_APP_NODE_ENV == "development")
-            address = "52.53.152.61:8080";
-        else
+        if (process.env.NODE_ENV === 'production')
             address = window.location.host;
+        else
+            address = "52.53.152.61:8080";
         axios({
             method:"get",
             url:"http://" + address + "/index.php?route=common/cp_home/api",
