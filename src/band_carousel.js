@@ -6,6 +6,7 @@ class BandCarousel extends React.Component {
     render(){
         var titleStyle={
             textAlign : "center",
+            fontSize : "3vmax",
         }
         var bandStyle={
             padding : "40px",
@@ -34,7 +35,7 @@ class BandCarousel extends React.Component {
             responsive : [{breakpoint:768, settings:{slidesToShow:1}}],
         }
         return (
-            <Grid><Row><Col>
+            <Grid><Row><Col md={12} xs={12}>
               <h2 style={titleStyle}>Most Popular Cigar Bands</h2>
                   <div style={containerStyle}>
                     <Slider {...settings}>        
