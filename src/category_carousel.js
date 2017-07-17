@@ -40,6 +40,7 @@ class CategoryCarousel extends React.Component {
             infinite : true,
             speed : 600,
             autoplaySpeed:5000,
+            responsive : [{breakpoint:768, settings:{slidesToShow:1}}],
         }
         return (
             <Grid>
