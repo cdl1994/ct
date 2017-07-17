@@ -1,7 +1,6 @@
 import React from 'react';
-import {Grid, Row, Col} from 'react-bootstrap';
-import {Nav, NavItem, NavDropdown, MenuItem} from 'react-bootstrap';
-import {Button} from 'react-bootstrap';
+import {Grid, Col} from 'react-bootstrap';
+import {Nav} from 'react-bootstrap';
 import NavButton from './nav_button.js'
 
 class NavHeader extends React.Component{

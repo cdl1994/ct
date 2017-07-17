@@ -1,30 +1,37 @@
 import React from 'react';
-import {Grid, Row, Col} from 'react-bootstrap';
-import {Nav, NavItem, NavDropdown, MenuItem} from 'react-bootstrap';
-import {Button} from 'react-bootstrap';
+import {Col} from 'react-bootstrap';
 import NavHeader from './navheader.js'
 
 class Header extends React.Component{
 	constructor(){
 		super();
 		this.state = {
-			navTitle : ["ABOUT US", "CUSTOMIZE YOUR OWN", "EVENTS","ACCESSORIES"],
-			navSubTitle : ["Bachelor Party Cigars","Birthday Cigars",
-			"Corporate Event Cigars","Father's Day Cigars","Golf Tournament Cigars",
-			"Groomsmen Cigars","Holiday Season Cigars","New Baby Cigars","Valentine's Day Cigars",
-			"Wedding Cigars"]
+			tobacco: {
+				navTitle : ["ABOUT US", "CUSTOMIZE YOUR OWN", "EVENTS","ACCESSORIES"],
+				navSubIndex : 2,
+				navSubTitle : ["Bachelor Party Cigars","Birthday Cigars",
+				"Corporate Event Cigars","Father's Day Cigars","Golf Tournament Cigars",
+				"Groomsmen Cigars","Holiday Season Cigars","New Baby Cigars","Valentine's Day Cigars",
+				"Wedding Cigars"]},
+			spa: {
+				navTitle : ["ABOUT US", "CHOOSE YOUR PRODUCT", "EVENTS"],
+				navSubIndex : 1,
+				navSubTitle : ["Wedding", "Baby Shower", "Birthday", "Anniversary", "Valentine's Day", "Mother's Day",
+				"Bachelorette Party", "Spa Day"],
+			}
 		}
 	}
 	render(){
-
 		var colStyle = {
 			padding : "0",
 			position : "absolute",
 		}
+		// var navHeader = <NavHeader list={this.state.spa.navTitle} navSubIndex={this.state.spa.navSubIndex} subList={this.state.spa.navSubTitle}/>;
+		var navHeader = <NavHeader list={this.state.tobacco.navTitle} navSubIndex={this.state.tobacco.navSubIndex} subList={this.state.tobacco.navSubTitle}/>;
 		return (
 			<Col md={12} style={colStyle}>
 				<TopHeader data={this.props.data}/>
-				<NavHeader list={this.state.navTitle} navSubIndex="2" subList={this.state.navSubTitle}/>
+				{navHeader}
 			</Col>
 		);
 	}
