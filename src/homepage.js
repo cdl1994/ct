@@ -114,6 +114,7 @@ class HomePage extends React.Component {
 function AsSeenIn(props){
     var containerStyle = {
         margin : "10px",
+        textAlign : "center",
     }
     var titleStyle = {
         margin : "auto",
@@ -122,8 +123,12 @@ function AsSeenIn(props){
         fontSize : "2.8vmax",
         textAlign : "center",
     }
+    var colStyle = {
+        float : "none",
+        display : "inline-block",
+    }
     var dataList = props.data.map((item)=>
-        <Col md={2} xs={2} key={item.image}><a href={item.link}><img src={item.image}/></a></Col>);
+        <Col md={2} xs={2} key={item.image} style={colStyle}><a href={item.link}><img src={item.image}/></a></Col>);
     return (
         <Grid>
         <Row style={containerStyle}>
