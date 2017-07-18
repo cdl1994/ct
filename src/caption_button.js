@@ -28,21 +28,18 @@ class CaptionButton extends React.Component {
 			background : this.state.buttonBackground,
 			color:this.state.textColor ,
 			whiteSpace: "nowrap",
+			display : "block",
+			margin : "0 0 10px",
 		}
-		if (this.props.colOffset==undefined){
-			return (
-			<Col md={this.props.colNum}>
-				<p style={buttonStyle} onMouseOver={this.onMouseOver} onMouseOut={this.onMouseOut}>{this.props.btnText}</p>
-			</Col>
-			);
-		}
-		else{
-			return (
-			<Col md={this.props.colNum} mdOffset={this.props.colOffset}>
-				<p style={buttonStyle} onMouseOver={this.onMouseOver} onMouseOut={this.onMouseOut}>{this.props.btnText}</p>
-			</Col>
-			);
-		}
+		var colStyle = {
+	        float : "none",
+	        display : "inline-block",
+	    }
+		return (
+		<Col md={this.props.colNum} xs={this.props.colNum} style={colStyle}>
+			<a href={this.props.link} style={buttonStyle} onMouseOver={this.onMouseOver} onMouseOut={this.onMouseOut}>{this.props.btnText}</a>
+		</Col>
+		);
 	}
 }
 

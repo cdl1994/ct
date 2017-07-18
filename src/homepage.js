@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import TobaccoCarousel from './tobacco_carousel.js';
-import SpaCarousel from './spa_carousel.js';
+// import SpaCarousel from './spa_carousel.js';
 import BandCarousel from './band_carousel.js';
 import CutBG from './cut_bg.js';
 import {Grid, Row, Col} from 'react-bootstrap';
@@ -21,6 +21,32 @@ class HomePage extends React.Component {
             data : null,
             header : null,
             footer : null,
+            "carousel": {
+                "banners": [
+                    {
+                        "image": "image\/data\/custom-tobacco\/home_banner\/banner-1.jpg",
+                        "text": "The <i>Perfect Gift</i> for that Perfect Occasion.<br><i>Personalized</i> Cigars."
+                    },
+                    {
+                        "image": "image\/data\/custom-tobacco\/home_banner\/banner-2.jpg",
+                        "text": "The <i>Perfect Gift</i> for that Perfect Occasion.<br><i>Personalized</i> Cigars."
+                    },
+                    {
+                        "image": "image\/data\/custom-tobacco\/home_banner\/banner-3.jpg",
+                        "text": "The <i>Perfect Gift</i> for that Perfect Occasion.<br><i>Personalized</i> Cigars."
+                    }
+                ],
+                "buttons": [
+                    {
+                        "buttonText": "Customize Yours >",
+                        "link": "\/design-tool\/custom-tobacco"
+                    },
+                    {
+                        "buttonText": "The Briarmont Difference >",
+                        "link": "\/index.php?route=information\/briardiffer"
+                    },
+                ]
+            },
         };
     }
 
@@ -75,7 +101,7 @@ class HomePage extends React.Component {
     render() {
         var footer = this.state.footer == null ? null : <Footer data={this.state.footer} />;
         var header = this.state.header == null ? null : <Header data={this.state.header} />;
-        var carousel = <TobaccoCarousel/>;
+        var carousel = <TobaccoCarousel data={this.state.carousel}/>;
         if (this.state.data != null){
             var homePageStyle = {
                 backgroundColor : this.state.data.theme.backgroundColor,
