@@ -3,6 +3,7 @@ import {Grid, Row, Col} from 'react-bootstrap';
 import {Nav, NavItem, NavDropdown, MenuItem} from 'react-bootstrap';
 import NavSub from './nav_sub.js';
 
+// header navigation button(horizontal)
 class NavButton extends React.Component{
 	constructor(){
 		super();
@@ -53,17 +54,17 @@ class NavButton extends React.Component{
 		var text = this.props.text;
 		// if this button have sublist and selected
 		if (this.props.subList!=null && this.state.selected){
-			var subList = this.props.subList.map((item)=><NavSub key={item} text={item}/>);
+			var subList = this.props.subList.map((item)=><NavSub key={item.title} text={item.title} link={item.link}/>);
 			return (
 			<NavItem key={text} onMouseEnter={this.mouseOverChange} onMouseLeave={this.mouseOutChange} style={itemStyle}>
-				<p style={navTitleStyle}>{text}</p>					
+				<a href={this.props.link} style={navTitleStyle}>{text}</a>					
 				<div style={subListStyle}>
 					{subList}
 				</div>
 			</NavItem>);
 		}
 		return (<NavItem onMouseEnter={this.mouseOverChange} onMouseLeave={this.mouseOutChange} style={itemStyle}> 
-			<p style={navTitleStyle}>{text}</p></NavItem>);
+			<a href={this.props.link} style={navTitleStyle}>{text}</a></NavItem>);
 	}
 
 

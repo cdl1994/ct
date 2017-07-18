@@ -2,6 +2,7 @@ import React from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
 import {Nav, NavItem, NavDropdown, MenuItem} from 'react-bootstrap';
 
+// header navigation button (vertical)
 class NavSub extends React.Component{
 	constructor(){
 		super();
@@ -30,7 +31,7 @@ class NavSub extends React.Component{
 			textAlign : "left",
 			background : this.state.navBg,
 		}
-		return (<div style={subTitleStyle} onMouseEnter={this.mouseOverChange} onMouseLeave={this.mouseOutChange} >{this.props.text}</div>);		
+		return (<div style={subTitleStyle} ><a href={this.props.link} style={subTitleStyle} onMouseEnter={this.mouseOverChange} onMouseLeave={this.mouseOutChange} >{this.props.text}</a></div>);		
 	}
 }
 

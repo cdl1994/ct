@@ -27,12 +27,12 @@ class NavHeader extends React.Component{
 		var settings = {
 			bsStyle : "pills",
 		}
-		var displayList = this.props.list.map((item,i)=>{
-			if (i==this.props.navSubIndex){
-				return (<NavButton key={item} text={item} subList={this.props.subList} />);
+		var displayList = this.props.data.map((item,i)=>{
+			if (item.dropdown!=null){
+				return (<NavButton key={item.tabText} text={item.tabText} link={item.link} subList={item.dropdown} />);
 			}
 			else{
-				return (<NavButton key={item} text={item}/>);
+				return (<NavButton key={item.tabText} text={item.tabText} link={item.link} />);
 			}
 		});
 		return (

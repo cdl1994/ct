@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
-import HomePageWithPopup from './HomePageWithPopup.js';
+import HomePageWithPopup from './homepage_with_popup.js';
 import CategoryPage from './category_page.js';
 
 class Index extends React.Component {

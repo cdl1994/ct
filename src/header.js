@@ -18,7 +18,79 @@ class Header extends React.Component{
 				navSubIndex : 1,
 				navSubTitle : ["Wedding", "Baby Shower", "Birthday", "Anniversary", "Valentine's Day", "Mother's Day",
 				"Bachelorette Party", "Spa Day"],
-			}
+			},
+			nav: [
+		        {
+		            "tabText": "ABOUT US",
+		            "dropdown": null,
+		            "link": "\/index.php?route=information\/aboutus"
+		        },
+		        {
+		            "tabText": "CUSTOMIZE YOUR OWN",
+		            "dropdown": null,
+		            "link": "\/design-tool\/custom-tobacco"
+		        },
+		        {
+		            "tabText": "EVENTS",
+		            "dropdown": [
+		                {
+		                    "title": "Make Your Wedding Stand Out",
+		                    "link": "\/index.php?route=product\/cp_category&category=wedding"
+		                },
+		                {
+		                    "title": "Show Your Partner Some Love",
+		                    "link": "\/index.php?route=product\/cp_category&category=valentine's_day"
+		                },
+		                {
+		                    "title": "Celebrate the Newest Addition to Your Family",
+		                    "link": "\/index.php?route=product\/cp_category&category=new_baby"
+		                },
+		                {
+		                    "title": "Cozy Up With the Perfect Gift",
+		                    "link": "\/index.php?route=product\/cp_category&category=holiday"
+		                },
+		                {
+		                    "title": "Say Thank You to the Men Who Stood by Your Side",
+		                    "link": "\/index.php?route=product\/cp_category&category=groomsmen"
+		                },
+		                {
+		                    "title": "Be Just Like the Pros",
+		                    "link": "\/index.php?route=product\/cp_category&category=golf_tournament"
+		                },
+		                {
+		                    "title": "A New Way to Celebrate Dad",
+		                    "link": "\/index.php?route=product\/cp_category&category=father's_day"
+		                },
+		                {
+		                    "title": "Smoke Out The Competition",
+		                    "link": "\/index.php?route=product\/cp_category&category=corporate_event"
+		                },
+		                {
+		                    "title": "Celebrate Another Year Lived",
+		                    "link": "\/index.php?route=product\/cp_category&category=birthday"
+		                },
+		                {
+		                    "title": "Celebrate The Last Single Days",
+		                    "link": "\/index.php?route=product\/cp_category&category=bachelor_party"
+		                }
+		            ],
+		            "link": "#"
+		        },
+		        {
+		            "tabText": "ACCESSORIES",
+		            "dropdown":[
+		                {
+		                    "title": "AAA",
+		                    "link": "\/index.php?route=product\/cp_category&category=wedding"
+		                },
+		                {
+		                    "title": "BBB",
+		                    "link": "\/index.php?route=product\/cp_category&category=valentine's_day"
+		                }
+		                ],
+		            "link": "\/index.php?route=information\/accessories"
+		        }
+		    ]
 		}
 	}
 	render(){
@@ -27,7 +99,8 @@ class Header extends React.Component{
 			position : "absolute",
 		}
 		// var navHeader = <NavHeader list={this.state.spa.navTitle} navSubIndex={this.state.spa.navSubIndex} subList={this.state.spa.navSubTitle}/>;
-		var navHeader = <NavHeader list={this.state.tobacco.navTitle} navSubIndex={this.state.tobacco.navSubIndex} subList={this.state.tobacco.navSubTitle}/>;
+		// var navHeader = <NavHeader list={this.state.tobacco.navTitle} navSubIndex={this.state.tobacco.navSubIndex} subList={this.state.tobacco.navSubTitle}/>;
+		var navHeader = <NavHeader data={this.state.nav} />;
 		return (
 			<Col md={12} style={colStyle}>
 				<TopHeader data={this.props.data} />
