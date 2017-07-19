@@ -21,44 +21,22 @@ class HomePage extends React.Component {
             data : null,
             header : null,
             footer : null,
-            "carousel": {
-                "banners": [
-                    {
-                        "image": "image\/data\/custom-tobacco\/home_banner\/banner-1.jpg",
-                        "text": "The <i>Perfect Gift</i> for that Perfect Occasion.<br><i>Personalized</i> Cigars."
-                    },
-                    {
-                        "image": "image\/data\/custom-tobacco\/home_banner\/banner-2.jpg",
-                        "text": "The <i>Perfect Gift</i> for that Perfect Occasion.<br><i>Personalized</i> Cigars."
-                    },
-                    {
-                        "image": "image\/data\/custom-tobacco\/home_banner\/banner-3.jpg",
-                        "text": "The <i>Perfect Gift</i> for that Perfect Occasion.<br><i>Personalized</i> Cigars."
-                    }
-                ],
-                "buttons": [
-                    {
-                        "buttonText": "Customize Yours >",
-                        "link": "\/design-tool\/custom-tobacco"
-                    },
-                    {
-                        "buttonText": "The Briarmont Difference >",
-                        "link": "\/index.php?route=information\/briardiffer"
-                    },
-                ]
-            },
         };
     }
 
     axiosRequest(){
         let address;
-        if (process.env.NODE_ENV === 'production')
+        var suffix = "";
+        if (process.env.NODE_ENV === 'production') {
             address = window.location.host;
-        else
+        }
+        else {
             address = "52.53.152.61:8080";
+            suffix = "&store_id=1";
+        }
         axios({
             method:"get",
-            url:"http://" + address + "/index.php?route=common/cp_home/api",
+            url:"http://" + address + "/index.php?route=common/cp_home/api" + suffix,
         })
         .then((response)=>{            
             this.setState({data: response.data});
@@ -69,7 +47,7 @@ class HomePage extends React.Component {
         });
         axios({
             method:"get",
-            url:"http://" + address + "/index.php?route=common/cp_header/api",
+            url:"http://" + address + "/index.php?route=common/cp_header/api" + suffix,
         })
         .then((response)=> {
             this.setState({header: response.data});
@@ -79,7 +57,7 @@ class HomePage extends React.Component {
         });
         axios({
             method:"get",
-            url:"http://" + address + "/index.php?route=common/cp_footer/api",
+            url:"http://" + address + "/index.php?route=common/cp_footer/api" + suffix,
         })
         .then((response)=> {
             this.setState({footer: response.data});
@@ -101,13 +79,14 @@ class HomePage extends React.Component {
     render() {
         var footer = this.state.footer == null ? null : <Footer data={this.state.footer} />;
         var header = this.state.header == null ? null : <Header data={this.state.header} />;
-        var carousel = <TobaccoCarousel data={this.state.carousel}/>;
         if (this.state.data != null){
             var homePageStyle = {
                 backgroundColor : this.state.data.theme.backgroundColor,
                 color : this.state.data.theme.lightTextColor,
                 fontStyle : this.state.data.theme.fontStyle,
             }
+            var carousel = <TobaccoCarousel data={this.state.data.carousel}/>;
+
             return (
                 <DocumentTitle title={this.state.data.info.title}>
                 <div style={homePageStyle}>

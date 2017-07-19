@@ -32,7 +32,7 @@ class TobaccoCarousel extends React.Component {
 			textAlign : "center",
 		}
 		var buttonList = this.props.data.buttons.map((item)=>
-			<CaptionButton colNum={5} btnText={item.buttonText} link={item.link}/>
+			<CaptionButton colNum={5} key={item.buttonText} btnText={item.buttonText} link={item.link}/>
 			);
 		var displayList = this.props.data.banners.map((item)=>
 			<div key={item.image}>
