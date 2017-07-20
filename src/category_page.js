@@ -137,7 +137,7 @@ class CategoryPage extends React.Component {
                 <WhiteLine image={this.state.data.theme.sectionDivider}/>
                 <Customize title={this.state.data.category_page_info.category_info.template_section_title} data={this.state.data.category_page_info.templates} />
                 <WhiteLine image={this.state.data.theme.sectionDivider}/>
-                <EnterEmail />
+                <EnterEmail title={this.state.data.category_page_info.category_titles.discountTitle} text={this.state.data.category_page_info.category_titles.discountText} />
                 <WhiteLine image={this.state.data.theme.sectionDivider}/>
                 <Grid className="related">
                     <Row><h3 className="centered-line">Related Articles</h3></Row>
