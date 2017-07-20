@@ -5,6 +5,7 @@ import {WhiteLine, PopupLine} from './whiteline.js';
 import Slider from 'react-slick';
 import axios from 'axios';
 import ReadMore from './read_more.js';
+import EnterEmail from './enter_email.js';
 
 function textProcess(text) {
     var res = text.replace(/<\/p><p>/g, " ");
@@ -79,6 +80,8 @@ class CategoryPage extends React.Component {
                 </Row></Grid>
                 <WhiteLine image={"/" + this.state.data.theme.sectionDivider}/>
                 <Customize title={this.state.data.category_page_info.category_info.template_section_title} data={this.state.data.category_page_info.templates} />
+                <WhiteLine image={"/" + this.state.data.theme.sectionDivider}/>
+                <EnterEmail />
                 <WhiteLine image={"/" + this.state.data.theme.sectionDivider}/>
                 </div>
                 </DocumentTitle>
