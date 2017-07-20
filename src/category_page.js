@@ -4,6 +4,14 @@ import DocumentTitle from 'react-document-title';
 import {WhiteLine, PopupLine} from './whiteline.js';
 import Slider from 'react-slick';
 import axios from 'axios';
+import ReadMore from './read_more.js';
+
+function textProcess(text) {
+    var res = text.replace(/<\/p><p>/g, " ");
+    res = res.replace(/<\/p>/g, "");
+    res = res.replace(/<p>/g, "");
+    return res;
+}
 
 class CategoryPage extends React.Component {
     constructor() {
@@ -37,7 +45,7 @@ class CategoryPage extends React.Component {
         });
     }
 
-    componentWillMount(){
+    componentWillMount() {
         this.axiosRequest();
     }
 
@@ -60,7 +68,10 @@ class CategoryPage extends React.Component {
                 <TestimonialCarousal list={this.state.data.category_page_info.testimonials} />
                 <WhiteLine image={"/" + this.state.data.theme.sectionDivider}/>
                 <Grid><Row>
-                    <div className="ct-intro-left" dangerouslySetInnerHTML={{__html: this.state.data.category_page_info.category_info.evergreen}}>
+                    <div className="ct-intro-left more" id="read_more_box">
+                        <ReadMore lines={4}>
+                            {textProcess(this.state.data.category_page_info.category_info.evergreen)}
+                        </ReadMore>
                     </div>
                     <div className="ct-intro-right">
                         <img id="ct-intro-img" src={this.state.data.category_page_info.category_info.image} />
