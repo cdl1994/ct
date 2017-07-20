@@ -77,6 +77,9 @@ class CategoryPage extends React.Component {
                         <img id="ct-intro-img" src={this.state.data.category_page_info.category_info.image} />
                     </div>
                 </Row></Grid>
+                <WhiteLine image={"/" + this.state.data.theme.sectionDivider}/>
+                <Customize title={this.state.data.category_page_info.category_info.template_section_title} data={this.state.data.category_page_info.templates} />
+                <WhiteLine image={"/" + this.state.data.theme.sectionDivider}/>
                 </div>
                 </DocumentTitle>
             );
@@ -120,6 +123,41 @@ function TestimonialCarousal(props) {
                 {displayList}
             </Slider>
         </Grid>
+    );
+}
+
+function Customize(props) {
+    var count = props.data.length;
+    var row = Math.floor(count/3);
+    var customize_rows = [];
+    for (var i = 0; i < row; i++) {
+        var cols = [];
+        for (var j = 0; j < 3; j++) {
+            cols[j] = <Col md={4} key={props.data[i*3 + j].image}>
+                <a href={props.data[i*3 + j].link}><img src={props.data[i*3 + j].image} />
+                <p className="customizebutton-2 mrgn">CUSTOMIZE YOURS ></p></a>
+            </Col>;
+        }
+        customize_rows[i] = <Row key={i}>{cols}</Row>;
+    }
+    var last = count%3;
+    if (last != 0) {
+        var cols = [];
+        var cur = 0;
+        for (var j = count - 1; j >= row*3; j--) {
+            cols[cur] = <Col md={12/last} key={props.data[j].image}>
+                <a href={props.data[j].link}><img src={props.data[j].image} />
+                <p className="customizebutton-2 mrgn">CUSTOMIZE YOURS ></p></a>
+            </Col>;
+            cur++;
+        }
+        customize_rows[row] = <Row key={row}>{cols}</Row>;
+    }
+    return (
+        <Grid><Row className="ct-customize">
+            <h3>{props.title}</h3>
+            {customize_rows}
+        </Row></Grid>
     );
 }
 
