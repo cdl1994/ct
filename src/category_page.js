@@ -9,6 +9,7 @@ import EnterEmail from './enter_email.js';
 import Columns from 'react-columns';
 import CutBG from './cut_bg.js';
 import Footer from './footer.js';
+import Header from './header.js'
 
 function textProcess(text) {
     var res = text.replace(/<\/p><p>/g, " ");
@@ -66,6 +67,16 @@ class CategoryPage extends React.Component {
         .catch((error)=>{
             console.log(error);
         });
+        axios({
+            method:"get",
+            url:"http://" + address + "/index.php?route=common/cp_header/api" + suffix,
+        })
+        .then((response)=> {
+            this.setState({header: response.data});
+        })
+        .catch((error)=>{
+            console.log(error);
+        });
     }
 
     componentWillMount() {
@@ -74,6 +85,7 @@ class CategoryPage extends React.Component {
 
     render() {
         var footer = this.state.footer == null ? null : <Footer data={this.state.footer} />;
+        var header = this.state.header == null ? null : <Header data={this.state.header} />;
         if (this.state.data != null) {
             var pageStyle = {
                 backgroundColor : this.state.data.theme.backgroundColor,
@@ -102,7 +114,8 @@ class CategoryPage extends React.Component {
             );
             return (
                 <DocumentTitle title={this.state.data.category_page_info.category_titles.title}>
-                <div style={pageStyle}>
+                <div style={pageStyle} className="nopadding">
+                {header}
                 <Grid className="ctcategory"><Row>
                     <Col md={6} xs={12}>
                         <div className="ct-title"><h2 className="centered-line">{this.state.data.category_page_info.category_titles.title}</h2></div>
