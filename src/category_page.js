@@ -85,7 +85,7 @@ class CategoryPage extends React.Component {
 
     render() {
         var footer = this.state.footer == null ? null : <Footer data={this.state.footer} />;
-        var header = this.state.header == null ? null : <Header data={this.state.header} />;
+        var header = this.state.header == null ? null : <Header showBG data={this.state.header} />;
         if (this.state.data != null) {
             var pageStyle = {
                 backgroundColor : this.state.data.theme.backgroundColor,

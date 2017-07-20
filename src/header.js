@@ -12,6 +12,13 @@ class Header extends React.Component{
 			padding : "0",
 			position : "absolute",
 		}
+		if (this.props.showBG){
+			colStyle.position = "relative";
+			colStyle.backgroundImage = "url("+this.props.data.headerImage+")";
+			colStyle.paddingBottom = "40px";
+			colStyle.marginBottom = "40px";
+			colStyle.backgroundSize = "cover";
+		}
 		var navHeader = <NavHeader data={this.props.data.nav} />;
 		return (
 			<Col md={12} style={colStyle}>
