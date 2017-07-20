@@ -98,7 +98,7 @@ class HomePage extends React.Component {
                   <AsSeenIn data={this.state.data.asSeenIn}/>
                   <CutBG imageURL={this.state.data.theme.backgroundImage}/>
                   <WhiteLine image={this.state.data.theme.sectionDivider} />
-                  <EnterEmail />
+                  <EnterEmail title="10% OFF YOUR FIRST ORDER" text="Simply enter your email here and look for an email with a code to use on your first order." />
                   <WhiteLine image={this.state.data.theme.sectionDivider} />
                   <BandCarousel list={this.state.data.customize}/>
                   <CutBG imageURL={this.state.data.theme.backgroundImage}/>
