@@ -115,6 +115,7 @@ class CategoryPage extends React.Component {
             return (
                 <DocumentTitle title={this.state.data.category_page_info.category_titles.title}>
                 <div style={pageStyle} className="nopadding">
+                <div style={{height:"0px"}}>dummy</div>
                 {header}
                 <Grid className="ctcategory"><Row>
                     <Col md={6} xs={12}>
