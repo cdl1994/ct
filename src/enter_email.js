@@ -15,7 +15,7 @@ class EnterEmail extends React.Component {
             email: "", 
             title: props.title, 
             text: props.text, 
-            status: 0.  //status: 0: input; 1: sending; 2: sent
+            status: 0  //status: 0: input; 1: sending; 2: sent
         };
         this.handleEmailChange = this.handleEmailChange.bind(this);
         this.submit = this.submit.bind(this);
@@ -34,16 +34,13 @@ class EnterEmail extends React.Component {
             address = "http://52.53.152.61:8080";
         }
         if (validateEmail(this.state.email)) {
+            var tc = this;
             this.setState({status: 1});
-            axios({
-                method: 'POST',
-                url: address + '/index.php?route=mail/cp_rfnewsletter/sendmail',
-                data: {
-                    email: this.state.email
-                }
-            })
+            var formData = new FormData();
+            formData.append("email", this.state.email);
+            axios.post(address + '/index.php?route=mail/cp_rfnewsletter/sendmail', formData)
             .then(function (response) {
-                this.setState({status: 2});
+                tc.setState({status: 2});
             })
             .catch(function (error) {
                 console.log(error);
@@ -57,7 +54,7 @@ class EnterEmail extends React.Component {
                         <button className="submitemail" id="submitNewsletter" onClick={this.submit}>
                             <img src="/image/data/default/misc/arrow-right.png" alt="right arrow" className="arrow-right-submit" />
                         </button></div>;
-        var bar = this.status == 2 ? <div>Thank you for your submission.</div> : inputBox;
+        var bar = this.state.status == 2 ? <div className="font-tradegothic-stdbold">Thank you for your submission.</div> : inputBox;
         return (
             <Grid>
             <Row>
