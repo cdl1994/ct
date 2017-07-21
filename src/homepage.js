@@ -13,6 +13,7 @@ import SkyLight from 'react-skylight';
 import Cookies from 'universal-cookie';
 import EnterEmail from './enter_email.js';
 import axios from 'axios';
+import ReactLoading from 'react-loading';
 
 class HomePage extends React.Component {
     constructor(){
@@ -77,8 +78,8 @@ class HomePage extends React.Component {
     }
 
     render() {
-        var footer = this.state.footer == null ? null : <Footer data={this.state.footer} />;
-        var header = this.state.header == null ? null : <Header data={this.state.header} />;
+        var footer = this.state.footer == null ? <ReactLoading type="bubbles" color="#444" /> : <Footer data={this.state.footer} />;
+        var header = this.state.header == null ? <ReactLoading type="bubbles" color="#444" /> : <Header data={this.state.header} />;
         if (this.state.data != null){
             var homePageStyle = {
                 backgroundColor : this.state.data.theme.backgroundColor,
@@ -109,8 +110,20 @@ class HomePage extends React.Component {
             );
         }
         else{
+            var center = {
+              position: 'absolute',
+              margin: 'auto',
+              top: 0,
+              right: 0,
+              bottom: 0,
+              left: 0,
+              width: '100px',
+              height: '100px'
+            };
             return (
-                <div>Loading</div>
+                <DocumentTitle title="Loading">
+                    <div style={center}><ReactLoading type="spokes" color="#444" /></div>
+                </DocumentTitle>
             );
         }
     }

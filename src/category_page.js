@@ -10,6 +10,7 @@ import Columns from 'react-columns';
 import CutBG from './cut_bg.js';
 import Footer from './footer.js';
 import Header from './header.js'
+import ReactLoading from 'react-loading';
 
 function textProcess(text) {
     var res = text.replace(/<\/p><p>/g, " ");
@@ -84,8 +85,8 @@ class CategoryPage extends React.Component {
     }
 
     render() {
-        var footer = this.state.footer == null ? null : <Footer data={this.state.footer} />;
-        var header = this.state.header == null ? null : <Header showBG data={this.state.header} />;
+        var footer = this.state.footer == null ? <ReactLoading type="bubbles" color="#444" /> : <Footer data={this.state.footer} />;
+        var header = this.state.header == null ? <ReactLoading type="bubbles" color="#444" /> : <Header showBG data={this.state.header} />;
         if (this.state.data != null) {
             var pageStyle = {
                 backgroundColor : this.state.data.theme.backgroundColor,
@@ -172,9 +173,19 @@ class CategoryPage extends React.Component {
             );
         }
         else {
+            var center = {
+              position: 'absolute',
+              margin: 'auto',
+              top: 0,
+              right: 0,
+              bottom: 0,
+              left: 0,
+              width: '100px',
+              height: '100px'
+            };
             return (
                 <DocumentTitle title="Loading">
-                    <div>Loading</div>
+                    <div style={center}><ReactLoading type="spokes" color="#444" /></div>
                 </DocumentTitle>
             );
         }
