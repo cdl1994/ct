@@ -118,7 +118,7 @@ class CategoryPage extends React.Component {
                 <div style={{height:"0px"}}>dummy</div>
                 {header}
                 <Grid className="ctcategory"><Row>
-                    <Col md={6} xs={12}>
+                    <Col md={12}>
                         <div className="ct-title"><h2 className="centered-line">{this.state.data.category_page_info.category_titles.title}</h2></div>
                     </Col>
                 </Row></Grid>
