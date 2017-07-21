@@ -56,15 +56,15 @@ class NavButton extends React.Component{
 		if (this.props.subList!=null && this.state.selected){
 			var subList = this.props.subList.map((item)=><NavSub key={item.title} text={item.title} link={item.link}/>);
 			return (
-			<NavItem key={text} onMouseEnter={this.mouseOverChange} onMouseLeave={this.mouseOutChange} style={itemStyle}>
-				<a href={this.props.link} style={navTitleStyle}>{text}</a>					
+			<NavItem href={this.props.link} key={text} onMouseEnter={this.mouseOverChange} onMouseLeave={this.mouseOutChange} style={itemStyle}>
+				<div style={navTitleStyle}>{text}</div>					
 				<div style={subListStyle}>
 					{subList}
 				</div>
 			</NavItem>);
 		}
-		return (<NavItem onMouseEnter={this.mouseOverChange} onMouseLeave={this.mouseOutChange} style={itemStyle}> 
-			<a href={this.props.link} style={navTitleStyle}>{text}</a></NavItem>);
+		return (<NavItem href={this.props.link} onMouseEnter={this.mouseOverChange} onMouseLeave={this.mouseOutChange} style={itemStyle}> 
+			<div style={navTitleStyle}>{text}</div></NavItem>);
 	}
 
 
