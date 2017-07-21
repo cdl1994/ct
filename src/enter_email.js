@@ -1,6 +1,7 @@
 import React from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
 import axios from 'axios';
+import ReactLoading from 'react-loading';
 
 function validateEmail(email) {
     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -10,7 +11,12 @@ function validateEmail(email) {
 class EnterEmail extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {email: "", title: props.title, text: props.text};
+        this.state = {
+            email: "", 
+            title: props.title, 
+            text: props.text, 
+            status: 0.  //status: 0: input; 1: sending; 2: sent
+        };
         this.handleEmailChange = this.handleEmailChange.bind(this);
         this.submit = this.submit.bind(this);
     }
@@ -20,12 +26,24 @@ class EnterEmail extends React.Component {
     }
 
     submit(event) {
+        let address;
+        if (process.env.NODE_ENV === 'production') {
+            address = window.location.host;
+        }
+        else {
+            address = "http://52.53.152.61:8080";
+        }
         if (validateEmail(this.state.email)) {
-            axios.post('/index.php?route=mail/cp_rfnewsletter/sendmail', {
-                email: this.state.email
+            this.setState({status: 1});
+            axios({
+                method: 'POST',
+                url: address + '/index.php?route=mail/cp_rfnewsletter/sendmail',
+                data: {
+                    email: this.state.email
+                }
             })
             .then(function (response) {
-                console.log(response);
+                this.setState({status: 2});
             })
             .catch(function (error) {
                 console.log(error);
@@ -34,6 +52,12 @@ class EnterEmail extends React.Component {
     }
 
     render() {
+        var loading = this.state.status == 1 ? <span style={{width: "50px", height: "50px"}}><ReactLoading type="spokes" color="#444" /></span> : null;
+        var inputBox =  <div><input type="text" className="input" ref="email" id="email" value={this.state.email} onChange={this.handleEmailChange} placeholder="Your Email Here"></input>
+                        <button className="submitemail" id="submitNewsletter" onClick={this.submit}>
+                            <img src="/image/data/default/misc/arrow-right.png" alt="right arrow" className="arrow-right-submit" />
+                        </button></div>;
+        var bar = this.status == 2 ? <div>Thank you for your submission.</div> : inputBox;
         return (
             <Grid>
             <Row>
@@ -42,10 +66,7 @@ class EnterEmail extends React.Component {
                 <h4 className="text-center color-white font-tradegothic-stdbold">{this.state.text}</h4>
                 <br />
                 <div id="column-left"><div id="formnewsletter">
-                    <input type="text" className="input" ref="email" id="email" value={this.state.email} onChange={this.handleEmailChange} placeholder="Your Email Here"></input>
-                    <button className="submitemail" id="submitNewsletter" onClick={this.submit}>
-                        <img src="/image/data/default/misc/arrow-right.png" alt="right arrow" className="arrow-right-submit" />
-                    </button>
+                    {bar}
                 </div></div>
             </Col>
             </Row>
