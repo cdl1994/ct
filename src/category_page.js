@@ -74,6 +74,13 @@ class CategoryPage extends React.Component {
         })
         .then((response)=> {
             this.setState({header: response.data});
+            var home = {
+              "tabText": "HOME",
+              "dropdown": null,
+              "link": "/"
+            };
+            this.state.header.nav.splice(0,0,home);
+            console.log(this.state.header.nav);
         })
         .catch((error)=>{
             console.log(error);
