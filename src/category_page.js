@@ -38,7 +38,7 @@ class CategoryPage extends React.Component {
         };
     }
 
-    axiosRequest(){
+    axiosRequest() {
         let address;
         var suffix = "";
         if (process.env.NODE_ENV === 'production') {
@@ -92,6 +92,16 @@ class CategoryPage extends React.Component {
     }
 
     render() {
+        var center = {
+            position: 'absolute',
+            margin: 'auto',
+            top: 0,
+            right: 0,
+            bottom: 0,
+            left: 0,
+            width: '100px',
+            height: '100px'
+        };
         var footer = this.state.footer == null ? <ReactLoading type="bubbles" color="#444" /> : <Footer data={this.state.footer} />;
         var header = this.state.header == null ? <ReactLoading type="bubbles" color="#444" /> : <Header showBG data={this.state.header} />;
         if (this.state.data != null) {
@@ -100,96 +110,107 @@ class CategoryPage extends React.Component {
                 color : this.state.data.theme.lightTextColor,
                 fontStyle : this.state.data.theme.fontStyle,
             };
-            var col_queries = [{
-                columns: 1,
-                query: 'min-width: 1px'
-            },
-            {
-                columns: 3,
-                query: 'min-width: 970px'
-            }];
-            const related = this.state.data.category_page_info.blogs.map((blog) => 
-                <a href={blog.link} key={blog.link} className="related-article-title">{blog.title}</a>
-            );
-            const also = this.state.data.category_page_info.also_loves.map((love) => 
-                <div className="h3 related-ct" key={love.link}>
-                    <a href={love.link}>
-                        <img src={love.template} />
-                        <br />
-                        <p className="related-category-title">{love.name}</p>
-                    </a>
-                </div>
-            );
-            return (
-                <DocumentTitle title={this.state.data.category_page_info.category_titles.title}>
-                <div style={pageStyle} className="nopadding">
-                <div style={{height:"0px"}}>dummy</div>
-                {header}
-                <Grid className="ctcategory"><Row>
-                    <Col md={12}>
-                        <div className="ct-title"><h2 className="centered-line">{this.state.data.category_page_info.category_titles.title}</h2></div>
-                    </Col>
-                </Row></Grid>
-                <WhiteLine image={this.state.data.theme.sectionDivider}/>
-                <TestimonialCarousal list={this.state.data.category_page_info.testimonials} />
-                <WhiteLine image={this.state.data.theme.sectionDivider}/>
-                <Grid><Row>
-                    <div className="ct-intro-left more" id="read_more_box">
-                        <ReadMore lines={4}>
-                            {textProcess(this.state.data.category_page_info.category_info.evergreen)}
-                        </ReadMore>
-                    </div>
-                    <div className="ct-intro-right">
-                        <img id="ct-intro-img" src={this.state.data.category_page_info.category_info.image} />
-                    </div>
-                </Row></Grid>
-                <WhiteLine image={this.state.data.theme.sectionDivider}/>
-                <Customize title={this.state.data.category_page_info.category_info.template_section_title} data={this.state.data.category_page_info.templates} />
-                <WhiteLine image={this.state.data.theme.sectionDivider}/>
-                <EnterEmail title={this.state.data.category_page_info.category_titles.discountTitle} text={this.state.data.category_page_info.category_titles.discountText} />
-                <WhiteLine image={this.state.data.theme.sectionDivider}/>
-                <Grid className="related">
-                    <Row><h3 className="centered-line">Related Articles</h3></Row>
-                    <Row><Columns queries={col_queries} gap="12px">
-                        {related}
-                    </Columns></Row>
-                </Grid>
-                <CutBG imageURL={this.state.data.theme.backgroundImage} />
-                <Grid>
-                    <Row className="related related_categories centered-line"><h3>{this.state.data.category_page_info.category_titles.relatedTitle}</h3></Row>
-                    <Row><Columns queries={col_queries} gap="15px">
-                        {also}
-                    </Columns></Row>
-                </Grid>
-                <CutBG imageURL={this.state.data.theme.backgroundImage} />
-                <Grid><Row>
-                    <div className="column-left margin-10 category-ad-btm-l">
-                        <img id="category-ad-btm-img" src={this.state.data.category_page_info.footer.image} />
-                    </div>
-                    <div className="column-right margin-10 category-ad-btm-r">
-                        <h3>{this.state.data.category_page_info.footer.title}</h3>
-                        <p>{this.state.data.category_page_info.footer.text}</p>
-                        <div className="h3 ct-tel">
-                            <a href={"tel:" + this.state.data.category_page_info.footer.phone}>{phoneFormatter(this.state.data.category_page_info.footer.phone)}</a>
+            if (this.state.data.category_page_info == null) {
+                var bottom = {
+                    bottom: 0,
+                    position: "absolute",
+                    width: "100%",
+                };
+                return (
+                    <DocumentTitle title="404 not found">
+                        <div>
+                            <div>{header}</div>
+                            <div style={center}>
+                                <p style={{fontSize: "22px", margin: "auto"}}>404</p>
+                                <p stye={{fontSize: "14px"}}>PAGE NOT FOUND</p>
+                            </div>
+                            <div style={bottom}>{footer}</div>
                         </div>
+                    </DocumentTitle>
+                );
+            }
+            else {
+                var col_queries = [{
+                    columns: 1,
+                    query: 'min-width: 1px'
+                },
+                {
+                    columns: 3,
+                    query: 'min-width: 970px'
+                }];
+                const related = this.state.data.category_page_info.blogs.map((blog) => 
+                    <a href={blog.link} key={blog.link} className="related-article-title">{blog.title}</a>
+                );
+                const also = this.state.data.category_page_info.also_loves.map((love) => 
+                    <div className="h3 related-ct" key={love.link}>
+                        <a href={love.link}>
+                            <img src={love.template} />
+                            <br />
+                            <p className="related-category-title">{love.name}</p>
+                        </a>
                     </div>
-                </Row></Grid>
-                {footer}
-                </div>
-                </DocumentTitle>
-            );
+                );
+                return (
+                    <DocumentTitle title={this.state.data.category_page_info.category_titles.title}>
+                    <div style={pageStyle} className="nopadding">
+                    <div style={{height:"0px"}}>dummy</div>
+                    {header}
+                    <Grid className="ctcategory"><Row>
+                        <Col md={12}>
+                            <div className="ct-title"><h2 className="centered-line">{this.state.data.category_page_info.category_titles.title}</h2></div>
+                        </Col>
+                    </Row></Grid>
+                    <WhiteLine image={this.state.data.theme.sectionDivider}/>
+                    <TestimonialCarousal list={this.state.data.category_page_info.testimonials} />
+                    <WhiteLine image={this.state.data.theme.sectionDivider}/>
+                    <Grid><Row>
+                        <div className="ct-intro-left more" id="read_more_box">
+                            <ReadMore lines={4}>
+                                {textProcess(this.state.data.category_page_info.category_info.evergreen)}
+                            </ReadMore>
+                        </div>
+                        <div className="ct-intro-right">
+                            <img id="ct-intro-img" src={this.state.data.category_page_info.category_info.image} />
+                        </div>
+                    </Row></Grid>
+                    <WhiteLine image={this.state.data.theme.sectionDivider}/>
+                    <Customize title={this.state.data.category_page_info.category_info.template_section_title} data={this.state.data.category_page_info.templates} />
+                    <WhiteLine image={this.state.data.theme.sectionDivider}/>
+                    <EnterEmail title={this.state.data.category_page_info.category_titles.discountTitle} text={this.state.data.category_page_info.category_titles.discountText} />
+                    <WhiteLine image={this.state.data.theme.sectionDivider}/>
+                    <Grid className="related">
+                        <Row><h3 className="centered-line">Related Articles</h3></Row>
+                        <Row><Columns queries={col_queries} gap="12px">
+                            {related}
+                        </Columns></Row>
+                    </Grid>
+                    <CutBG imageURL={this.state.data.theme.backgroundImage} />
+                    <Grid>
+                        <Row className="related related_categories centered-line"><h3>{this.state.data.category_page_info.category_titles.relatedTitle}</h3></Row>
+                        <Row><Columns queries={col_queries} gap="15px">
+                            {also}
+                        </Columns></Row>
+                    </Grid>
+                    <CutBG imageURL={this.state.data.theme.backgroundImage} />
+                    <Grid><Row>
+                        <div className="column-left margin-10 category-ad-btm-l">
+                            <img id="category-ad-btm-img" src={this.state.data.category_page_info.footer.image} />
+                        </div>
+                        <div className="column-right margin-10 category-ad-btm-r">
+                            <h3>{this.state.data.category_page_info.footer.title}</h3>
+                            <p>{this.state.data.category_page_info.footer.text}</p>
+                            <div className="h3 ct-tel">
+                                <a href={"tel:" + this.state.data.category_page_info.footer.phone}>{phoneFormatter(this.state.data.category_page_info.footer.phone)}</a>
+                            </div>
+                        </div>
+                    </Row></Grid>
+                    {footer}
+                    </div>
+                    </DocumentTitle>
+                );
+            }
         }
         else {
-            var center = {
-              position: 'absolute',
-              margin: 'auto',
-              top: 0,
-              right: 0,
-              bottom: 0,
-              left: 0,
-              width: '100px',
-              height: '100px'
-            };
             return (
                 <DocumentTitle title="Loading">
                     <div style={center}><ReactLoading type="spokes" color="#444" /></div>

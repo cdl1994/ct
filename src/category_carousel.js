@@ -27,7 +27,7 @@ class CategoryCarousel extends React.Component {
                 <div className="white-line margin-right"></div>
                 <img src={item.image} style={imgStyle}/>
                 <div className="customizebutton-1">
-                    <a href={item.buttonUrl}>{item.buttonText}</a>
+                    <a href={item.link}>{item.buttonText}</a>
                 </div>
             </div>
         );
