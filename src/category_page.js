@@ -46,7 +46,7 @@ class CategoryPage extends React.Component {
         }
         else {
             address = "52.53.152.61:8080";
-            suffix = "&store_id=1";
+            suffix = "&store_id=2";
         }
         axios({
             method:"get",
@@ -138,59 +138,50 @@ class CategoryPage extends React.Component {
                     columns: 3,
                     query: 'min-width: 970px'
                 }];
-                const related = this.state.data.category_page_info.blogs.map((blog) => 
-                    <a href={blog.link} key={blog.link} className="related-article-title">{blog.title}</a>
-                );
-                const also = this.state.data.category_page_info.also_loves.map((love) => 
-                    <div className="h3 related-ct" key={love.link}>
-                        <a href={love.link}>
-                            <img src={love.template} />
-                            <br />
-                            <p className="related-category-title">{love.name}</p>
-                        </a>
-                    </div>
-                );
-                return (
-                    <DocumentTitle title={this.state.data.category_page_info.category_titles.title}>
-                    <div style={pageStyle} className="nopadding">
-                    <div style={{height:"0px"}}>dummy</div>
-                    {header}
-                    <Grid className="ctcategory"><Row>
-                        <Col md={12}>
-                            <div className="ct-title"><h2 className="centered-line">{this.state.data.category_page_info.category_titles.title}</h2></div>
-                        </Col>
-                    </Row></Grid>
-                    <WhiteLine image={this.state.data.theme.sectionDivider}/>
-                    <TestimonialCarousal list={this.state.data.category_page_info.testimonials} />
-                    <WhiteLine image={this.state.data.theme.sectionDivider}/>
-                    <Grid><Row>
-                        <div className="ct-intro-left more" id="read_more_box">
-                            <ReadMore lines={4}>
-                                {textProcess(this.state.data.category_page_info.category_info.evergreen)}
-                            </ReadMore>
+                var testimonialComponent = this.state.data.category_page_info.testimonials.length == 0 ? null : <div>
+                                           <WhiteLine image={this.state.data.theme.sectionDivider} />
+                                           <TestimonialCarousal list={this.state.data.category_page_info.testimonials} /> </div>;
+                var customizeComponent = this.state.data.category_page_info.templates.length == 0 ? null : <div>
+                                         <WhiteLine image={this.state.data.theme.sectionDivider}/>
+                                         <Customize title={this.state.data.category_page_info.category_info.template_section_title} data={this.state.data.category_page_info.templates} />
+                                         </div>;
+                var relatedComponent = null;
+                if (this.state.data.category_page_info.blogs.length != 0) {
+                    const related = this.state.data.category_page_info.blogs.map((blog) => 
+                        <a href={blog.link} key={blog.link} className="related-article-title">{blog.title}</a>
+                    );
+                    relatedComponent = <div>
+                        <WhiteLine image={this.state.data.theme.sectionDivider}/>
+                        <Grid className="related">
+                            <Row><h3 className="centered-line">Related Articles</h3></Row>
+                            <Row><Columns queries={col_queries} gap="12px">
+                                {related}
+                            </Columns></Row>
+                        </Grid>
+                    </div>;
+                }
+                var alsoComponent = null;
+                if (this.state.data.category_page_info.also_loves != 0) {
+                    const also = this.state.data.category_page_info.also_loves.map((love) => 
+                        <div className="h3 related-ct" key={love.link}>
+                            <a href={love.link}>
+                                <img src={love.template} />
+                                <br />
+                                <p className="related-category-title">{love.name}</p>
+                            </a>
                         </div>
-                        <div className="ct-intro-right">
-                            <img id="ct-intro-img" src={this.state.data.category_page_info.category_info.image} />
-                        </div>
-                    </Row></Grid>
-                    <WhiteLine image={this.state.data.theme.sectionDivider}/>
-                    <Customize title={this.state.data.category_page_info.category_info.template_section_title} data={this.state.data.category_page_info.templates} />
-                    <WhiteLine image={this.state.data.theme.sectionDivider}/>
-                    <EnterEmail title={this.state.data.category_page_info.category_titles.discountTitle} text={this.state.data.category_page_info.category_titles.discountText} />
-                    <WhiteLine image={this.state.data.theme.sectionDivider}/>
-                    <Grid className="related">
-                        <Row><h3 className="centered-line">Related Articles</h3></Row>
-                        <Row><Columns queries={col_queries} gap="12px">
-                            {related}
-                        </Columns></Row>
-                    </Grid>
-                    <CutBG imageURL={this.state.data.theme.backgroundImage} />
-                    <Grid>
-                        <Row className="related related_categories centered-line"><h3>{this.state.data.category_page_info.category_titles.relatedTitle}</h3></Row>
-                        <Row><Columns queries={col_queries} gap="15px">
-                            {also}
-                        </Columns></Row>
-                    </Grid>
+                    );
+                    alsoComponent = <div>
+                        <CutBG imageURL={this.state.data.theme.backgroundImage} />
+                        <Grid>
+                            <Row className="related related_categories centered-line"><h3>{this.state.data.category_page_info.category_titles.relatedTitle}</h3></Row>
+                            <Row><Columns queries={col_queries} gap="15px">
+                                {also}
+                            </Columns></Row>
+                        </Grid>
+                    </div>;
+                }
+                var catFooter = this.state.data.category_page_info.footer == null ? null : <div>
                     <CutBG imageURL={this.state.data.theme.backgroundImage} />
                     <Grid><Row>
                         <div className="column-left margin-10 category-ad-btm-l">
@@ -204,6 +195,35 @@ class CategoryPage extends React.Component {
                             </div>
                         </div>
                     </Row></Grid>
+                </div>;
+                return (
+                    <DocumentTitle title={this.state.data.category_page_info.category_titles.title}>
+                    <div style={pageStyle} className="nopadding">
+                    <div style={{height:"0px"}}>dummy</div>
+                    {header}
+                    <Grid className="ctcategory"><Row>
+                        <Col md={12}>
+                            <div className="ct-title"><h2 className="centered-line">{this.state.data.category_page_info.category_titles.title}</h2></div>
+                        </Col>
+                    </Row></Grid>
+                    {testimonialComponent}
+                    <WhiteLine image={this.state.data.theme.sectionDivider}/>
+                    <Grid><Row>
+                        <div className="ct-intro-left more" id="read_more_box">
+                            <ReadMore lines={4}>
+                                {textProcess(this.state.data.category_page_info.category_info.evergreen)}
+                            </ReadMore>
+                        </div>
+                        <div className="ct-intro-right">
+                            <img id="ct-intro-img" src={this.state.data.category_page_info.category_info.image} />
+                        </div>
+                    </Row></Grid>
+                    {customizeComponent}
+                    <WhiteLine image={this.state.data.theme.sectionDivider}/>
+                    <EnterEmail title={this.state.data.category_page_info.category_titles.discountTitle} text={this.state.data.category_page_info.category_titles.discountText} />
+                    {relatedComponent}
+                    {alsoComponent}
+                    {catFooter}
                     {footer}
                     </div>
                     </DocumentTitle>

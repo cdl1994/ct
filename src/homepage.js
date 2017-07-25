@@ -33,7 +33,7 @@ class HomePage extends React.Component {
         }
         else {
             address = "52.53.152.61:8080";
-            suffix = "&store_id=1";
+            suffix = "&store_id=2";
         }
         axios({
             method:"get",

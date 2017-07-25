@@ -33,7 +33,7 @@ class NavSub extends React.Component{
 			background : this.state.navBg,
 			display : "block"
 		}
-		return (<Link to={'/'+this.props.link} style={subTitleStyle} onMouseEnter={this.mouseOverChange} onMouseLeave={this.mouseOutChange} >{this.props.text}</Link>);		
+		return (<Link to={'/' + this.props.link} style={subTitleStyle} onMouseEnter={this.mouseOverChange} onMouseLeave={this.mouseOutChange} >{this.props.text}</Link>);		
 	}
 }
 
