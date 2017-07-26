@@ -38,7 +38,7 @@ class CategoryPage extends React.Component {
         };
     }
 
-    axiosRequest() {
+    axiosRequest(props) {
         let address;
         var suffix = "";
         if (process.env.NODE_ENV === 'production') {
@@ -50,7 +50,7 @@ class CategoryPage extends React.Component {
         }
         axios({
             method:"get",
-            url:"http://" + address + "/index.php?route=product/cp_category/api&category=" + this.props.match.params.name + suffix,
+            url:"http://" + address + "/index.php?route=product/cp_category/api&category=" + props.match.params.name + suffix,
         })
         .then((response) => {            
             this.setState({data: response.data});
@@ -87,7 +87,7 @@ class CategoryPage extends React.Component {
     }
 
     componentWillMount() {
-        this.axiosRequest();
+        this.axiosRequest(this.props);
     }
 
     componentDidMount(){
@@ -95,30 +95,8 @@ class CategoryPage extends React.Component {
 
     componentWillReceiveProps(nextProps) {
         if(this.props != nextProps){
-            console.log("receive " + nextProps.match.params.name);
             this.setState({data : null});
-            let address;
-            var suffix = "";
-            if (process.env.NODE_ENV === 'production') {
-                address = window.location.host;
-            }
-            else {
-                address = "52.53.152.61:8080";
-                suffix = "&store_id=2";
-            }
-            axios({
-                method:"get",
-                url:"http://" + address + "/index.php?route=product/cp_category/api&category=" + nextProps.match.params.name + suffix,
-            })
-            .then((response) => {         
-                console.log("axios callback: "+response.data.category_page_info.category_info.categoryName);   
-                this.setState({data: response.data},()=>{
-                    console.log("setState callback: "+response.data.category_page_info.category_info.categoryName);
-                });
-            })
-            .catch(function (error) {
-                console.log(error);
-            });
+            this.axiosRequest(nextProps);
         }
     }
 
