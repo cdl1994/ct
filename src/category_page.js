@@ -128,11 +128,11 @@ class CategoryPage extends React.Component {
                 };
                 return (
                     <DocumentTitle title="404 not found">
-                        <div>
+                        <div style={pageStyle}>
                             <div>{header}</div>
                             <div style={center}>
                                 <p style={{fontSize: "22px", margin: "auto"}}>404</p>
-                                <p stye={{fontSize: "14px"}}>PAGE NOT FOUND</p>
+                                <p style={{fontSize: "14px"}}>PAGE NOT FOUND</p>
                             </div>
                             <div style={bottom}>{footer}</div>
                         </div>

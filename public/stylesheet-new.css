@@ -34,6 +34,10 @@
 	src:url('../fonts/bodoni/BauerBodoniStd-BoldCond.otf');
 }
 
+a:hover {
+	text-decoration: none;
+}
+
 
 
 /*No Padding , !important: It means, essentially,
