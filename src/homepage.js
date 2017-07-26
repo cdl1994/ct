@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import TobaccoCarousel from './tobacco_carousel.js';
+import Carousel from './carousel.js';
 import BandCarousel from './band_carousel.js';
 import CutBG from './cut_bg.js';
 import {Grid, Row, Col} from 'react-bootstrap';
@@ -86,7 +86,7 @@ class HomePage extends React.Component {
                 color : this.state.data.theme.lightTextColor,
                 fontStyle : this.state.data.theme.fontStyle,
             }
-            var carousel = <TobaccoCarousel data={this.state.data.carousel}/>;
+            var carousel = <Carousel data={this.state.data.carousel} font={this.state.data.theme.fontStyle}/>;
 
             return (
                 <DocumentTitle title={this.state.data.info.title}>

@@ -23,7 +23,7 @@ class CaptionButton extends React.Component {
 	render(){
 		var buttonStyle = {
 			fontSize:"1.8vmax",
-			fontFamily: "Tradegothic-stdbold", 
+			// fontFamily: "Tradegothic-stdbold", 
 			padding : "3%",
 			background : this.state.buttonBackground,
 			color:this.state.textColor ,

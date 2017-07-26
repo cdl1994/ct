@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import {Col,Row} from 'react-bootstrap';
 import CaptionButton from './caption_button.js';
 
-class TobaccoCarousel extends React.Component {
+class Carousel extends React.Component {
 	render(){
 		var itemStyle = {
 			margin : "0px",
@@ -19,12 +19,13 @@ class TobaccoCarousel extends React.Component {
 			left : "20%",
 			zIndex : "10000000",
 			width : "60%",
+			fontFamily : this.props.font,
 		}
 		var pStyle = {
 			fontSize : "2.5vmax",
 			color : "#fff",
 			textAlign : "center",
-			fontFamily : "Bodoni-stdroman",
+			fontFamily : this.props.font,
 			fontWeight : "500",
 			whiteSpace : "nowrap",
 		}
@@ -65,4 +66,4 @@ class TobaccoCarousel extends React.Component {
 	}
 }
 
-export default TobaccoCarousel;
+export default Carousel;
