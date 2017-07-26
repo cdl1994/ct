@@ -29,8 +29,8 @@ function phoneFormatter(phone) {
 }
 
 class CategoryPage extends React.Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             data : null,
             header : null,
@@ -80,7 +80,6 @@ class CategoryPage extends React.Component {
               "link": "/"
             };
             this.state.header.nav.splice(0,0,home);
-            console.log(this.state.header.nav);
         })
         .catch((error)=>{
             console.log(error);
@@ -89,6 +88,38 @@ class CategoryPage extends React.Component {
 
     componentWillMount() {
         this.axiosRequest();
+    }
+
+    componentDidMount(){
+    }
+
+    componentWillReceiveProps(nextProps) {
+        if(this.props != nextProps){
+            console.log("receive " + nextProps.match.params.name);
+            this.setState({data : null});
+            let address;
+            var suffix = "";
+            if (process.env.NODE_ENV === 'production') {
+                address = window.location.host;
+            }
+            else {
+                address = "52.53.152.61:8080";
+                suffix = "&store_id=2";
+            }
+            axios({
+                method:"get",
+                url:"http://" + address + "/index.php?route=product/cp_category/api&category=" + nextProps.match.params.name + suffix,
+            })
+            .then((response) => {         
+                console.log("axios callback: "+response.data.category_page_info.category_info.categoryName);   
+                this.setState({data: response.data},()=>{
+                    console.log("setState callback: "+response.data.category_page_info.category_info.categoryName);
+                });
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+        }
     }
 
     render() {
@@ -105,6 +136,7 @@ class CategoryPage extends React.Component {
         var footer = this.state.footer == null ? <ReactLoading type="bubbles" color="#444" /> : <Footer data={this.state.footer} />;
         var header = this.state.header == null ? <ReactLoading type="bubbles" color="#444" /> : <Header showBG data={this.state.header} />;
         if (this.state.data != null) {
+            console.log("render");
             var pageStyle = {
                 backgroundColor : this.state.data.theme.backgroundColor,
                 color : this.state.data.theme.lightTextColor,
