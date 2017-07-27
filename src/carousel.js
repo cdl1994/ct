@@ -28,6 +28,7 @@ class Carousel extends React.Component {
 			fontFamily : this.props.font,
 			fontWeight : "500",
 			whiteSpace : "nowrap",
+			lineHeight : "3.4vmax",
 		}
 		var rowStyle = {
 			textAlign : "center",
@@ -57,11 +58,10 @@ class Carousel extends React.Component {
     	}
 		return (
 			<div>
-				<Slider {...settings}>	
+				<Slider {...settings}>
 					{displayList}
 				</Slider>
 			</div>
-
 		);
 	}
 }
