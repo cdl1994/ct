@@ -33,7 +33,7 @@ class HomePage extends React.Component {
         }
         else {
             address = "52.53.152.61:8080";
-            suffix = "&store_id=2";
+            suffix = "&store_id=1";
         }
         axios({
             method:"get",
@@ -94,7 +94,7 @@ class HomePage extends React.Component {
                   {header}
                   {carousel}
                   <CutBG imageURL={this.state.data.theme.backgroundImage}/>
-                  <CategoryCarousel titleColor={this.state.data.theme.darkTextColor} list={this.state.data.categories} />
+                  <CategoryCarousel titleColor={this.state.data.theme.lightTextColor} list={this.state.data.categories} />
                   <CutBG imageURL={this.state.data.theme.backgroundImage}/>
                   <AsSeenIn data={this.state.data.asSeenIn}/>
                   <CutBG imageURL={this.state.data.theme.backgroundImage}/>

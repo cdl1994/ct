@@ -27,6 +27,7 @@ class TobaccoCarousel extends React.Component {
 			fontFamily : "Bodoni-stdroman",
 			fontWeight : "500",
 			whiteSpace : "nowrap",
+			lineHeight : "3.4vmax",
 		}
 		var rowStyle = {
 			textAlign : "center",
@@ -56,11 +57,10 @@ class TobaccoCarousel extends React.Component {
     	}
 		return (
 			<div>
-				<Slider {...settings}>	
+				<Slider {...settings}>
 					{displayList}
 				</Slider>
 			</div>
-
 		);
 	}
 }
