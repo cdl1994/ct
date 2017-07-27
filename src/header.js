@@ -1,6 +1,6 @@
 import React from 'react';
 import {Col} from 'react-bootstrap';
-import NavHeader from './navheader.js'
+import NavHeader from './nav_header.js'
 
 class Header extends React.Component{
 	constructor(){
