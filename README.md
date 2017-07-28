@@ -23,6 +23,9 @@ During development, front-end run in Node.js usually has a different domain name
 
 If you think the above method is too complicated, you can find some browser plugins to force the browser sending CORS requests.
 
+### More informaion
+This application originally created by [Create React App](https://github.com/facebookincubator/create-react-app), but we have executed `npm run eject`. If you want to know more about how React bundle works, you can check documents of [Webpack](https://webpack.github.io) and Create React App.
+
 ## Production version
 To deploy this application in production, this project should be compiled and compress first. Run `npm run build`, and it will do everything for you. There will be a folder named `build`. All Javascript codes, frameworks, plug-ins and files will be automatically packed and minified into a single file in the `build\static\js` directory. In this case, production server will not need React framework nor Node.js anymore. Also, there are some conditional compilation to distinguish development and production environment using `process.env.NODE_ENV`.
 
