@@ -46,7 +46,7 @@ class CategoryPage extends React.Component {
         }
         else {
             address = "52.53.152.61:8080";
-            suffix = "&store_id=2";
+            suffix = "&store_id=1";
         }
         axios({
             method:"get",
