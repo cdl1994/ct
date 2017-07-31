@@ -1,15 +1,15 @@
 import React from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
 import DocumentTitle from 'react-document-title';
-import {WhiteLine, PopupLine} from './whiteline.js';
+import {WhiteLine, PopupLine} from '../whiteline.js';
 import Slider from 'react-slick';
 import axios from 'axios';
 import ReadMore from './read_more.js';
-import EnterEmail from './enter_email.js';
+import EnterEmail from '../enter_email.js';
 import Columns from 'react-columns';
-import CutBG from './cut_bg.js';
-import Footer from './footer.js';
-import Header from './header.js'
+import CutBG from '../cut_bg.js';
+import Footer from '../footer.js';
+import Header from '../header/header.js'
 import ReactLoading from 'react-loading';
 
 function textProcess(text) {

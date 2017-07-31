@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
-import HomePageWithPopup from './homepage_with_popup.js';
-import CategoryPage from './category_page.js';
+import HomePageWithPopup from './homepage/homepage_with_popup.js';
+import CategoryPage from './category/category_page.js';
+import Designer from './designer/designer.js';
 
 class Index extends React.Component {
     constructor() {
@@ -18,6 +19,9 @@ class Index extends React.Component {
                     </div>
                     <div>
                         <Route path="/category/:name" component={CategoryPage} />
+                    </div>
+                    <div>
+                        <Route path="/designer" component={Designer} />
                     </div>
                 </div>
             </BrowserRouter>

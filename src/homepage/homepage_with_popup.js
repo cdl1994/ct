@@ -2,7 +2,7 @@ import React from 'react';
 import HomePage from './homepage.js'
 import Cookies from 'universal-cookie';
 import SkyLight from 'react-skylight';
-import {PopupLine} from './whiteline.js';
+import {PopupLine} from '../whiteline.js';
 import {Row,Col} from 'react-bootstrap';
 
 class HomePageWithPopup extends React.Component {

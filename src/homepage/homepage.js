@@ -2,16 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Carousel from './carousel.js';
 import BandCarousel from './band_carousel.js';
-import CutBG from './cut_bg.js';
+import CutBG from '../cut_bg.js';
 import {Grid, Row, Col} from 'react-bootstrap';
 import DocumentTitle from 'react-document-title';
-import {WhiteLine, PopupLine} from './whiteline.js';
-import Footer from './footer.js';
-import Header from './header.js'
+import {WhiteLine, PopupLine} from '../whiteline.js';
+import Footer from '../footer.js';
+import Header from '../header/header.js'
 import CategoryCarousel from './category_carousel.js'
 import SkyLight from 'react-skylight';
 import Cookies from 'universal-cookie';
-import EnterEmail from './enter_email.js';
+import EnterEmail from '../enter_email.js';
 import axios from 'axios';
 import ReactLoading from 'react-loading';
 
