@@ -5,6 +5,9 @@ import SkyLight from 'react-skylight';
 import {PopupLine} from '../whiteline.js';
 import {Row,Col} from 'react-bootstrap';
 
+import '../css/stylesheet-new.css';
+import '../css/combined-styles.css';
+
 class HomePageWithPopup extends React.Component {
     constructor() {
         super();

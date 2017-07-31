@@ -12,6 +12,9 @@ import Footer from '../footer.js';
 import Header from '../header/header.js'
 import ReactLoading from 'react-loading';
 
+import '../css/stylesheet-new.css';
+import '../css/combined-styles.css';
+
 function textProcess(text) {
     var res = text.replace(/<\/p><p>/g, " ");
     res = res.replace(/<\/p>/g, "");

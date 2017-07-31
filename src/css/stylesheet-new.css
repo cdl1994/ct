@@ -3,51 +3,51 @@
 /*font family*/
 @font-face {
 	font-family:Tradegothic-std;
-	src:url('fonts/tradegothic/TradeGothicLTStd.otf');
+	src:url('/fonts/tradegothic/TradeGothicLTStd.otf');
 }
 @font-face {
 	font-family:Tradegothic-stdbold;
-	src:url('fonts/tradegothic/TradeGothicLTStd-Bold.otf');
+	src:url('/fonts/tradegothic/TradeGothicLTStd-Bold.otf');
 }
 @font-face {
 	font-family:Tradegothic-stdBdCn;
-	src:url('fonts/tradegothic/TradeGothicLTStd-BdCn20.otf');
+	src:url('/fonts/tradegothic/TradeGothicLTStd-BdCn20.otf');
 }
 @font-face {
 	font-family:Bodoni-stdblack;
-	src:url('fonts/bodoni/BauerBodoniStd-Black.otf');
+	src:url('/fonts/bodoni/BauerBodoniStd-Black.otf');
 }
 @font-face {
 	font-family:Bodoni-stdblackIta;
-	src:url('fonts/bodoni/BauerBodoniStd-BlackItalic.otf');
+	src:url('/fonts/bodoni/BauerBodoniStd-BlackItalic.otf');
 }
 @font-face {
 	font-family:Bodoni-stdblackcond;
-	src:url('fonts/bodoni/BauerBodoniStd-BlackCond.otf');
+	src:url('/fonts/bodoni/BauerBodoniStd-BlackCond.otf');
 }
 @font-face {
 	font-family:Bodoni-stdita;
-	src:url('fonts/bodoni/BauerBodoniStd-Italic.otf');
+	src:url('/fonts/bodoni/BauerBodoniStd-Italic.otf');
 }
 @font-face {
 	font-family:Bodoni-stdroman;
-	src:url('fonts/bodoni/BauerBodoniStd-Roman.otf');
+	src:url('/fonts/bodoni/BauerBodoniStd-Roman.otf');
 }
 @font-face {
 	font-family:Bodonistd-bcond;
-	src:url('fonts/bodoni/BauerBodoniStd-BoldCond.otf');
+	src:url('/fonts/bodoni/BauerBodoniStd-BoldCond.otf');
 }
 @font-face {
 	font-family:Bodonistd-bd;
-	src:url('fonts/bodoni/BauerBodoniStd-Bold.otf');
+	src:url('/fonts/bodoni/BauerBodoniStd-Bold.otf');
 }
 @font-face {
 	font-family:Bodonistd-book;
-	src:url('fonts/bodoni/BodoniStd-Book.otf');
+	src:url('/fonts/bodoni/BodoniStd-Book.otf');
 }
 @font-face {
 	font-family:Bodonistd;
-	src:url('fonts/bodoni/BodoniStd.otf');
+	src:url('/fonts/bodoni/BodoniStd.otf');
 }
 
 a:hover {
@@ -646,16 +646,6 @@ span.gc-cs-link {
 	font-size:11px;
 	text-decoration:none;
 }
-#header #cart .heading a span {
-	margin-right:5px;
-	background:url("../../../../../image/data/platform/icons/arrow_down.png")no-repeat scroll 100% 60%;
-	font-family:'NeuzeitSLT-Book';
-	//font-family:"Raleway", sans-serif;
-	font-size:16px;
-	font-size-adjust:0.56;
-	text-transform:uppercase;
-	padding-right:12px;
-}
 #header #cart .content {
 	position:absolute;
 	display:none;
@@ -920,20 +910,6 @@ span.gc-cs-link {
 .valid {
 	background:#F7FFEC;
 }
-.scrollup {
-	position: fixed;
-    bottom: 214px;
-    text-align: center;
-    right: 15px;
-    display: none;
-    background: #fff;
-    width: 32px;
-    opacity: 0.8;
-    z-index: 11;
-    border-radius: 1px;
-	//background:url(../../../../../image/data/customized-cigars/components/to_top.png);
-	transition:0.5s ease-in-out;
-}
 .scrollup i{font-size:35px;}
 .scrollup:hover i{
 	color:#fff;
@@ -954,18 +930,6 @@ ul.slidecontrols li a {
 	width:24px;
 	height:24px;
 	display:block;
-}
-ul.slidecontrols li a.prev {
-	background:url(../../../../../image/data/platform/icons/previous_button.png) no-repeat;
-}
-ul.slidecontrols li a.next {
-	background:url(../../../../../image/data/platform/icons/next_button.png) no-repeat;
-}
-ul.slidecontrols li a.next.carousel-disabled {
-	background:url(../../../../../image/data/platform/icons/next_disabled_button.png) no-repeat;
-}
-ul.slidecontrols li a.prev.carousel-disabled {
-	background:url(../../../../../image/data/platform/icons/prev_disabled_button.png) no-repeat;
 }
 .table {
 	margin:35px 0;
@@ -1222,26 +1186,6 @@ ul.pagination li.unavailable:hover a, ul.pagination li.unavailable a:focus {
 span.arrow-text {
 	color:#000;
 }
-INPUT#changecfonttext {
-	background-image:url('../../../../../image/data/platform/icons/icon-arrow-down.png') !important;
-	background-repeat:no-repeat !important;
-	background-position:right !important;
-	background-size:18px 18px !important;
-	border:none;
-	padding:3px 0;
-	margin:0;
-	width:94%;
-}
-INPUT#changecfontsize {
-	background-image:url('../../../../../image/data/platform/icons/icon-arrow-down.png') !important;
-	background-repeat:no-repeat !important;
-	background-position:right !important;
-	background-size:18px 18px !important;
-	border:none;
-	padding:3px 0;
-	margin:0;
-	width:81%;
-}
 .band-edit-area #text1 .font-format.font-type #changecfonttext {width:100%;border-top:1px solid #fff;border-bottom:1px solid #fff;text-align:left;font-size:22px;cursor:pointer;}
 #tab1 input{background: rgba(255,255,255,0.0);color:#4c372e;border: 1px solid #fff;padding: 7px 7px;font-family: Tradegothic-stdbold;font-size: 22px;margin-bottom:15px;}
 #tab1 input#color{width:40px;height:40px;}
@@ -1412,14 +1356,14 @@ ul.contact-us li{font-size: 20px;font-family: Bodoni-stdroman;color: #fff;margin
 	max-height: 300px;
 }
 #simpleDesignLogo {
-	background-image: url('../image/misc/wood_background.jpg');
+	background-image: url('/image/misc/wood_background.jpg');
 	padding: 0;
 	/*min-height: 300px;*/
 	max-height: 300px;
 }
 
 .mirr_logo_div {
-	background-image: url('../image/misc/mirror_edit_background.png');
+	background-image: url('/image/misc/mirror_edit_background.png');
 	background-size: cover;
 	padding: 0;
 	padding-top: 42px;
@@ -1428,7 +1372,7 @@ ul.contact-us li{font-size: 20px;font-family: Bodoni-stdroman;color: #fff;margin
 }
 
 .mirr_logo_div_small {
-	background-image: url('../image/misc/mirror_edit_background.png');
+	background-image: url('/image/misc/mirror_edit_background.png');
 	background-size: cover;
 	padding: 0;
 	padding-top: 21px;
@@ -1689,7 +1633,7 @@ img.category_display_img:hover{
 	}
 
 	.mirr_logo_div {
-		background-image: url('../image/misc/mirror_edit_background.png');
+		background-image: url('/image/misc/mirror_edit_background.png');
 		background-size: cover;
 		padding: 0;
 		padding-top: 28px;
@@ -1699,7 +1643,7 @@ img.category_display_img:hover{
 	}
 
 	.mirr_logo_div_small {
-		background-image: url('../image/misc/mirror_edit_background.png');
+		background-image: url('/image/misc/mirror_edit_background.png');
 		background-size: cover;
 		padding: 0;
 		padding-top: 14px;
@@ -1767,7 +1711,7 @@ img.category_display_img:hover{
 	}
 
 	.mirr_logo_div {
-		background-image: url('../image/misc/mirror_edit_background.png');
+		background-image: url('/image/misc/mirror_edit_background.png');
 		background-size: cover;
 		padding: 0;
 		padding-top: 21px;
@@ -1777,7 +1721,7 @@ img.category_display_img:hover{
 	}
 
 	.mirr_logo_div_small {
-		background-image: url('../image/misc/mirror_edit_background.png');
+		background-image: url('/image/misc/mirror_edit_background.png');
 		background-size: cover;
 		padding: 0;
 		padding-top: 10.5px;
