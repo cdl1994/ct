@@ -197,16 +197,16 @@ class CategoryPage extends React.Component {
                 var catFooter = this.state.data.category_page_info.footer == null ? null : <div>
                     <CutBG imageURL={this.state.data.theme.backgroundImage} />
                     <Grid><Row>
-                        <div className="column-left margin-10 category-ad-btm-l">
+                        <Col md={4}><div className="category-ad-btm-l">
                             <img id="category-ad-btm-img" src={this.state.data.category_page_info.footer.image} />
-                        </div>
-                        <div className="column-right margin-10 category-ad-btm-r">
+                        </div></Col>
+                        <Col md={8}><div className="category-ad-btm-r">
                             <h3>{this.state.data.category_page_info.footer.title}</h3>
                             <p>{this.state.data.category_page_info.footer.text}</p>
                             <div className="h3 ct-tel">
                                 <a href={"tel:" + this.state.data.category_page_info.footer.phone}>{phoneFormatter(this.state.data.category_page_info.footer.phone)}</a>
                             </div>
-                        </div>
+                        </div></Col>
                     </Row></Grid>
                 </div>;
                 return (
