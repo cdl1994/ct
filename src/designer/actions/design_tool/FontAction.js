@@ -1,3 +1,5 @@
+// redux: action for CPStep2 - text insert/font/size/color/rotate/resize/...
+
 export const TEXT_CONTENT = 'textContent';
 export const TEXT_FONT = 'textFont';
 export const TEXT_SIZE = 'textSize';
@@ -72,9 +74,9 @@ export function selectText(id) {
   }
 }
 
-export function resizeBox(e,data,id) {
+export function resizeBox(e, data, id) {
   return {
-    type:RESIZ_BOX,
+    type: RESIZ_BOX,
     id: id
   }
 }

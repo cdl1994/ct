@@ -14,6 +14,6 @@ function mapStateToProps(state) {
   }
 }
 
-const TextPresnt = connect(mapStateToProps)(Step2Presnt);
+const PresntStep2 = connect(mapStateToProps)(Step2Presnt);
 
-export default TextPresnt;
+export default PresntStep2;

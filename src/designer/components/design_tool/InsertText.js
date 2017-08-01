@@ -25,7 +25,6 @@ class InsertText extends Component {
   }
 
   render() {
-    console.log(this.props);
     return (
       <Col md={12}>
         <input type="text" 

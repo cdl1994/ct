@@ -66,8 +66,8 @@ h3 {
 
 /*image style for the templates in step1*/
 .step1img {
-  width:12vmax;
-  height:12vmax;
+  width: 12vmax;
+  height: 12vmax;
 }
 
 /*category title under the template image in step1*/
@@ -79,7 +79,7 @@ h3 {
 /*two background images in stap2*/
 .designImageBackground {
   max-width: 90%;
-  height:25vw;
+  height: 25vw;
 }
 
 /*three template images showed up after clicking the category title*/
@@ -90,11 +90,10 @@ h3 {
 /*the template svg show on the background image*/
 .templateOnStep2 {
   max-width: 90%;
-  height:25vw;
+  height: 25vw;
   z-index: 2;
   position: relative;
-  margin-top:-25vw;	
-
+  margin-top: -25vw;	
 }
 
 /*the text "Drag Items to position on Label"*/
@@ -108,9 +107,9 @@ h3 {
 
 /*the initial position of the text showed on the template*/
 .presentTextDiv {
-  margin-top:-13vw;
-  position:relative;
-  z-index:1111;
+  margin-top: -13vw;
+  position: relative;
+  z-index: 1111;
 } 
 
 /*the text style of 1.TEXT 2.COLOR 3.OPTIONAL IMAGE OR LOGO*/
@@ -129,9 +128,9 @@ input::placeholder {
 
 /*the text style of the value when user input something */
 .textInput {
-  background:transparent;
+  background: transparent;
   display: inline-block;
-  border:1px white solid;
+  border: 1px white solid;
   border-radius: 4px;
   width: 100%;
   height: 40px;
@@ -148,11 +147,11 @@ input::placeholder {
 }
 
 .Select, .Select div, .Select input, .Select span {
-  background:transparent;
+  background: transparent;
 }
 .Select-control {
-  background:transparent !important;
-  border:1px white solid !important;
+  background: transparent !important;
+  border: 1px white solid !important;
   height: 40px !important;
   margin-bottom: 2%;
 }
@@ -162,7 +161,7 @@ input::placeholder {
 
 .Select-placeholder,
 .Select--single > .Select-control .Select-value {
-  color:#4c372e !important;
+  color: #4c372e !important;
   font-family: Tradegothic-stdBdCn;
   font-size: 140%;
   line-height: 40px !important;
@@ -177,7 +176,7 @@ input::placeholder {
 .step2Button {
   font-family: Tradegothic-stdBdCn;
   font-size: 150%;
-  background:transparent;
+  background: transparent;
   color: white;
   border:none;
   text-shadow: none;
@@ -185,9 +184,9 @@ input::placeholder {
   display: inline-block;
 }
 .step2Button:hover {
-  background:transparent;
+  background: transparent;
   color: #4c372e;
-  border:none;
+  border: none;
   text-shadow: none;
   box-shadow: none;
 }
@@ -205,19 +204,19 @@ input::placeholder {
 .step2ButtonBorder {
   font-family: Tradegothic-stdBdCn;
   font-size: 150%;
-  background:transparent;
+  background: transparent;
   color: white;
-  border:1px white solid;
+  border: 1px white solid;
   text-shadow: none;
   box-shadow: none;
   display: inline-block;
   width: 100%;
-  margin-top:2%;
+  margin-top: 2%;
 }
 .step2ButtonBorder:hover {
-  background:transparent;
+  background: transparent;
   color: #4c372e;
-  border:1px white solid;
+  border: 1px white solid;
   text-shadow: none;
   box-shadow: none;
 }
@@ -229,12 +228,12 @@ input::placeholder {
   font-size: 150%;
   background-color: white;
   color: #dcc0ba;
-  border:none;
+  border: none;
   text-shadow: none;
   box-shadow: none;
   background-image: none;
   display: inline-block;
-  width:45%;
+  width: 100%;
   float: left;
 }
 .step2WhiteButton2 {
@@ -242,15 +241,15 @@ input::placeholder {
   font-size: 150%;
   background-color: white;
   color: #dcc0ba;
-  border:none;
+  border: none;
   text-shadow: none;
   box-shadow: none;
   background-image: none;
   display: inline-block;
-  width:48%;
+  width: 100%;
   float: right;
 }
-.step2WhiteButton1:hover, .step2WhiteButton2:hover{
+.step2WhiteButton1:hover, .step2WhiteButton2:hover {
   background-color: white;
 }
 /*END button1 is for "Delete Text", button2 is for "Add more Text"*/

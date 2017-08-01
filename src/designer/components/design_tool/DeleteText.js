@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button } from 'react-bootstrap';
+import { Button, Col } from 'react-bootstrap';
 
 class DeleteText extends Component {
   // constructor() {
@@ -31,7 +31,9 @@ class DeleteText extends Component {
   }
   render() {
     return (
-      <Button href="#" onClick={() => this.handleClick(this.props.id)} className='step2WhiteButton1'>DELETE TEXT</Button>
+      <Col md={6}>
+        <Button href="#" onClick={() => this.handleClick(this.props.id)} className='step2WhiteButton1'>DELETE TEXT</Button>
+      </Col>
     );
   }
 

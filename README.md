@@ -56,7 +56,7 @@ As a single page application (SPA), all paths inside of this application are han
 ## File structure
 
 ### ./public
-* `index.html`: main html file, used for importing CDN and CSS Files. Division named root is rendered by ReactJS.
+* `index.html`: main html file, used for importing files from CDN. Division named root is rendered by ReactJS.
 * `image/`: store all the images
 * `fonts/`: store all the fonts
 

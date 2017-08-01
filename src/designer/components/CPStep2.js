@@ -1,20 +1,15 @@
 import React, { Component } from 'react';
-
 import { connect } from 'react-redux'
 import { Row, Col, Button, DropdownButton, MenuItem } from 'react-bootstrap';
 
 import { StepTitle } from './CPBody';
-import TextPresnt from '../containers/Step2Presnt';
+import PresntStep2 from '../containers/Step2Presnt';
 import ModifText from '../containers/ModifText';
 import ModifColor from './ModifColor';
+import ModifImage from './ModifImage';
 
-// function reducer(state = {}, action) {
-//   return action;
-// }
-
-// let store = createStore(reducer);
-
-
+// Step2 Class: main component for step2
+// Step2 is design tool, including two parts: design part and modification part
 class Step2 extends Component {
   constructor(props) {
     super(props);
@@ -30,15 +25,15 @@ class Step2 extends Component {
             <h3 className='dragItemsTo'>Drag Items to Position on Label</h3>
           </Col>
         </Row>
-        <TextPresnt designBackground = {this.props.design_background} />
-        <br />
-        <br />
+        <PresntStep2 designBackground = {this.props.design_background} />
         <Step2Modif />
       </div>
     );
   }
 }
 
+// Step2 Modificatio part main component
+// Step2Modif includes three parts: modify text, modify image color, and upload/delete image
 class Step2Modif extends Component {
   render() {
     return (
@@ -57,53 +52,4 @@ class Step2Modif extends Component {
   }
 }
 
-
-
-// class ModifText extends Component {
-//   render() {
-//     return (
-//       <div>
-//         <p>{this.props.children}</p>
-//         <TextFont />
-//         <TextSize />
-//         <TextRotate />
-//         <Col xs={4} md={4}>
-//           <TextColor />
-//         </Col>
-//         <Col xs={12} md={12}>
-//           <DeleteText />
-//           <TextAdd />
-//         </Col>
-//       </div>
-//     );
-//   }
-// }
-
-
-
-
-
-// class ModifColor extends Component {
-//   render() {
-//     return (
-//       <div>
-//         <p>{this.props.children}</p>
-//       </div>
-//     );
-//   }
-// }
-
-class ModifImage extends Component {
-  render() {
-    return (
-      <div >
-        <p className='step2Title'>{this.props.children}</p>
-        <Button className='step2ButtonBorder'>UPLOAD IMAGE OR LOGO</Button>
-        <Button className='step2ButtonBorder'>SELECT FROM GALLERY</Button>
-        <Button className='step2ButtonBorder'>DELETE SELECTED IMAGE</Button>
-      </div>
-    );
-  }
-}
-
-export { Step2 };
+export default Step2;

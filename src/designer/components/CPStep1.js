@@ -1,20 +1,16 @@
 import React, { Component } from 'react';
 import { Row, Col, Clearfix } from 'react-bootstrap';
 import { StepTitle } from './CPBody';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 import CategoryList from '../containers/chooseTemplate/step1CategoryContainer';
 import TemplateList from '../containers/chooseTemplate/step1TemplateContainer';
 
-
-
-
-
-
+// Step1 Class: main component for step1
+// Step1 is for choosing template
 class Step1 extends Component {
   constructor() {
     super();
   }
-
   showTemplate() {    
     return (
     <div>
@@ -24,7 +20,6 @@ class Step1 extends Component {
     </div>
     );
   }
-
   showCategoty() {  
     return (
     <div>
@@ -34,23 +29,19 @@ class Step1 extends Component {
     </div>
     );
   }
-
   render() {
-
-      if (this.props.data == null) {
-        return this.showCategoty();
-      }
-      return this.showTemplate(); 
- 
+    if (this.props.data == null) {
+      return this.showCategoty();
+    }
+    return this.showTemplate(); 
   }
 }
 
+// redux: containers
 function mapStateToProps(state) {
-  //console.log("Step1");
-  //console.log(state);
-    return {
-        data : state.activeCategory
-    };
+  return {
+    data : state.activeCategory
+  };
 }
 
 export default connect(mapStateToProps)(Step1);

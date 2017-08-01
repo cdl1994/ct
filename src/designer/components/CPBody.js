@@ -1,26 +1,27 @@
 import React, { Component } from 'react';
 import { Grid } from 'react-bootstrap';
-
-import Step1 from './CPStep1'
-import { Step2 } from './CPStep2'
-
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 
-// import { fontReducer } from '../reducers/design_tool/FontReducer'
+import Step1 from './CPStep1'
+import Step2 from './CPStep2'
 
+// redux: import reducers
 import allReducers from '../reducers';
 
+// import json file
 const customData = require('../custompage.json');
-document.body.style.backgroundColor = customData.Theme.background_color; //get the background color (pink)
-document.body.style.color = customData.Theme.dark_text_color; //get the background color (brown)
 
+// set background color
+document.body.style.backgroundColor = customData.Theme.background_color; // get the background color (pink)
+document.body.style.color = customData.Theme.dark_text_color; // get the background color (brown)
 
+// redux: create store for the whole website
 const store = createStore(allReducers);
 const state = store.getState();
 console.log(state);
 
-
+// CPBody Class: main component of the customize page
 class CPBody extends Component {
   constructor() {
     super();
@@ -40,7 +41,9 @@ class CPBody extends Component {
     );
   }
 }
+// CPBody Class end
 
+// StepTitle Class: child component for step titles
 class StepTitle extends Component {
   render() {
     return (
@@ -48,6 +51,6 @@ class StepTitle extends Component {
     );
   }
 }
-
+// StepTitle Class end
 
 export { CPBody, StepTitle, customData };

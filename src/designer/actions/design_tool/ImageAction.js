@@ -1,3 +1,5 @@
+// redux: action for CPStep2 - change template svg color
+
 export const SELECT_IMG = 'selectImage';
 export const IMG_COLOR = 'imageColor';
 export const IMG_CHANGE = 'imageChange';

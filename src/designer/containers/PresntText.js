@@ -6,7 +6,7 @@ function mapDispatchToProps(dispatch) {
   return {
   	actions: {
   		onClickSelected: (id) => dispatch(selectText(id)),
-        onResizeBox: (e,data,id) => dispatch(selectText(e,data,id))
+        onResizeBox: (e, data, id) => dispatch(selectText(e, data, id))
   	} 
   }
 }

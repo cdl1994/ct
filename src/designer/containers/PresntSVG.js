@@ -9,6 +9,7 @@ function mapStateToProps(state) {
   return {
     selectedSVG: state.svgSelected,
     selectedColor: state.selectedColor,
+    svgImage: state.svgImage,
   }
 }
 

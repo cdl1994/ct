@@ -25,7 +25,6 @@ class ModifText extends Component {
     // return selected;
   }
   render() {
-    console.log('aaaa');
     const textList = this.props.textList;
    // console.log(textList);
     if (textList.length == 0) {
@@ -36,18 +35,13 @@ class ModifText extends Component {
           <TextFont selectedTextFont="" id={null}/>
           <TextSize selectedTextSize="" id={null}/>
           <TextRotate selectedTextRotate="" id={null}/>
-          <Col md={4}>
-            <TextColor selectedTextColor="" id={null}/>
-          </Col>
-          <Col md={12}>
-            <TextDelete id={null}/>
-            <TextAdd />
-          </Col>
+          <TextColor selectedTextColor="" id={null}/>
+          <TextDelete id={null}/>
+          <TextAdd />
         </div>
       );
     } else {
       var selectedTextObj = this.findSelectedText(textList);
-      console.log(selectedTextObj);
       return (
         <div>
           <p className='step2Title'>{this.props.children}</p>
@@ -58,10 +52,8 @@ class ModifText extends Component {
           <Col md={4}>
             <TextColor selectedTextColor={selectedTextObj.textColor} id={selectedTextObj.id}/>
           </Col>
-          <Col md={12}>
-            <TextDelete textList={textList} id={selectedTextObj.id}/>
-            <TextAdd />
-          </Col>
+          <TextDelete textList={textList} id={selectedTextObj.id}/>
+          <TextAdd />
         </div>
       );
     }

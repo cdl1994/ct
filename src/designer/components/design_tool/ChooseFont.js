@@ -26,10 +26,6 @@ class ChooseFont extends Component {
   }
   render() {
     const fontList = this.state.fontData.map((value) => {
-      // let fontStyle = {
-      //   fontFamily: value.family
-      // };
-      // return (<option value={value.family} style={fontStyle}>{value.family}</option>);
       return {value:value.family, label:value.family}
     });
     var fontLinkList = this.state.fontData.reduce((font, value) => 
