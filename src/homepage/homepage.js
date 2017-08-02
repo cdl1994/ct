@@ -170,7 +170,7 @@ function BlogTags(props){
                     </Col>
                 </Row>
                 <div className="white-line"></div>
-                <a href="/blog" className="readmore"><img src="/image/data/default/misc/arrow-right.png" alt="right arrow" className="arrow-right" />Read More</a>
+                <a href="/blog" className="readmore"><img src="/image/catalog/default/misc/arrow-right.png" alt="right arrow" className="arrow-right" />Read More</a>
             </Col>
             <Col md={6} xs={12}>
                 <div className="white-line"></div>

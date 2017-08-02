@@ -52,7 +52,7 @@ class EnterEmail extends React.Component {
         var loading = this.state.status == 1 ? <span style={{width: "50px", height: "50px"}}><ReactLoading type="spokes" color="#444" /></span> : null;
         var inputBox =  <div><input type="text" className="input" ref="email" id="email" value={this.state.email} onChange={this.handleEmailChange} placeholder="Your Email Here"></input>
                         <button className="submitemail" id="submitNewsletter" onClick={this.submit}>
-                            <img src="/image/data/default/misc/arrow-right.png" alt="right arrow" className="arrow-right-submit" />
+                            <img src="/image/catalog/default/misc/arrow-right.png" alt="right arrow" className="arrow-right-submit" />
                         </button></div>;
         var bar = this.state.status == 2 ? <div className="font-tradegothic-stdbold">Thank you for your submission.</div> : inputBox;
         return (

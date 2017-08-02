@@ -5,12 +5,12 @@
     "dark_text_color": "#4c372e",
     "light_text_color": "#ffffff",
     "link_hover_color": "#ffffff",
-    "background_image": "image/data/custom-tobacco/Woodcut.jpg",
+    "background_image": "image/catalog/custom-tobacco/Woodcut.jpg",
     "font": "Bodoni-stdroman"
   },
   "Categories": [
     {
-      "image": "/image/data/custom-tobacco/category/Wedding.jpg",
+      "image": "/image/catalog/custom-tobacco/category/Wedding.jpg",
       "title": "Wedding",
       "templates": [
         {
@@ -28,156 +28,156 @@
       ]
     },
     {
-      "image": "/image/data/custom-tobacco/category/Valentine.jpg",
+      "image": "/image/catalog/custom-tobacco/category/Valentine.jpg",
       "title": "Valentine's Day",
       "templates": [
         {
-          "image": "/image/data/custom-tobacco/templates/Valentines1.png"
-        },
- {
-          "image": "/image/data/custom-tobacco/templates/Valentines2.png"
+          "image": "/image/catalog/custom-tobacco/templates/Valentines1.png"
         },
         {
-          "image": "/image/data/custom-tobacco/templates/Valentines3.png"
+          "image": "/image/catalog/custom-tobacco/templates/Valentines2.png"
+        },
+        {
+          "image": "/image/catalog/custom-tobacco/templates/Valentines3.png"
         }
       ]
     },
     {
-      "image": "/image/data/custom-tobacco/category/NewBaby.jpg",
+      "image": "/image/catalog/custom-tobacco/category/NewBaby.jpg",
       "title": "New Baby",
       "templates": [
         {
-          "image": "/image/data/custom-tobacco/templates/Baby1.png"
+          "image": "/image/catalog/custom-tobacco/templates/Baby1.png"
         },
         {
-          "image": "/image/data/custom-tobacco/templates/Baby2.png"
+          "image": "/image/catalog/custom-tobacco/templates/Baby2.png"
         },
         {
-          "image": "/image/data/custom-tobacco/templates/Baby3.png"
+          "image": "/image/catalog/custom-tobacco/templates/Baby3.png"
         }
       ]
     },
     {
-      "image": "/image/data/custom-tobacco/category/Holiday.png",
+      "image": "/image/catalog/custom-tobacco/category/Holiday.png",
       "title": "Holiday",
       "templates": [
         {
-          "image": "/image/data/custom-tobacco/templates/Hannukah1.png"
+          "image": "/image/catalog/custom-tobacco/templates/Hannukah1.png"
         },
         {
-          "image": "/image/data/custom-tobacco/templates/Hannukah2.png"
+          "image": "/image/catalog/custom-tobacco/templates/Hannukah2.png"
         },
         {
-          "image": "/image/data/custom-tobacco/templates/Hannukah3.png"
+          "image": "/image/catalog/custom-tobacco/templates/Hannukah3.png"
         },
         {
-          "image": "/image/data/custom-tobacco/templates/Christmas1.png"
+          "image": "/image/catalog/custom-tobacco/templates/Christmas1.png"
         },
         {
-          "image": "/image/data/custom-tobacco/templates/Christmas2.png"
+          "image": "/image/catalog/custom-tobacco/templates/Christmas2.png"
         },
         {
-          "image": "/image/data/custom-tobacco/templates/Christmas3.png"
+          "image": "/image/catalog/custom-tobacco/templates/Christmas3.png"
         }
       ]
     },
     {
-      "image": "/image/data/custom-tobacco/category/Groomsmen.png",
+      "image": "/image/catalog/custom-tobacco/category/Groomsmen.png",
       "title": "Groomsmen",
       "templates": [
         {
-          "image": "/image/data/custom-tobacco/templates/Groomsmen1.jpg"
+          "image": "/image/catalog/custom-tobacco/templates/Groomsmen1.jpg"
         },
         {
-          "image": "/image/data/custom-tobacco/templates/Groomsmen2.jpg"
+          "image": "/image/catalog/custom-tobacco/templates/Groomsmen2.jpg"
         },
         {
-          "image": "/image/data/custom-tobacco/templates/Groomsmen3.jpg"
+          "image": "/image/catalog/custom-tobacco/templates/Groomsmen3.jpg"
         }
       ]
     },
     {
-      "image": "/image/data/custom-tobacco/category/Golf.jpg",
+      "image": "/image/catalog/custom-tobacco/category/Golf.jpg",
       "title": "Golf Tournament",
       "templates": [
- {
-          "image": "/image/data/custom-tobacco/templates/Golf1.png"
+        {
+          "image": "/image/catalog/custom-tobacco/templates/Golf1.png"
         },
         {
-          "image": "/image/data/custom-tobacco/templates/Golf2.png"
+          "image": "/image/catalog/custom-tobacco/templates/Golf2.png"
         },
         {
-          "image": "/image/data/custom-tobacco/templates/Golf3.png"
+          "image": "/image/catalog/custom-tobacco/templates/Golf3.png"
         }
       ]
     },
     {
-      "image": "/image/data/custom-tobacco/category/FathersDay.JPG",
+      "image": "/image/catalog/custom-tobacco/category/FathersDay.JPG",
       "title": "Father's Day",
       "templates": [
         {
-          "image": "/image/data/custom-tobacco/templates/FathersDay1.png"
+          "image": "/image/catalog/custom-tobacco/templates/FathersDay1.png"
         },
         {
-          "image": "/image/data/custom-tobacco/templates/FathersDay2.png"
+          "image": "/image/catalog/custom-tobacco/templates/FathersDay2.png"
         },
         {
-          "image": "/image/data/custom-tobacco/templates/FathersDay3.png"
+          "image": "/image/catalog/custom-tobacco/templates/FathersDay3.png"
         }
       ]
     },
     {
-      "image": "/image/data/custom-tobacco/category/CorporateEvents.png",
+      "image": "/image/catalog/custom-tobacco/category/CorporateEvents.png",
       "title": "Corporate Event",
       "templates": [
         {
-          "image": "/image/data/custom-tobacco/templates/Corporate1.png"
+          "image": "/image/catalog/custom-tobacco/templates/Corporate1.png"
         },
         {
-  "image": "/image/data/custom-tobacco/templates/Corporate2.png"
+          "image": "/image/catalog/custom-tobacco/templates/Corporate2.png"
         },
         {
-          "image": "/image/data/custom-tobacco/templates/Corporate3.png"
+          "image": "/image/catalog/custom-tobacco/templates/Corporate3.png"
         }
       ]
     },
     {
-      "image": "/image/data/custom-tobacco/category/Birthday.png",
+      "image": "/image/catalog/custom-tobacco/category/Birthday.png",
       "title": "Birthday",
       "templates": [
         {
-          "image": "/image/data/custom-tobacco/templates/Birthday1.png"
+          "image": "/image/catalog/custom-tobacco/templates/Birthday1.png"
         },
         {
-          "image": "/image/data/custom-tobacco/templates/Birthday2.png"
+          "image": "/image/catalog/custom-tobacco/templates/Birthday2.png"
         },
         {
-          "image": "/image/data/custom-tobacco/templates/Birthday3.png"
+          "image": "/image/catalog/custom-tobacco/templates/Birthday3.png"
         }
       ]
     },
     {
-      "image": "/image/data/custom-tobacco/category/BachelorParty.png",
+      "image": "/image/catalog/custom-tobacco/category/BachelorParty.png",
       "title": "Bachelor Party",
       "templates": [
         {
-          "image": "/image/data/custom-tobacco/templates/BachelorParty1.png"
+          "image": "/image/catalog/custom-tobacco/templates/BachelorParty1.png"
         },
         {
-          "image": "/image/data/custom-tobacco/templates/BachelorParty1.png"
-  },
+          "image": "/image/catalog/custom-tobacco/templates/BachelorParty1.png"
+        },
         {
-          "image": "/image/data/custom-tobacco/templates/BachelorParty1.png"
+          "image": "/image/catalog/custom-tobacco/templates/BachelorParty1.png"
         }
       ]
     }
   ],
   "Design_background": [
     {
-      "image": "/image/data/custom-tobacco/edit_background_1.png"
+      "image": "/image/catalog/custom-tobacco/edit_background_1.png"
     },
     {
-      "image": "/image/data/custom-tobacco/edit_background_2.jpg"
+      "image": "/image/catalog/custom-tobacco/edit_background_2.jpg"
     }
   ]
 }

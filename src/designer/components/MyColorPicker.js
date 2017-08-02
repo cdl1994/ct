@@ -15,7 +15,7 @@ class MyColorPicker extends Component {
     return (
       <div>
       <div>
-        <img className="color-image" ref="image" src='image/data/custom-tobacco/colormap.gif' useMap='colormap' alt='colormap' />
+        <img className="color-image" ref="image" src='image/catalog/custom-tobacco/colormap.gif' useMap='colormap' alt='colormap' />
         <map ref="map" name='#colormap'>
           <area shape='poly' coords='63,0,72,4,72,15,63,19,54,15,54,4' onClick={() => this.handleClick("#003366",20,54)} alt='#003366' />
           <area shape='poly' coords='81,0,90,4,90,15,81,19,72,15,72,4' onClick={() => this.handleClick("#336699",20,72)} alt='#336699' />
