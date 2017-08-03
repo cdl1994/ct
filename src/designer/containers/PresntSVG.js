@@ -10,6 +10,7 @@ function mapStateToProps(state) {
     selectedSVG: state.svgSelected,
     selectedColor: state.selectedColor,
     svgImage: state.svgImage,
+    uploadedImages: state.uploadedImages,
   }
 }
 

@@ -10,6 +10,7 @@ class PresntSVG extends Component {
     this.state = {
       draw: null,
       currentUrl: "",
+      uploadedImageId: [],
     }
   }
   componentWillMount() {
@@ -31,16 +32,24 @@ class PresntSVG extends Component {
         .then((response) => response.text())
         .then((data) => this.handleLoadSvg(data));
     }
+    var outer = this;
+    this.props.uploadedImages.forEach(function(element) {
+      if (outer.state.uploadedImageId.includes(element.id)) return;
+      outer.state.uploadedImageId.push(element.id);
+      var uploaded_img = outer.state.draw.image(element.uri);
+      uploaded_img.size(null, element.boxHeight);
+      uploaded_img.node.removeAttribute('width');
+    });
   }
   handleLoadSvg(svg) {
     //var s = new XMLSerializer().serializeToString(svg);
-    console.log(this.props);
     this.props.onChangeSVG(svg);
     this.state.draw.clear();
     var final = this.state.draw.svg(this.props.svgImage);
     // final.node.lastElementChild.width.baseVal.value gets the actual width of the background image,
     // and correspondingly change the band template's width
     final.viewbox(0, 0, final.node.lastElementChild.width.baseVal.value, final.node.lastElementChild.height.baseVal.value);
+
     var svgImage = final.svg();
     
     var svgArray = [];

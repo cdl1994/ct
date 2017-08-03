@@ -5,9 +5,22 @@ import Dropzone from 'react-dropzone';
 // Step2 modify image: upload/delete images
 // not finished yet
 class ModifImage extends Component {
-  handleClick(img) {
-    console.log(img);
+  constructor(props) {
+    super(props);
   }
+
+  handleClick(img) {
+    var reader = new FileReader();
+    var dispatcher = this.props.onClickUpload;
+    reader.addEventListener("load", function () {
+      var uri = reader.result;
+      dispatcher(uri);
+    }, false);
+    if (img[0]) {
+      reader.readAsDataURL(img[0]);
+    }
+  }
+
   render() {
     return (
       <div >

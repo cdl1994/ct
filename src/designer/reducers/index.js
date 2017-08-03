@@ -7,7 +7,7 @@ import TextReducer from './design_tool/FontReducer';
 import ImageReducer from './design_tool/ImageReducer';
 import ColorReducer from './design_tool/ColorReducer';
 import SVGReducer from './design_tool/SVGReducer';
-// import SelectTextReducer from './design_tool/SelectTextReducer';
+import UploadedImageReducer from './design_tool/UploadedImageReducer';
 
 const allReducers = combineReducers({
   activeCategory: ActiveCategoryReducer,
@@ -16,6 +16,7 @@ const allReducers = combineReducers({
   svgSelected: ImageReducer,
   selectedColor: ColorReducer,
   svgImage: SVGReducer,
+  uploadedImages: UploadedImageReducer,
 });
 
 export default allReducers;

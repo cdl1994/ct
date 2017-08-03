@@ -2,6 +2,7 @@
 // rightnow no use
 import { connect } from 'react-redux';
 import ModifImage from '../components/ModifImage';
+import { uploadImage } from '../actions/design_tool/UploadImage.js';
 
 function mapDispatchToProps(dispatch) {
   return {
@@ -9,6 +10,6 @@ function mapDispatchToProps(dispatch) {
   }
 }
 
-const TextModif = connect(null, mapDispatchToProps)(ModifImage);
+const ImageModif = connect(null, mapDispatchToProps)(ModifImage);
 
 export default ImageModif;

@@ -6,7 +6,7 @@ import { StepTitle } from './CPBody';
 import PresntStep2 from '../containers/Step2Presnt';
 import ModifText from '../containers/ModifText';
 import ModifColor from './ModifColor';
-import ModifImage from './ModifImage';
+import ModifImage from '../containers/ModifImage';
 
 // Step2 Class: main component for step2
 // Step2 is design tool, including two parts: design part and modification part
