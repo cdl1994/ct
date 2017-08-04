@@ -45,15 +45,15 @@ class CategoryPage extends React.Component {
         let address;
         var suffix = "";
         if (process.env.NODE_ENV === 'production') {
-            address = window.location.host;
+            address = window.location.origin;
         }
         else {
-            address = "52.53.152.61:8080";
+            address = "http://52.53.152.61:8080";
             suffix = "&store_id=1";
         }
         axios({
             method:"get",
-            url:"http://" + address + "/index.php?route=product/cp_category/api&category=" + props.match.params.name + suffix,
+            url:address + "/index.php?route=product/cp_category/api&category=" + props.match.params.name + suffix,
         })
         .then((response) => {            
             this.setState({data: response.data});
@@ -63,7 +63,7 @@ class CategoryPage extends React.Component {
         });
         axios({
             method:"get",
-            url:"http://" + address + "/index.php?route=common/cp_footer/api" + suffix,
+            url:address + "/index.php?route=common/cp_footer/api" + suffix,
         })
         .then((response)=> {
             this.setState({footer: response.data});
@@ -73,7 +73,7 @@ class CategoryPage extends React.Component {
         });
         axios({
             method:"get",
-            url:"http://" + address + "/index.php?route=common/cp_header/api" + suffix,
+            url:address + "/index.php?route=common/cp_header/api" + suffix,
         })
         .then((response)=> {
             this.setState({header: response.data});

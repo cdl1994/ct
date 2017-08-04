@@ -8,7 +8,6 @@ export const TEXT_ROTATE = 'textRotate';
 export const ADD_TEXT = 'addText';
 export const SELECT_TEXT = 'selectText';
 export const DELETE_TEXT = 'deleteText';
-export const RESIZ_BOX = 'resizeBox';
 
 var nextTextId = 0
 
@@ -70,13 +69,6 @@ export function deleteText(id) {
 export function selectText(id) {
   return {
     type: SELECT_TEXT,
-    id: id
-  }
-}
-
-export function resizeBox(e, data, id) {
-  return {
-    type: RESIZ_BOX,
     id: id
   }
 }

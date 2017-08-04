@@ -17,7 +17,7 @@ class DeleteText extends Component {
   findLargestID() {
     var textList = this.props.textList;
     var maxID;
-    if (textList == null || textList.length == 0) {
+    if (textList === null || textList.length === 0) {
       maxID = null;
     } else {
       maxID = textList[0].id;

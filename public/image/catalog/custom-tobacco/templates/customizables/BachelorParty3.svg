@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="759px" height="439px" viewBox="0 0 759 439" style="enable-background:new 0 0 759 439;" xml:space="preserve">
+<style type="text/css">
+<![CDATA[
+	.st0{fill:#4659A7;}
+	.st1{fill:#7DA0D4;}
+	.st2{fill:#7F5E26;}
+	.st3{fill:#151943;}
+	.st4{fill:#171719;}
+	.st5{fill:#172919;}
+	.st6{fill:#18331B;}
+	.st7{fill:#E72834;}
+	.st8{fill:#E7E9E9;}
+	.st9{fill:#E8EAEA;}
+	.st10{fill-rule:evenodd;clip-rule:evenodd;fill:none;stroke:#E4C54B;stroke-width:1.7463;stroke-miterlimit:10;}
+	.st11{fill:#EAE71E;}
+	.st12{fill:#EB185B;}
+	.st13{fill:#EC2127;}
+	.st14{fill:#503C2C;}
+	.st15{fill:#507FC1;}
+	.st16{fill:#542D8B;}
+	.st17{fill:#8C6828;}
+	.st18{fill:#BF2327;}
+	.st19{fill:#231F20;}
+	.st20{fill:#F7F3A3;}
+	.st21{fill-rule:evenodd;clip-rule:evenodd;fill:none;stroke:#E4C54B;stroke-width:2.6195;stroke-miterlimit:10;}
+	.st22{fill:#C2922E;}
+	.st23{fill:#C597C5;}
+	.st24{fill:#966828;}
+	.st25{fill:#2B378B;}
+	.st26{fill:#FAA532;}
+	.st27{fill:#FBCA28;}
+	.st28{fill:#FBCD36;}
+	.st29{fill-rule:evenodd;clip-rule:evenodd;}
+	.st30{fill:#FFFFFF;}
+	.st31{fill-rule:evenodd;clip-rule:evenodd;fill:#F0CEE3;}
+	.st32{fill:#FFFFFF;stroke:#7DA0D4;stroke-miterlimit:10;}
+	.st33{fill:none;}
+	.st34{fill:#231F20;stroke:#231F20;stroke-width:0.5;stroke-miterlimit:10;}
+	.st35{fill:#679B9B;}
+	.st36{fill:#9B732B;}
+	.st37{fill:#CB7361;}
+	.st38{fill:#CC2228;}
+	.st39{fill:#311C10;}
+	.st40{fill:#EC2127;stroke:#EC2127;stroke-width:0.5;stroke-miterlimit:10;}
+	.st41{fill:#381414;}
+	.st42{fill-rule:evenodd;clip-rule:evenodd;fill:#FBCDCD;}
+	.st43{fill:#010101;}
+	.st44{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+	.st45{fill:#FFFFFF;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st46{fill-rule:evenodd;clip-rule:evenodd;fill:#641E0F;}
+	.st47{fill:#D3D3D3;}
+	.st48{fill:#060707;}
+	.st49{fill:#080908;}
+	.st50{fill:#721212;}
+	.st51{fill:#0E8141;}
+	.st52{fill:#424143;}
+	.st53{fill:#4259A8;}
+]]>
+</style>
+<g id="band">
+	<path id="Background" fill="#000000" d="M0,117.7v215h759v-215H0z M442.5,144.5l-13.3,28.8l-1.5-0.6l-48.2,96.5L365,285v36.4h-2v-37.1l15.5-17
+		l-47.3-94.6l-1.5,0.6l-13.3-28.8l0.3-0.5l-12.6-25.1h75.2h75.2l-12.6,25.1L442.5,144.5z"/>
+	<path id="LowerBowTie" fill="#FFFFFF" d="M379.5,163c-8.3,5-14.2-3.3-14.2-3.3l-34,12.9l47.3,94.6l-15.5,17v37.1h2V285l14.5-15.8
+		l48.2-96.5l-34-12.9C393.7,159.7,387.8,168,379.5,163z M379.5,235.3c-3.2,0-5.9-2.6-5.9-5.9c0-3.2,2.6-5.9,5.9-5.9s5.9,2.6,5.9,5.9
+		C385.4,232.7,382.7,235.3,379.5,235.3z M379.5,212.1c-3.2,0-5.9-2.6-5.9-5.9c0-3.2,2.6-5.9,5.9-5.9s5.9,2.6,5.9,5.9
+		C385.4,209.4,382.7,212.1,379.5,212.1z M379.5,188.8c-3.2,0-5.9-2.6-5.9-5.9c0-3.2,2.6-5.9,5.9-5.9s5.9,2.6,5.9,5.9
+		C385.4,186.2,382.7,188.8,379.5,188.8z"/>
+	<path id="UpperBowTie" fill="#FFFFFF" d="M379.5,118.8h-75.2l12.6,25.1l12.2-19c0,0,15,5.5,37.5,13.8c5.9-6,12-3.3,13-2.5
+		c0.9-0.8,7.1-3.5,13,2.5C415,130.5,430,125,430,125l12.2,19l12.6-25.1H379.5z"/>
+	<g id="Dotters">
+		<circle id="XMLID_284_" cx="379.5" cy="182.9" r="5.9"/>
+		<circle id="XMLID_285_" cx="379.5" cy="206.2" r="5.9"/>
+		<circle id="XMLID_286_" cx="379.5" cy="229.4" r="5.9"/>
+	</g>
+	<path id="BowTie" d="M392.5,138.7c-5.9-6-12-3.3-13-2.5c-0.9-0.8-7.1-3.5-13,2.5C344,130.5,329,125,329,125l-12.2,19l-0.3,0.5
+		l13.3,28.8l1.5-0.6l34-12.9c0,0,5.9,8.3,14.2,3.3c8.3,5,14.2-3.3,14.2-3.3l34,12.9l1.5,0.6l13.3-28.8l-0.3-0.5L430,125
+		C430,125,415,130.5,392.5,138.7z"/>
+	<g id="SideLine">
+		<path id="XMLID_193_" fill="#FFFFFF" d="M454.7,194L376,278.2c0,0,16.3-9.8,31.8-28S454.7,194,454.7,194z"/>
+		<polygon id="XMLID_196_" fill="#FFFFFF" points="314,197.5 374.5,265 371.3,269.2 "/>
+	</g>
+	<circle id="LowerDotter" fill="#FFFFFF" cx="377.4" cy="297.5" r="7.3"/>
+	<text x="257" class="svg_element" y="318.5" onclick="choose_text('text1')" id="text1" font-size="30" font-family="IM Fell Great Primer SC" fill="#FFFFFF" transform="rotate(null,null,null)">DUDE,<title></title></text>
+	<text x="395.17340087890625" class="svg_element" y="317.1900329589844" onclick="choose_text('text2')" id="text2" font-size="30" font-family="IM Fell Great Primer SC" fill="#FFFFFF" transform="rotate(null,null,null)">BE MY GROOMSMAN?<title></title></text>
+</g>
+</svg>

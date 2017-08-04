@@ -4,9 +4,9 @@ import { Row, Col, Button, DropdownButton, MenuItem } from 'react-bootstrap';
 
 import { StepTitle } from './CPBody';
 import PresntStep2 from '../containers/Step2Presnt';
-import ModifText from '../containers/ModifText';
-import ModifColor from './ModifColor';
-import ModifImage from '../containers/ModifImage';
+import ModifText from '../containers/design_tool/ModifText';
+import ModifColor from './design_tool/ModifColor';
+import ModifImage from '../containers/design_tool/ModifImage';
 
 // Step2 Class: main component for step2
 // Step2 is design tool, including two parts: design part and modification part
@@ -25,7 +25,8 @@ class Step2 extends Component {
             <h3 className='dragItemsTo'>Drag Items to Position on Label</h3>
           </Col>
         </Row>
-        <PresntStep2 designBackground = {this.props.design_background} />
+        <PresntStep2 design_background_left = {this.props.design_background_left}
+                design_background_right = {this.props.design_background_right} />
         <Step2Modif />
       </div>
     );
@@ -53,3 +54,4 @@ class Step2Modif extends Component {
 }
 
 export default Step2;
+

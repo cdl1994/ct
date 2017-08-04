@@ -28,7 +28,7 @@ class EnterEmail extends React.Component {
     submit(event) {
         let address;
         if (process.env.NODE_ENV === 'production') {
-            address = window.location.host;
+            address = window.location.origin;
         }
         else {
             address = "http://52.53.152.61:8080";

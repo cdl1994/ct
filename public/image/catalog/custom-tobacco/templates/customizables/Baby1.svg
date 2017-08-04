@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="759px" height="439px" viewBox="0 0 759 439" style="enable-background:new 0 0 759 439;" xml:space="preserve">
+<style type="text/css">
+<![CDATA[
+	.st0{fill:#4659A7;}
+	.st1{fill:#7DA0D4;}
+	.st2{fill:#7F5E26;}
+	.st3{fill:#151943;}
+	.st4{fill:#171719;}
+	.st5{fill:#172919;}
+	.st6{fill:#18331B;}
+	.st7{fill:#E72834;}
+	.st8{fill:#E7E9E9;}
+	.st9{fill:#E8EAEA;}
+	.st10{fill-rule:evenodd;clip-rule:evenodd;fill:none;stroke:#E4C54B;stroke-width:1.7463;stroke-miterlimit:10;}
+	.st11{fill:#EAE71E;}
+	.st12{fill:#EB185B;}
+	.st13{fill:#EC2127;}
+	.st14{fill:#503C2C;}
+	.st15{fill:#507FC1;}
+	.st16{fill:#542D8B;}
+	.st17{fill:#8C6828;}
+	.st18{fill:#BF2327;}
+	.st19{fill:#231F20;}
+	.st20{fill:#F7F3A3;}
+	.st21{fill-rule:evenodd;clip-rule:evenodd;fill:none;stroke:#E4C54B;stroke-width:2.6195;stroke-miterlimit:10;}
+	.st22{fill:#C2922E;}
+	.st23{fill:#C597C5;}
+	.st24{fill:#966828;}
+	.st25{fill:#2B378B;}
+	.st26{fill:#FAA532;}
+	.st27{fill:#FBCA28;}
+	.st28{fill:#FBCD36;}
+	.st29{fill-rule:evenodd;clip-rule:evenodd;}
+	.st30{fill:#FFFFFF;}
+	.st31{fill-rule:evenodd;clip-rule:evenodd;fill:#F0CEE3;}
+	.st32{fill:#FFFFFF;stroke:#7DA0D4;stroke-miterlimit:10;}
+	.st33{fill:none;}
+	.st34{fill:#231F20;stroke:#231F20;stroke-width:0.5;stroke-miterlimit:10;}
+	.st35{fill:#679B9B;}
+	.st36{fill:#9B732B;}
+	.st37{fill:#CB7361;}
+	.st38{fill:#CC2228;}
+	.st39{fill:#311C10;}
+	.st40{fill:#EC2127;stroke:#EC2127;stroke-width:0.5;stroke-miterlimit:10;}
+	.st41{fill:#381414;}
+	.st42{fill-rule:evenodd;clip-rule:evenodd;fill:#FBCDCD;}
+	.st43{fill:#010101;}
+	.st44{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+	.st45{fill:#FFFFFF;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st46{fill-rule:evenodd;clip-rule:evenodd;fill:#641E0F;}
+	.st47{fill:#D3D3D3;}
+	.st48{fill:#060707;}
+	.st49{fill:#080908;}
+	.st50{fill:#721212;}
+	.st51{fill:#0E8141;}
+	.st52{fill:#424143;}
+	.st53{fill:#4259A8;}
+]]>
+</style>
+<g id="band">
+	<g id="Background">
+		<path id="XMLID_1611_" fill="#7DA0D4" d="M284,155H0v129h284c-12.5-18.4-19.8-40.6-19.8-64.5C264.2,195.6,271.5,173.4,284,155z"/>
+		<path id="XMLID_1612_" fill="#7DA0D4" d="M759,155H475c12.5,18.4,19.8,40.6,19.8,64.5c0,23.9-7.3,46.1-19.8,64.5h284V155z"/>
+		<path id="XMLID_1616_" fill="#7DA0D4" d="M475,155c-20.7-30.6-55.8-50.8-95.5-50.8c-39.7,0-74.8,20.2-95.5,50.8
+			c-12.5,18.4-19.8,40.6-19.8,64.5c0,23.9,7.3,46.1,19.8,64.5c20.7,30.6,55.8,50.8,95.5,50.8c39.7,0,74.8-20.2,95.5-50.8
+			c12.5-18.4,19.8-40.6,19.8-64.5C494.8,195.6,487.5,173.4,475,155z M379.5,324.8c-58.1,0-105.3-47.2-105.3-105.3
+			s47.2-105.3,105.3-105.3c58.1,0,105.3,47.2,105.3,105.3S437.6,324.8,379.5,324.8z"/>
+	</g>
+	<g id="Footprint">
+		<path id="XMLID_832_" fill="#FFFFFF" d="M27.4,194.3c2.3-1.8,2.8-5.4-2.1-8.7S9.8,186.8,10,196.3s12.4,19.6,17.1,18.8
+		c4.7-0.8,6.3-5.1,3.7-6.8c-2.6-1.8-7.8-3.9-7.9-7.8S25.9,195.6,27.4,194.3z"/>
+		<ellipse id="XMLID_836_" fill="#FFFFFF" cx="27" cy="180" rx="3.7" ry="4.2"/>
+		<ellipse id="XMLID_837_" transform="matrix(0.9995 -3.074045e-002 3.074045e-002 0.9995 -5.5287 0.666)" fill="#FFFFFF" cx="18.9" cy="180.1" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_839_" transform="matrix(0.9117 -0.4108 0.4108 0.9117 -73.8595 21.6393)" fill="#FFFFFF" cx="13.4" cy="182.7" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_840_" transform="matrix(0.6849 -0.7286 0.7286 0.6849 -133.3953 65.7933)" fill="#FFFFFF" cx="9.4" cy="187.1" rx="2.1" ry="2.6"/>
+		<ellipse id="XMLID_770_" transform="matrix(0.3905 -0.9206 0.9206 0.3905 -172.5982 123.409)" fill="#FFFFFF" cx="6.9" cy="192.1" rx="2" ry="2.4"/>
+		<path id="XMLID_775_" fill="#FFFFFF" d="M38.2,194.3c-2.3-1.8-2.8-5.4,2.1-8.7c4.9-3.3,15.6,1.2,15.3,10.7s-12.4,19.6-17.1,18.8
+		c-4.7-0.8-6.3-5.1-3.7-6.8s7.8-3.9,7.9-7.8C42.8,196.7,39.7,195.6,38.2,194.3z"/>
+		<ellipse id="XMLID_774_" fill="#FFFFFF" cx="38.6" cy="180" rx="3.7" ry="4.2"/>
+		<ellipse id="XMLID_773_" transform="matrix(-0.9995 -3.073414e-002 3.073414e-002 -0.9995 87.8281 361.6356)" fill="#FFFFFF" cx="46.7" cy="180.1" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_772_" transform="matrix(-0.9117 -0.4109 0.4109 -0.9117 24.6757 370.6287)" fill="#FFFFFF" cx="52.2" cy="182.7" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_776_" transform="matrix(-0.6849 -0.7286 0.7286 -0.6849 -41.636 356.2617)" fill="#FFFFFF" cx="56.2" cy="187.1" rx="2.1" ry="2.6"/>
+		<ellipse id="XMLID_777_" transform="matrix(-0.3905 -0.9206 0.9206 -0.3905 -95.2081 321.0902)" fill="#FFFFFF" cx="58.7" cy="192.1" rx="2" ry="2.4"/>
+		<path id="XMLID_850_" fill="#FFFFFF" d="M94,194.3c2.3-1.8,2.8-5.4-2.1-8.7c-4.9-3.3-15.6,1.2-15.3,10.7s12.4,19.6,17.1,18.8
+		c4.7-0.8,6.3-5.1,3.7-6.8s-7.8-3.9-7.9-7.8C89.4,196.7,92.5,195.6,94,194.3z"/>
+		<ellipse id="XMLID_849_" fill="#FFFFFF" cx="93.6" cy="180" rx="3.7" ry="4.2"/>
+		<ellipse id="XMLID_848_" transform="matrix(0.9995 -3.074045e-002 3.074045e-002 0.9995 -5.4973 2.7128)" fill="#FFFFFF" cx="85.5" cy="180.1" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_847_" transform="matrix(0.9117 -0.4109 0.4109 0.9117 -67.9921 49.0066)" fill="#FFFFFF" cx="80" cy="182.7" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_846_" transform="matrix(0.6849 -0.7286 0.7286 0.6849 -112.416 114.3074)" fill="#FFFFFF" cx="76" cy="187.1" rx="2.1" ry="2.6"/>
+		<ellipse id="XMLID_845_" transform="matrix(0.3905 -0.9206 0.9206 0.3905 -132.0189 184.7045)" fill="#FFFFFF" cx="73.5" cy="192.1" rx="2" ry="2.4"/>
+		<path id="XMLID_843_" fill="#FFFFFF" d="M104.7,194.3c-2.3-1.8-2.8-5.4,2.1-8.7s15.6,1.2,15.3,10.7s-12.4,19.6-17.1,18.8
+		c-4.7-0.8-6.3-5.1-3.7-6.8c2.6-1.8,7.8-3.9,7.9-7.8S106.3,195.6,104.7,194.3z"/>
+		<ellipse id="XMLID_842_" fill="#FFFFFF" cx="105.2" cy="180" rx="3.7" ry="4.2"/>
+		<ellipse id="XMLID_841_" transform="matrix(-0.9995 -3.074034e-002 3.074034e-002 -0.9995 220.9615 363.6826)" fill="#FFFFFF" cx="113.3" cy="180.1" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_838_" transform="matrix(-0.9117 -0.4109 0.4109 -0.9117 151.9608 397.9885)" fill="#FFFFFF" cx="118.8" cy="182.7" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_789_" transform="matrix(-0.6849 -0.7286 0.7286 -0.6849 70.5517 404.7758)" fill="#FFFFFF" cx="122.8" cy="187.1" rx="2.1" ry="2.6"/>
+		<ellipse id="XMLID_793_" transform="matrix(-0.3905 -0.9206 0.9206 -0.3905 -2.6205 382.3858)" fill="#FFFFFF" cx="125.3" cy="192.1" rx="2" ry="2.4"/>
+		<path id="XMLID_867_" fill="#FFFFFF" d="M160.6,194.3c2.3-1.8,2.8-5.4-2.1-8.7c-4.9-3.3-15.6,1.2-15.3,10.7s12.4,19.6,17.1,18.8
+		c4.7-0.8,6.3-5.1,3.7-6.8c-2.6-1.8-7.8-3.9-7.9-7.8C155.9,196.7,159,195.6,160.6,194.3z"/>
+		<ellipse id="XMLID_866_" fill="#FFFFFF" cx="160.2" cy="180" rx="3.7" ry="4.2"/>
+		<ellipse id="XMLID_865_" transform="matrix(0.9995 -3.073414e-002 3.073414e-002 0.9995 -5.4647 4.7585)" fill="#FFFFFF" cx="152.1" cy="180.1" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_864_" transform="matrix(0.9117 -0.4108 0.4108 0.9117 -62.1022 76.3487)" fill="#FFFFFF" cx="146.6" cy="182.7" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_863_" transform="matrix(0.6849 -0.7286 0.7286 0.6849 -91.4367 162.8215)" fill="#FFFFFF" cx="142.5" cy="187.1" rx="2.1" ry="2.6"/>
+		<ellipse id="XMLID_862_" transform="matrix(0.3905 -0.9206 0.9206 0.3905 -91.4396 246.0001)" fill="#FFFFFF" cx="140.1" cy="192.1" rx="2" ry="2.4"/>
+		<path id="XMLID_860_" fill="#FFFFFF" d="M171.3,194.3c-2.3-1.8-2.8-5.4,2.1-8.7c4.9-3.3,15.6,1.2,15.3,10.7s-12.4,19.6-17.1,18.8
+		c-4.7-0.8-6.3-5.1-3.7-6.8c2.6-1.8,7.8-3.9,7.9-7.8C176,196.7,172.9,195.6,171.3,194.3z"/>
+		<ellipse id="XMLID_859_" fill="#FFFFFF" cx="171.8" cy="180" rx="3.7" ry="4.2"/>
+		<ellipse id="XMLID_858_" transform="matrix(-0.9995 -3.073414e-002 3.073414e-002 -0.9995 354.0992 365.7284)" fill="#FFFFFF" cx="179.9" cy="180.1" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_857_" transform="matrix(-0.9117 -0.4108 0.4108 -0.9117 279.2682 425.3407)" fill="#FFFFFF" cx="185.3" cy="182.7" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_856_" transform="matrix(-0.6849 -0.7286 0.7286 -0.6849 182.7386 453.2896)" fill="#FFFFFF" cx="189.4" cy="187.1" rx="2.1" ry="2.6"/>
+		<ellipse id="XMLID_855_" transform="matrix(-0.3905 -0.9206 0.9206 -0.3905 89.9665 443.6809)" fill="#FFFFFF" cx="191.8" cy="192.1" rx="2" ry="2.4"/>
+		<path id="XMLID_882_" fill="#FFFFFF" d="M227.2,194.3c2.3-1.8,2.8-5.4-2.1-8.7s-15.6,1.2-15.3,10.7s12.4,19.6,17.1,18.8
+		c4.7-0.8,6.3-5.1,3.7-6.8c-2.6-1.8-7.8-3.9-7.9-7.8S225.6,195.6,227.2,194.3z"/>
+		<ellipse id="XMLID_881_" fill="#FFFFFF" cx="226.7" cy="180" rx="3.7" ry="4.2"/>
+		<ellipse id="XMLID_880_" transform="matrix(0.9995 -3.074045e-002 3.074045e-002 0.9995 -5.4343 6.8064)" fill="#FFFFFF" cx="218.6" cy="180.1" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_879_" transform="matrix(0.9117 -0.4108 0.4108 0.9117 -56.2235 103.7035)" fill="#FFFFFF" cx="213.2" cy="182.7" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_878_" transform="matrix(0.6849 -0.7286 0.7286 0.6849 -70.4576 211.3353)" fill="#FFFFFF" cx="209.1" cy="187.1" rx="2.1" ry="2.6"/>
+		<ellipse id="XMLID_877_" transform="matrix(0.3905 -0.9206 0.9206 0.3905 -50.8605 307.2952)" fill="#FFFFFF" cx="206.7" cy="192.1" rx="2" ry="2.4"/>
+		<path id="XMLID_875_" fill="#FFFFFF" d="M237.9,194.3c-2.3-1.8-2.8-5.4,2.1-8.7c4.9-3.3,15.6,1.2,15.3,10.7s-12.4,19.6-17.1,18.8
+		c-4.7-0.8-6.3-5.1-3.7-6.8s7.8-3.9,7.9-7.8C242.6,196.7,239.5,195.6,237.9,194.3z"/>
+		<ellipse id="XMLID_874_" fill="#FFFFFF" cx="238.3" cy="180" rx="3.7" ry="4.2"/>
+		<ellipse id="XMLID_873_" transform="matrix(-0.9995 -3.073414e-002 3.073414e-002 -0.9995 487.2338 367.7748)" fill="#FFFFFF" cx="246.4" cy="180.1" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_872_" transform="matrix(-0.9117 -0.4109 0.4109 -0.9117 406.5328 452.7083)" fill="#FFFFFF" cx="251.9" cy="182.7" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_871_" transform="matrix(-0.6849 -0.7286 0.7286 -0.6849 294.9262 501.8037)" fill="#FFFFFF" cx="256" cy="187.1" rx="2.1" ry="2.6"/>
+		<ellipse id="XMLID_870_" transform="matrix(-0.3905 -0.9206 0.9206 -0.3905 182.5542 504.9764)" fill="#FFFFFF" cx="258.4" cy="192.1" rx="2" ry="2.4"/>
+		<path id="XMLID_954_" fill="#FFFFFF" d="M27.4,242.3c2.3-1.8,2.8-5.4-2.1-8.7S9.8,234.8,10,244.3s12.4,19.6,17.1,18.8
+		c4.7-0.8,6.3-5.1,3.7-6.8c-2.6-1.8-7.8-3.9-7.9-7.8S25.9,243.6,27.4,242.3z"/>
+		<ellipse id="XMLID_953_" fill="#FFFFFF" cx="27" cy="228" rx="3.7" ry="4.2"/>
+		<ellipse id="XMLID_952_" transform="matrix(0.9995 -3.074045e-002 3.074045e-002 0.9995 -7.0043 0.6886)" fill="#FFFFFF" cx="18.9" cy="228.1" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_951_" transform="matrix(0.9117 -0.4108 0.4108 0.9117 -93.5796 25.8772)" fill="#FFFFFF" cx="13.4" cy="230.7" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_950_" transform="matrix(0.6849 -0.7286 0.7286 0.6849 -168.3691 80.9173)" fill="#FFFFFF" cx="9.4" cy="235.1" rx="2.1" ry="2.6"/>
+		<ellipse id="XMLID_949_" transform="matrix(0.3905 -0.9206 0.9206 0.3905 -216.7861 152.6626)" fill="#FFFFFF" cx="6.9" cy="240.1" rx="2" ry="2.4"/>
+		<path id="XMLID_947_" fill="#FFFFFF" d="M38.2,242.3c-2.3-1.8-2.8-5.4,2.1-8.7c4.9-3.3,15.6,1.2,15.3,10.7s-12.4,19.6-17.1,18.8
+		c-4.7-0.8-6.3-5.1-3.7-6.8s7.8-3.9,7.9-7.8C42.8,244.7,39.7,243.6,38.2,242.3z"/>
+		<ellipse id="XMLID_944_" fill="#FFFFFF" cx="38.6" cy="228" rx="3.7" ry="4.2"/>
+		<ellipse id="XMLID_943_" transform="matrix(-0.9995 -3.073414e-002 3.073414e-002 -0.9995 86.3529 457.6129)" fill="#FFFFFF" cx="46.7" cy="228.1" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_942_" transform="matrix(-0.9117 -0.4109 0.4109 -0.9117 4.9519 462.3891)" fill="#FFFFFF" cx="52.2" cy="230.7" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_941_" transform="matrix(-0.6849 -0.7286 0.7286 -0.6849 -76.6098 437.1377)" fill="#FFFFFF" cx="56.2" cy="235.1" rx="2.1" ry="2.6"/>
+		<ellipse id="XMLID_940_" transform="matrix(-0.3905 -0.9206 0.9206 -0.3905 -139.3961 387.8366)" fill="#FFFFFF" cx="58.7" cy="240.1" rx="2" ry="2.4"/>
+		<path id="XMLID_937_" fill="#FFFFFF" d="M94,242.3c2.3-1.8,2.8-5.4-2.1-8.7c-4.9-3.3-15.6,1.2-15.3,10.7s12.4,19.6,17.1,18.8
+		c4.7-0.8,6.3-5.1,3.7-6.8s-7.8-3.9-7.9-7.8C89.4,244.7,92.5,243.6,94,242.3z"/>
+		<ellipse id="XMLID_936_" fill="#FFFFFF" cx="93.6" cy="228" rx="3.7" ry="4.2"/>
+		<ellipse id="XMLID_935_" transform="matrix(0.9995 -3.074045e-002 3.074045e-002 0.9995 -6.9728 2.7354)" fill="#FFFFFF" cx="85.5" cy="228.1" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_934_" transform="matrix(0.9117 -0.4109 0.4109 0.9117 -87.7159 53.2462)" fill="#FFFFFF" cx="80" cy="230.7" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_933_" transform="matrix(0.6849 -0.7286 0.7286 0.6849 -147.3898 129.4314)" fill="#FFFFFF" cx="76" cy="235.1" rx="2.1" ry="2.6"/>
+		<ellipse id="XMLID_932_" transform="matrix(0.3905 -0.9206 0.9206 0.3905 -176.2068 213.9581)" fill="#FFFFFF" cx="73.5" cy="240.1" rx="2" ry="2.4"/>
+		<path id="XMLID_930_" fill="#FFFFFF" d="M104.7,242.3c-2.3-1.8-2.8-5.4,2.1-8.7s15.6,1.2,15.3,10.7s-12.4,19.6-17.1,18.8
+		c-4.7-0.8-6.3-5.1-3.7-6.8c2.6-1.8,7.8-3.9,7.9-7.8S106.3,243.6,104.7,242.3z"/>
+		<ellipse id="XMLID_929_" fill="#FFFFFF" cx="105.2" cy="228" rx="3.7" ry="4.2"/>
+		<ellipse id="XMLID_928_" transform="matrix(-0.9995 -3.074034e-002 3.074034e-002 -0.9995 219.486 459.66)" fill="#FFFFFF" cx="113.3" cy="228.1" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_926_" transform="matrix(-0.9117 -0.4109 0.4109 -0.9117 132.237 489.7489)" fill="#FFFFFF" cx="118.8" cy="230.7" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_925_" transform="matrix(-0.6849 -0.7286 0.7286 -0.6849 35.5779 485.6518)" fill="#FFFFFF" cx="122.8" cy="235.1" rx="2.1" ry="2.6"/>
+		<ellipse id="XMLID_924_" transform="matrix(-0.3905 -0.9206 0.9206 -0.3905 -46.8084 449.1322)" fill="#FFFFFF" cx="125.3" cy="240.1" rx="2" ry="2.4"/>
+		<path id="XMLID_921_" fill="#FFFFFF" d="M160.6,242.3c2.3-1.8,2.8-5.4-2.1-8.7c-4.9-3.3-15.6,1.2-15.3,10.7s12.4,19.6,17.1,18.8
+		c4.7-0.8,6.3-5.1,3.7-6.8c-2.6-1.8-7.8-3.9-7.9-7.8C155.9,244.7,159,243.6,160.6,242.3z"/>
+		<ellipse id="XMLID_920_" fill="#FFFFFF" cx="160.2" cy="228" rx="3.7" ry="4.2"/>
+		<ellipse id="XMLID_919_" transform="matrix(0.9995 -3.073414e-002 3.073414e-002 0.9995 -6.9399 4.7812)" fill="#FFFFFF" cx="152.1" cy="228.1" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_910_" transform="matrix(0.9117 -0.4108 0.4108 0.9117 -81.8223 80.5866)" fill="#FFFFFF" cx="146.6" cy="230.7" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_909_" transform="matrix(0.6849 -0.7286 0.7286 0.6849 -126.4105 177.9455)" fill="#FFFFFF" cx="142.5" cy="235.1" rx="2.1" ry="2.6"/>
+		<ellipse id="XMLID_908_" transform="matrix(0.3905 -0.9206 0.9206 0.3905 -135.6275 275.2537)" fill="#FFFFFF" cx="140.1" cy="240.1" rx="2" ry="2.4"/>
+		<path id="XMLID_906_" fill="#FFFFFF" d="M171.3,242.3c-2.3-1.8-2.8-5.4,2.1-8.7c4.9-3.3,15.6,1.2,15.3,10.7s-12.4,19.6-17.1,18.8
+		c-4.7-0.8-6.3-5.1-3.7-6.8c2.6-1.8,7.8-3.9,7.9-7.8C176,244.7,172.9,243.6,171.3,242.3z"/>
+		<ellipse id="XMLID_905_" fill="#FFFFFF" cx="171.8" cy="228" rx="3.7" ry="4.2"/>
+		<ellipse id="XMLID_904_" transform="matrix(-0.9995 -3.073414e-002 3.073414e-002 -0.9995 352.624 461.7057)" fill="#FFFFFF" cx="179.9" cy="228.1" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_903_" transform="matrix(-0.9117 -0.4108 0.4108 -0.9117 259.5481 517.1027)" fill="#FFFFFF" cx="185.3" cy="230.7" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_902_" transform="matrix(-0.6849 -0.7286 0.7286 -0.6849 147.7648 534.1656)" fill="#FFFFFF" cx="189.4" cy="235.1" rx="2.1" ry="2.6"/>
+		<ellipse id="XMLID_901_" transform="matrix(-0.3905 -0.9206 0.9206 -0.3905 45.7786 510.4273)" fill="#FFFFFF" cx="191.8" cy="240.1" rx="2" ry="2.4"/>
+		<path id="XMLID_898_" fill="#FFFFFF" d="M227.2,242.3c2.3-1.8,2.8-5.4-2.1-8.7s-15.6,1.2-15.3,10.7s12.4,19.6,17.1,18.8
+		c4.7-0.8,6.3-5.1,3.7-6.8c-2.6-1.8-7.8-3.9-7.9-7.8S225.6,243.6,227.2,242.3z"/>
+		<ellipse id="XMLID_897_" fill="#FFFFFF" cx="226.7" cy="228" rx="3.7" ry="4.2"/>
+		<ellipse id="XMLID_896_" transform="matrix(0.9995 -3.074045e-002 3.074045e-002 0.9995 -6.9099 6.8291)" fill="#FFFFFF" cx="218.6" cy="228.1" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_895_" transform="matrix(0.9117 -0.4108 0.4108 0.9117 -75.9436 107.9414)" fill="#FFFFFF" cx="213.2" cy="230.7" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_894_" transform="matrix(0.6849 -0.7286 0.7286 0.6849 -105.4313 226.4593)" fill="#FFFFFF" cx="209.1" cy="235.1" rx="2.1" ry="2.6"/>
+		<ellipse id="XMLID_893_" transform="matrix(0.3905 -0.9206 0.9206 0.3905 -95.0485 336.5488)" fill="#FFFFFF" cx="206.7" cy="240.1" rx="2" ry="2.4"/>
+		<path id="XMLID_890_" fill="#FFFFFF" d="M237.9,242.3c-2.3-1.8-2.8-5.4,2.1-8.7c4.9-3.3,15.6,1.2,15.3,10.7s-12.4,19.6-17.1,18.8
+		c-4.7-0.8-6.3-5.1-3.7-6.8s7.8-3.9,7.9-7.8C242.6,244.7,239.5,243.6,237.9,242.3z"/>
+		<ellipse id="XMLID_889_" fill="#FFFFFF" cx="238.3" cy="228" rx="3.7" ry="4.2"/>
+		<ellipse id="XMLID_888_" transform="matrix(-0.9995 -3.073414e-002 3.073414e-002 -0.9995 485.7585 463.7521)" fill="#FFFFFF" cx="246.4" cy="228.1" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_887_" transform="matrix(-0.9117 -0.4109 0.4109 -0.9117 386.809 544.4688)" fill="#FFFFFF" cx="251.9" cy="230.7" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_886_" transform="matrix(-0.6849 -0.7286 0.7286 -0.6849 259.9524 582.6797)" fill="#FFFFFF" cx="256" cy="235.1" rx="2.1" ry="2.6"/>
+		<ellipse id="XMLID_885_" transform="matrix(-0.3905 -0.9206 0.9206 -0.3905 138.3663 571.7228)" fill="#FFFFFF" cx="258.4" cy="240.1" rx="2" ry="2.4"/>
+		<path id="XMLID_1594_" fill="#FFFFFF" d="M521.1,194.3c2.3-1.8,2.8-5.4-2.1-8.7c-4.9-3.3-15.6,1.2-15.3,10.7s12.4,19.6,17.1,18.8
+		c4.7-0.8,6.3-5.1,3.7-6.8s-7.8-3.9-7.9-7.8C516.4,196.7,519.5,195.6,521.1,194.3z"/>
+		<ellipse id="XMLID_1593_" fill="#FFFFFF" cx="520.7" cy="180" rx="3.7" ry="4.2"/>
+		<ellipse id="XMLID_1592_" transform="matrix(0.9995 -3.074045e-002 3.074045e-002 0.9995 -5.2954 15.8414)" fill="#FFFFFF" cx="512.6" cy="180.1" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_1591_" transform="matrix(0.9117 -0.4109 0.4109 0.9117 -30.2704 224.4984)" fill="#FFFFFF" cx="507.1" cy="182.7" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_1590_" transform="matrix(0.6849 -0.7286 0.7286 0.6849 22.1492 425.4861)" fill="#FFFFFF" cx="503" cy="187.1" rx="2.1" ry="2.6"/>
+		<ellipse id="XMLID_1589_" transform="matrix(0.3905 -0.9206 0.9206 0.3905 128.2646 577.8657)" fill="#FFFFFF" cx="500.6" cy="192.1" rx="2" ry="2.4"/>
+		<path id="XMLID_1587_" fill="#FFFFFF" d="M531.8,194.3c-2.3-1.8-2.8-5.4,2.1-8.7s15.6,1.2,15.3,10.7s-12.4,19.6-17.1,18.8
+		c-4.7-0.8-6.3-5.1-3.7-6.8c2.6-1.8,7.8-3.9,7.9-7.8S533.4,195.6,531.8,194.3z"/>
+		<ellipse id="XMLID_1586_" fill="#FFFFFF" cx="532.3" cy="180" rx="3.7" ry="4.2"/>
+		<ellipse id="XMLID_1585_" transform="matrix(-0.9995 -3.074034e-002 3.074034e-002 -0.9995 1074.918 376.8112)" fill="#FFFFFF" cx="540.4" cy="180.1" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_1584_" transform="matrix(-0.9117 -0.4109 0.4109 -0.9117 968.3972 573.4803)" fill="#FFFFFF" cx="545.8" cy="182.7" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_1583_" transform="matrix(-0.6849 -0.7286 0.7286 -0.6849 790.1447 715.9545)" fill="#FFFFFF" cx="549.9" cy="187.1" rx="2.1" ry="2.6"/>
+		<ellipse id="XMLID_1582_" transform="matrix(-0.3905 -0.9206 0.9206 -0.3905 591.2537 775.5466)" fill="#FFFFFF" cx="552.3" cy="192.1" rx="2" ry="2.4"/>
+		<path id="XMLID_1579_" fill="#FFFFFF" d="M587.7,194.3c2.3-1.8,2.8-5.4-2.1-8.7c-4.9-3.3-15.6,1.2-15.3,10.7s12.4,19.6,17.1,18.8
+		c4.7-0.8,6.3-5.1,3.7-6.8c-2.6-1.8-7.8-3.9-7.9-7.8C583,196.7,586.1,195.6,587.7,194.3z"/>
+		<ellipse id="XMLID_1578_" fill="#FFFFFF" cx="587.2" cy="180" rx="3.7" ry="4.2"/>
+		<ellipse id="XMLID_1577_" transform="matrix(0.9995 -3.073414e-002 3.073414e-002 0.9995 -5.2629 17.8845)" fill="#FFFFFF" cx="579.1" cy="180.1" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_1576_" transform="matrix(0.9117 -0.4108 0.4108 0.9117 -24.3953 251.8076)" fill="#FFFFFF" cx="573.7" cy="182.7" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_1575_" transform="matrix(0.6849 -0.7286 0.7286 0.6849 43.1285 474.0002)" fill="#FFFFFF" cx="569.6" cy="187.1" rx="2.1" ry="2.6"/>
+		<ellipse id="XMLID_1574_" transform="matrix(0.3905 -0.9206 0.9206 0.3905 168.8439 639.1613)" fill="#FFFFFF" cx="567.2" cy="192.1" rx="2" ry="2.4"/>
+		<path id="XMLID_1572_" fill="#FFFFFF" d="M598.4,194.3c-2.3-1.8-2.8-5.4,2.1-8.7c4.9-3.3,15.6,1.2,15.3,10.7s-12.4,19.6-17.1,18.8
+		c-4.7-0.8-6.3-5.1-3.7-6.8c2.6-1.8,7.8-3.9,7.9-7.8C603.1,196.7,600,195.6,598.4,194.3z"/>
+		<ellipse id="XMLID_1571_" fill="#FFFFFF" cx="598.8" cy="180" rx="3.7" ry="4.2"/>
+		<ellipse id="XMLID_1570_" transform="matrix(-0.9995 -3.073414e-002 3.073414e-002 -0.9995 1208.0547 378.8543)" fill="#FFFFFF" cx="606.9" cy="180.1" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_1569_" transform="matrix(-0.9117 -0.4108 0.4108 -0.9117 1095.7195 600.7997)" fill="#FFFFFF" cx="612.4" cy="182.7" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_1568_" transform="matrix(-0.6849 -0.7286 0.7286 -0.6849 902.3315 764.4683)" fill="#FFFFFF" cx="616.5" cy="187.1" rx="2.1" ry="2.6"/>
+		<ellipse id="XMLID_1567_" transform="matrix(-0.3905 -0.9206 0.9206 -0.3905 683.8413 836.8422)" fill="#FFFFFF" cx="618.9" cy="192.1" rx="2" ry="2.4"/>
+		<path id="XMLID_1564_" fill="#FFFFFF" d="M654.3,194.3c2.3-1.8,2.8-5.4-2.1-8.7s-15.6,1.2-15.3,10.7s12.4,19.6,17.1,18.8
+		c4.7-0.8,6.3-5.1,3.7-6.8c-2.6-1.8-7.8-3.9-7.9-7.8S652.7,195.6,654.3,194.3z"/>
+		<ellipse id="XMLID_1563_" fill="#FFFFFF" cx="653.8" cy="180" rx="3.7" ry="4.2"/>
+		<ellipse id="XMLID_1562_" transform="matrix(0.9995 -3.074045e-002 3.074045e-002 0.9995 -5.2325 19.935)" fill="#FFFFFF" cx="645.7" cy="180.1" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_1561_" transform="matrix(0.9117 -0.4109 0.4109 0.9117 -18.5084 279.2183)" fill="#FFFFFF" cx="640.2" cy="182.7" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_1560_" transform="matrix(0.6849 -0.7286 0.7286 0.6849 64.1077 522.514)" fill="#FFFFFF" cx="636.2" cy="187.1" rx="2.1" ry="2.6"/>
+		<ellipse id="XMLID_1559_" transform="matrix(0.3905 -0.9206 0.9206 0.3905 209.4229 700.4564)" fill="#FFFFFF" cx="633.7" cy="192.1" rx="2" ry="2.4"/>
+		<path id="XMLID_1556_" fill="#FFFFFF" d="M665,194.3c-2.3-1.8-2.8-5.4,2.1-8.7c4.9-3.3,15.6,1.2,15.3,10.7s-12.4,19.6-17.1,18.8
+		c-4.7-0.8-6.3-5.1-3.7-6.8s7.8-3.9,7.9-7.8C669.6,196.7,666.5,195.6,665,194.3z"/>
+		<ellipse id="XMLID_1555_" fill="#FFFFFF" cx="665.4" cy="180" rx="3.7" ry="4.2"/>
+		<ellipse id="XMLID_1554_" transform="matrix(-0.9995 -3.072771e-002 3.072771e-002 -0.9995 1341.1914 380.8964)" fill="#FFFFFF" cx="673.5" cy="180.1" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_1553_" transform="matrix(-0.9117 -0.4108 0.4108 -0.9117 1223.0068 628.1542)" fill="#FFFFFF" cx="679" cy="182.7" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_1552_" transform="matrix(-0.6849 -0.7286 0.7286 -0.6849 1014.5192 812.9824)" fill="#FFFFFF" cx="683" cy="187.1" rx="2.1" ry="2.6"/>
+		<ellipse id="XMLID_1551_" transform="matrix(-0.3905 -0.9206 0.9206 -0.3905 776.429 898.1377)" fill="#FFFFFF" cx="685.5" cy="192.1" rx="2" ry="2.4"/>
+		<path id="XMLID_1548_" fill="#FFFFFF" d="M720.8,194.3c2.3-1.8,2.8-5.4-2.1-8.7c-4.9-3.3-15.6,1.2-15.3,10.7s12.4,19.6,17.1,18.8
+		c4.7-0.8,6.3-5.1,3.7-6.8s-7.8-3.9-7.9-7.8C716.2,196.7,719.3,195.6,720.8,194.3z"/>
+		<ellipse id="XMLID_1547_" fill="#FFFFFF" cx="720.4" cy="180" rx="3.7" ry="4.2"/>
+		<ellipse id="XMLID_1546_" transform="matrix(0.9995 -3.073414e-002 3.073414e-002 0.9995 -5.2001 21.9772)" fill="#FFFFFF" cx="712.3" cy="180.1" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_1545_" transform="matrix(0.9117 -0.4109 0.4109 0.9117 -12.6275 306.578)" fill="#FFFFFF" cx="706.8" cy="182.7" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_1544_" transform="matrix(0.6849 -0.7286 0.7286 0.6849 85.087 571.0281)" fill="#FFFFFF" cx="702.8" cy="187.1" rx="2.1" ry="2.6"/>
+		<ellipse id="XMLID_1543_" transform="matrix(0.3905 -0.9206 0.9206 0.3905 250.0022 761.752)" fill="#FFFFFF" cx="700.3" cy="192.1" rx="2" ry="2.4"/>
+		<path id="XMLID_1541_" fill="#FFFFFF" d="M731.6,194.3c-2.3-1.8-2.8-5.4,2.1-8.7s15.6,1.2,15.3,10.7s-12.4,19.6-17.1,18.8
+		c-4.7-0.8-6.3-5.1-3.7-6.8c2.6-1.8,7.8-3.9,7.9-7.8S733.1,195.6,731.6,194.3z"/>
+		<ellipse id="XMLID_1540_" fill="#FFFFFF" cx="732" cy="180" rx="3.7" ry="4.2"/>
+		<ellipse id="XMLID_1539_" transform="matrix(-0.9995 -3.074034e-002 3.074034e-002 -0.9995 1474.3235 382.9516)" fill="#FFFFFF" cx="740.1" cy="180.1" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_1538_" transform="matrix(-0.9117 -0.4109 0.4109 -0.9117 1350.2544 655.5599)" fill="#FFFFFF" cx="745.6" cy="182.7" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_1537_" transform="matrix(-0.6849 -0.7286 0.7286 -0.6849 1126.7068 861.4966)" fill="#FFFFFF" cx="749.6" cy="187.1" rx="2.1" ry="2.6"/>
+		<ellipse id="XMLID_1536_" transform="matrix(-0.3905 -0.9206 0.9206 -0.3905 869.016 959.4327)" fill="#FFFFFF" cx="752.1" cy="192.1" rx="2" ry="2.4"/>
+		<path id="XMLID_1533_" fill="#FFFFFF" d="M521.1,242.3c2.3-1.8,2.8-5.4-2.1-8.7c-4.9-3.3-15.6,1.2-15.3,10.7s12.4,19.6,17.1,18.8
+		c4.7-0.8,6.3-5.1,3.7-6.8s-7.8-3.9-7.9-7.8C516.4,244.7,519.5,243.6,521.1,242.3z"/>
+		<ellipse id="XMLID_1532_" fill="#FFFFFF" cx="520.7" cy="228" rx="3.7" ry="4.2"/>
+		<ellipse id="XMLID_1530_" transform="matrix(0.9995 -3.074045e-002 3.074045e-002 0.9995 -6.771 15.864)" fill="#FFFFFF" cx="512.6" cy="228.1" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_1529_" transform="matrix(0.9117 -0.4109 0.4109 0.9117 -49.9941 228.738)" fill="#FFFFFF" cx="507.1" cy="230.7" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_1528_" transform="matrix(0.6849 -0.7286 0.7286 0.6849 -12.8245 440.6101)" fill="#FFFFFF" cx="503" cy="235.1" rx="2.1" ry="2.6"/>
+		<ellipse id="XMLID_1527_" transform="matrix(0.3905 -0.9206 0.9206 0.3905 84.0766 607.1194)" fill="#FFFFFF" cx="500.6" cy="240.1" rx="2" ry="2.4"/>
+		<path id="XMLID_1525_" fill="#FFFFFF" d="M531.8,242.3c-2.3-1.8-2.8-5.4,2.1-8.7s15.6,1.2,15.3,10.7s-12.4,19.6-17.1,18.8
+		c-4.7-0.8-6.3-5.1-3.7-6.8c2.6-1.8,7.8-3.9,7.9-7.8S533.4,243.6,531.8,242.3z"/>
+		<ellipse id="XMLID_1524_" fill="#FFFFFF" cx="532.3" cy="228" rx="3.7" ry="4.2"/>
+		<ellipse id="XMLID_1523_" transform="matrix(-0.9995 -3.074034e-002 3.074034e-002 -0.9995 1073.4424 472.7885)" fill="#FFFFFF" cx="540.4" cy="228.1" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_1522_" transform="matrix(-0.9117 -0.4109 0.4109 -0.9117 948.6735 665.2407)" fill="#FFFFFF" cx="545.8" cy="230.7" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_1521_" transform="matrix(-0.6849 -0.7286 0.7286 -0.6849 755.1708 796.8306)" fill="#FFFFFF" cx="549.9" cy="235.1" rx="2.1" ry="2.6"/>
+		<ellipse id="XMLID_1520_" transform="matrix(-0.3905 -0.9206 0.9206 -0.3905 547.0657 842.293)" fill="#FFFFFF" cx="552.3" cy="240.1" rx="2" ry="2.4"/>
+		<path id="XMLID_1516_" fill="#FFFFFF" d="M587.7,242.3c2.3-1.8,2.8-5.4-2.1-8.7c-4.9-3.3-15.6,1.2-15.3,10.7s12.4,19.6,17.1,18.8
+		c4.7-0.8,6.3-5.1,3.7-6.8c-2.6-1.8-7.8-3.9-7.9-7.8C583,244.7,586.1,243.6,587.7,242.3z"/>
+		<ellipse id="XMLID_1515_" fill="#FFFFFF" cx="587.2" cy="228" rx="3.7" ry="4.2"/>
+		<ellipse id="XMLID_1514_" transform="matrix(0.9995 -3.073414e-002 3.073414e-002 0.9995 -6.7382 17.9072)" fill="#FFFFFF" cx="579.1" cy="228.1" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_1513_" transform="matrix(0.9117 -0.4108 0.4108 0.9117 -44.1154 256.0455)" fill="#FFFFFF" cx="573.7" cy="230.7" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_1512_" transform="matrix(0.6849 -0.7286 0.7286 0.6849 8.1548 489.1242)" fill="#FFFFFF" cx="569.6" cy="235.1" rx="2.1" ry="2.6"/>
+		<ellipse id="XMLID_1511_" transform="matrix(0.3905 -0.9206 0.9206 0.3905 124.6559 668.4149)" fill="#FFFFFF" cx="567.2" cy="240.1" rx="2" ry="2.4"/>
+		<path id="XMLID_1507_" fill="#FFFFFF" d="M598.4,242.3c-2.3-1.8-2.8-5.4,2.1-8.7c4.9-3.3,15.6,1.2,15.3,10.7s-12.4,19.6-17.1,18.8
+		c-4.7-0.8-6.3-5.1-3.7-6.8c2.6-1.8,7.8-3.9,7.9-7.8C603.1,244.7,600,243.6,598.4,242.3z"/>
+		<ellipse id="XMLID_1506_" fill="#FFFFFF" cx="598.8" cy="228" rx="3.7" ry="4.2"/>
+		<ellipse id="XMLID_1505_" transform="matrix(-0.9995 -3.073414e-002 3.073414e-002 -0.9995 1206.5793 474.8316)" fill="#FFFFFF" cx="606.9" cy="228.1" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_1503_" transform="matrix(-0.9117 -0.4108 0.4108 -0.9117 1075.9994 692.5617)" fill="#FFFFFF" cx="612.4" cy="230.7" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_1502_" transform="matrix(-0.6849 -0.7286 0.7286 -0.6849 867.3577 845.3444)" fill="#FFFFFF" cx="616.5" cy="235.1" rx="2.1" ry="2.6"/>
+		<ellipse id="XMLID_1501_" transform="matrix(-0.3905 -0.9206 0.9206 -0.3905 639.6534 903.5885)" fill="#FFFFFF" cx="618.9" cy="240.1" rx="2" ry="2.4"/>
+		<path id="XMLID_1037_" fill="#FFFFFF" d="M654.3,242.3c2.3-1.8,2.8-5.4-2.1-8.7s-15.6,1.2-15.3,10.7s12.4,19.6,17.1,18.8
+		c4.7-0.8,6.3-5.1,3.7-6.8c-2.6-1.8-7.8-3.9-7.9-7.8S652.7,243.6,654.3,242.3z"/>
+		<ellipse id="XMLID_1036_" fill="#FFFFFF" cx="653.8" cy="228" rx="3.7" ry="4.2"/>
+		<ellipse id="XMLID_1035_" transform="matrix(0.9995 -3.074045e-002 3.074045e-002 0.9995 -6.708 19.9577)" fill="#FFFFFF" cx="645.7" cy="228.1" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_1034_" transform="matrix(0.9117 -0.4109 0.4109 0.9117 -38.2322 283.4579)" fill="#FFFFFF" cx="640.2" cy="230.7" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_1033_" transform="matrix(0.6849 -0.7286 0.7286 0.6849 29.1339 537.638)" fill="#FFFFFF" cx="636.2" cy="235.1" rx="2.1" ry="2.6"/>
+		<ellipse id="XMLID_1032_" transform="matrix(0.3905 -0.9206 0.9206 0.3905 165.235 729.71)" fill="#FFFFFF" cx="633.7" cy="240.1" rx="2" ry="2.4"/>
+		<path id="XMLID_1030_" fill="#FFFFFF" d="M665,242.3c-2.3-1.8-2.8-5.4,2.1-8.7c4.9-3.3,15.6,1.2,15.3,10.7s-12.4,19.6-17.1,18.8
+		c-4.7-0.8-6.3-5.1-3.7-6.8s7.8-3.9,7.9-7.8C669.6,244.7,666.5,243.6,665,242.3z"/>
+		<ellipse id="XMLID_1029_" fill="#FFFFFF" cx="665.4" cy="228" rx="3.7" ry="4.2"/>
+		<ellipse id="XMLID_1028_" transform="matrix(-0.9995 -3.072771e-002 3.072771e-002 -0.9995 1339.7166 476.8737)" fill="#FFFFFF" cx="673.5" cy="228.1" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_1027_" transform="matrix(-0.9117 -0.4108 0.4108 -0.9117 1203.2869 719.9163)" fill="#FFFFFF" cx="679" cy="230.7" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_1026_" transform="matrix(-0.6849 -0.7286 0.7286 -0.6849 979.5453 893.8585)" fill="#FFFFFF" cx="683" cy="235.1" rx="2.1" ry="2.6"/>
+		<ellipse id="XMLID_1025_" transform="matrix(-0.3905 -0.9206 0.9206 -0.3905 732.2411 964.884)" fill="#FFFFFF" cx="685.5" cy="240.1" rx="2" ry="2.4"/>
+		<path id="XMLID_1022_" fill="#FFFFFF" d="M720.8,242.3c2.3-1.8,2.8-5.4-2.1-8.7c-4.9-3.3-15.6,1.2-15.3,10.7s12.4,19.6,17.1,18.8
+		c4.7-0.8,6.3-5.1,3.7-6.8s-7.8-3.9-7.9-7.8C716.2,244.7,719.3,243.6,720.8,242.3z"/>
+		<ellipse id="XMLID_1021_" fill="#FFFFFF" cx="720.4" cy="228" rx="3.7" ry="4.2"/>
+		<ellipse id="XMLID_1020_" transform="matrix(0.9995 -3.073414e-002 3.073414e-002 0.9995 -6.6753 21.9999)" fill="#FFFFFF" cx="712.3" cy="228.1" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_1019_" transform="matrix(0.9117 -0.4109 0.4109 0.9117 -32.3513 310.8176)" fill="#FFFFFF" cx="706.8" cy="230.7" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_1018_" transform="matrix(0.6849 -0.7286 0.7286 0.6849 50.1132 586.1521)" fill="#FFFFFF" cx="702.8" cy="235.1" rx="2.1" ry="2.6"/>
+		<ellipse id="XMLID_1017_" transform="matrix(0.3905 -0.9206 0.9206 0.3905 205.8143 791.0056)" fill="#FFFFFF" cx="700.3" cy="240.1" rx="2" ry="2.4"/>
+		<path id="XMLID_1015_" fill="#FFFFFF" d="M731.6,242.3c-2.3-1.8-2.8-5.4,2.1-8.7s15.6,1.2,15.3,10.7s-12.4,19.6-17.1,18.8
+		c-4.7-0.8-6.3-5.1-3.7-6.8c2.6-1.8,7.8-3.9,7.9-7.8S733.1,243.6,731.6,242.3z"/>
+		<ellipse id="XMLID_1014_" fill="#FFFFFF" cx="732" cy="228" rx="3.7" ry="4.2"/>
+		<ellipse id="XMLID_1013_" transform="matrix(-0.9995 -3.074034e-002 3.074034e-002 -0.9995 1472.8479 478.9289)" fill="#FFFFFF" cx="740.1" cy="228.1" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_959_" transform="matrix(-0.9117 -0.4109 0.4109 -0.9117 1330.5305 747.3203)" fill="#FFFFFF" cx="745.6" cy="230.7" rx="2.4" ry="2.8"/>
+		<ellipse id="XMLID_958_" transform="matrix(-0.6849 -0.7286 0.7286 -0.6849 1091.733 942.3726)" fill="#FFFFFF" cx="749.6" cy="235.1" rx="2.1" ry="2.6"/>
+		<ellipse id="XMLID_957_" transform="matrix(-0.3905 -0.9206 0.9206 -0.3905 824.8281 1026.1792)" fill="#FFFFFF" cx="752.1" cy="240.1" rx="2" ry="2.4"/>
+	</g>
+	<path id="Circle" fill="#FFFFFF" d="M484.8,219.5c0-58.1-47.2-105.3-105.3-105.3c-58.1,0-105.3,47.2-105.3,105.3
+		s47.2,105.3,105.3,105.3C437.6,324.8,484.8,277.6,484.8,219.5z"/>
+	<text x="318.5" class="svg_element" y="175.5" onclick="choose_text('text1')" id="text1" font-size="27" font-family="Pontano Sans" transform="rotate(null,null,null)" fill="#7DA0D4">WELCOME<title></title></text>
+	<text x="346.5" class="svg_element" y="214" onclick="choose_text('text2')" id="text2" font-size="28" font-family="Pontano Sans" transform="rotate(null,null,null)" fill="#7DA0D4">BABY<title></title></text>
+	<text x="325" class="svg_element" y="251" onclick="choose_text('text3')" id="text3" font-size="33" font-family="Pontano Sans" fill="#0A7BFC" transform="rotate(null,null,null)" font-weight="bold">HENRY<title></title></text>
+	<text x="351" class="svg_element" y="282" onclick="choose_text('text4')" id="text4" font-size="24" font-family="Pontano Sans" transform="rotate(null,null,null)" fill="#7DA0D4">5.6.17<title></title></text>
+</g>
+</svg>

@@ -1,49 +1,16 @@
-import { TEXT_CONTENT, TEXT_FONT, TEXT_SIZE, TEXT_COLOR, TEXT_ROTATE, ADD_TEXT, DELETE_TEXT, SELECT_TEXT,RESIZ_BOX } from '../../actions/design_tool/FontAction'
+import { TEXT_CONTENT, TEXT_FONT, TEXT_SIZE, TEXT_COLOR, TEXT_ROTATE, ADD_TEXT, DELETE_TEXT, SELECT_TEXT } from '../../actions/design_tool/FontAction'
 
-// const initialState = {
-//   textContent: '',
-//   textFont: '',
-//   textSize: '',
-//   textColor: 'black',
-//   textRotate: 0,
-// }
+// text arrary structure
+// id: unique id,
+// textContent: text content, TEXT_CONTENT
+// textFont: font, TEXT_FONT
+// textSize: text size, TEXT_SIZE
+// textColor: text color, TEXT_COLOR
+// textRotate: rotate degree, TEXT_ROTATE
+// isSelected: true/false, SELECT_TEXT
 
-// function TextReducer(state = initialState, action) {
-//   var textContent = state.textContent;
-//   var textFont = state.textFont;
-//   var textSize = state.textSize;
-//   var textColor = state.textColor;
-//   var textRotate = state.textRotate;
-//   switch (action.type) {
-//     case TEXT_CONTENT: {
-//       textContent = action.data;
-//       break;
-//     }
-//     case TEXT_FONT: {
-//       textFont = action.data;
-//       break;
-//     }
-//     case TEXT_SIZE: {
-//       textSize = action.data;
-//       break;
-//     }
-//     case TEXT_COLOR: {
-//       textColor = action.data;
-//       break;
-//     }
-//     case TEXT_ROTATE: {
-//       textRotate = action.data;
-//       break;
-//     }
-//   }
-//   return {
-//     textContent,
-//     textFont,
-//     textSize,
-//     textColor,
-//     textRotate
-//   }
-// }
+// ADD_TEXT: add a new text object into the array, change all isSelected to FALSE
+// DELETE_TEXT: delete a selected text object from the array
 
 function TextReducer(state = [], action) {
   switch (action.type) {
@@ -125,14 +92,10 @@ function TextReducer(state = [], action) {
           id: action.id,
           textContent: action.data,
           textFont: '',
-          textSize: '',
+          textSize: '36',
           textColor: 'black',
           textRotate: 0,
           isSelected: true,
-          positionX: 0,
-          positionY: 0,
-          boxWidth: 0,
-          boxHeight: 20,
         }
       ]
     }
@@ -143,7 +106,7 @@ function TextReducer(state = [], action) {
           tempTextList.push(state[i]);
         }
       }
-      if (tempTextList.length == 0) {
+      if (tempTextList.length === 0) {
         return [];
       }
       var maxID = tempTextList[tempTextList.length - 1].id;
@@ -172,32 +135,10 @@ function TextReducer(state = [], action) {
           }
       )
     }
-    case RESIZ_BOX: {
-      return state.map(textList =>
-        (textList.id === action.id)
-        ? {
-            ...textList,
-            boxHeight: action.data.size.height,
-            boxWidth: action.data.size.width
-          }
-        : {
-            ...textList,
-          }
-      )
-    }
     default:
       return state
   }
 }
 
-            // id: textList.id,
-            // textContent: textList.textContent,
-            // textFont: textList.textFont,
-            // textSize: textList.textSize,
-            // textColor: textList.textColor,
-            // textRotate: textList.textRotate,
-
-
 
 export default TextReducer;
-

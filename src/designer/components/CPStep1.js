@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { Row, Col, Clearfix } from 'react-bootstrap';
+import { Clearfix } from 'react-bootstrap';
 import { StepTitle } from './CPBody';
 import { connect } from 'react-redux';
-import CategoryList from '../containers/chooseTemplate/step1CategoryContainer';
-import TemplateList from '../containers/chooseTemplate/step1TemplateContainer';
+import CategoryList from '../containers/choose_template/step1CategoryContainer';
+import TemplateList from '../containers/choose_template/step1TemplateContainer';
 
 // Step1 Class: main component for step1
 // Step1 is for choosing template

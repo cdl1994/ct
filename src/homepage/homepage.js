@@ -29,15 +29,15 @@ class HomePage extends React.Component {
         let address;
         var suffix = "";
         if (process.env.NODE_ENV === 'production') {
-            address = window.location.host;
+            address = window.location.origin;
         }
         else {
-            address = "52.53.152.61:8080";
+            address = "http://52.53.152.61:8080";
             suffix = "&store_id=1";
         }
         axios({
-            method:"get",
-            url:"http://" + address + "/index.php?route=common/cp_home/api" + suffix,
+            method: "get",
+            url: address + "/index.php?route=common/cp_home/api" + suffix,
         })
         .then((response)=>{            
             this.setState({data: response.data});
@@ -48,7 +48,7 @@ class HomePage extends React.Component {
         });
         axios({
             method:"get",
-            url:"http://" + address + "/index.php?route=common/cp_header/api" + suffix,
+            url:address + "/index.php?route=common/cp_header/api" + suffix,
         })
         .then((response)=> {
             this.setState({header: response.data});
@@ -58,7 +58,7 @@ class HomePage extends React.Component {
         });
         axios({
             method:"get",
-            url:"http://" + address + "/index.php?route=common/cp_footer/api" + suffix,
+            url:address + "/index.php?route=common/cp_footer/api" + suffix,
         })
         .then((response)=> {
             this.setState({footer: response.data});

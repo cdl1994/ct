@@ -13,10 +13,10 @@ class InsertText extends Component {
     // this.setState({
     //   insertData: event.target.value
     // });
-    if (this.props.functionType == "ADD") {
+    if (this.props.functionType === "ADD") {
       this.props.onChangeAddText(event.target.value);
     } else {
-      if (event.target.value == "") {
+      if (event.target.value === "") {
         this.props.onChangeDeleteText(this.props.id);
       } else {
         this.props.onChangeTextContent(event.target.value, this.props.id);

@@ -107,7 +107,6 @@ h3 {
 
 /*the initial position of the text showed on the template*/
 .presentTextDiv {
-  margin-top: -13vw;
   position: relative;
   z-index: 1111;
 } 

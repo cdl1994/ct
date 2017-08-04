@@ -4,6 +4,7 @@ export const SELECT_IMG = 'selectImage';
 export const IMG_COLOR = 'imageColor';
 export const IMG_CHANGE = 'imageChange';
 
+// set the selected image
 export function selectImage(id) {
   return {
     type: SELECT_IMG,
@@ -11,6 +12,7 @@ export function selectImage(id) {
   }
 }
 
+// set the color selected in color picker
 export function imageColor(color) {
   return {
     type: IMG_COLOR,
@@ -18,6 +20,7 @@ export function imageColor(color) {
   }
 }
 
+// no use
 export function changeImage(svg) {
   return {
     type: IMG_CHANGE,
